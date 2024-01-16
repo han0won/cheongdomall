@@ -2,47 +2,119 @@
 
 
 
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: inherit;
+    }
+}
+
+
+
 // contents
 
-
-// .h-wrap {
-//     display: flex;
-// }
-
-h1 {
-    margin: auto;
-}
-
-.nav-top {
-    display: flex;
-}
-
-.nav-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.depth1 li {
-    display: none;
-}
-
-.depth1 {
-    display: flex;
-}
-
-.cartegory {
-    ul {
+#header {
+    max-width: 1440px;
+    margin: 0 auto;
+    .h-wrap {
+        padding: 20px 80px 30px;
+    }
+    .nav-top {
         display: flex;
+        justify-content: flex-end;
     }
-    li {
-        padding: 0 27px;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto 30px;
+    }
+    .nav-bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .gnb-wrap > a {
+            display: flex;
+        }
+        .gnb-wrap > a:hover .depth1 {
+            opacity: 1;
+            visibility: visible;
+        }   
+        .cartegory {
+            ul {
+                display: flex;
+            }
+            li {
+                padding: 0 27px;
+            }
+        }
+        .nav-icon {
+            display: flex;
+            p {
+                padding: 0 17px;
+            }
+        }
     }
 }
 
-.nav-icon {
-    display: flex;
-    p {
-        padding: 0 17px;
+#footer {
+    width: 100%;
+    background-color: $bg-light;
+    
+    .f-wrap {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 60px 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .f-left {
+        .f-top {
+            ul {
+            display: flex;
+            gap: 30px;
+            }
+            a {
+                font-weight: bold;
+            }
+        }
+        .f-middle {
+            p {
+                font-size: 14px;
+            }
+            .f-m-inner {
+                padding: 40px 0 20px;
+            }
+        }
+        .f-bottom {
+            padding-top: 60px;
+            font-size: 12px;
+        }
+    }
+
+    .f-right {
+       text-align: right; 
+       
+       strong {
+        font-size: 30px;
+        font-weight: normal;
+       }
+       p {
+        line-height: 28px;    
+        font-size: 14px;    
+       }
+       .number {
+        padding: 20px 0;
+        font-size: 50px;
+        line-height: normal;
+       }
     }
 }
 
