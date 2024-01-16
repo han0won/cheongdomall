@@ -1,0 +1,39 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+a {
+    color: $txt-default;
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font-family, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+    color: $txt-default;
+
+    h2 {
+        font-family: 'BMJUA';
+    }
+}

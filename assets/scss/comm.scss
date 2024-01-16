@@ -1,21 +1,4 @@
-@import 'variables', 'fonts';
-
-
-
-* {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-        color: inherit;
-    }
-}
+@import 'variables', 'fonts', 'reset';
 
 
 
