@@ -1,1 +1,27 @@
-// github 공유 test
+
+// 신상품
+.new-items{
+  .new-item-card{
+    .img{
+      width: 305px;
+      height: 305px;
+      background-image: url(../../images/bacon01.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      .img-tag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 30px;
+        background-color: $point;
+        color: $w;
+        font-weight: 600;
+        border-radius: 10px 0 10px 0;
+      }
+      // .img-icon{
+        // 추가해야함
+      // }
+    }
+  }
+}

@@ -140,4 +140,23 @@ body h2 {
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.new-items .new-item-card .img {
+  width: 305px;
+  height: 305px;
+  background-image: url(../../images/bacon01.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.new-items .new-item-card .img .img-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 30px;
+  background-color: #FF8C00;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px 0 10px 0;
 }/*# sourceMappingURL=comm.css.map */
