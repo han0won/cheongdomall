@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables', 'fonts';
 
 
 
@@ -100,7 +100,9 @@
     }
 
     .f-right {
-       text-align: right; 
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
        
        strong {
         font-size: 30px;
@@ -109,13 +111,21 @@
        p {
         line-height: 28px;    
         font-size: 14px;    
+        text-align: right;
        }
        .number {
         padding: 20px 0;
         font-size: 50px;
         line-height: normal;
        }
+       .f-r-wrap {
+        display: grid;
+        justify-items: end;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px
+       }
     }
 }
 
-@import 'main';
+@import 'main' ;
