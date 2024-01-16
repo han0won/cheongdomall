@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "BMJUA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff") format("woff");
@@ -17,11 +18,32 @@
   padding: 0;
   box-sizing: border-box;
 }
-* a:link,
-* a:visited,
-* a:hover,
-* a:active {
-  color: inherit;
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+a {
+  color: #232527;
+  text-decoration: none;
+}
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Pretendard-Regular", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #232527;
+}
+body h2 {
+  font-family: "BMJUA";
 }
 
 #header {
