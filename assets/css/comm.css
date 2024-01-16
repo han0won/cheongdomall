@@ -1,0 +1,34 @@
+h1 {
+  margin: auto;
+}
+
+.nav-top {
+  display: flex;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.depth1 li {
+  display: none;
+}
+
+.depth1 {
+  display: flex;
+}
+
+.cartegory ul {
+  display: flex;
+}
+.cartegory li {
+  padding: 0 27px;
+}
+
+.nav-icon {
+  display: flex;
+}
+.nav-icon p {
+  padding: 0 17px;
+}/*# sourceMappingURL=comm.css.map */
