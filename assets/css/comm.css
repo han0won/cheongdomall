@@ -142,6 +142,10 @@ body h2 {
        column-gap: 20px;
 }
 
+.new-items .new-slide {
+  width: 100%;
+  height: 100%;
+}
 .new-items .new-item-card .img {
   width: 305px;
   height: 305px;
