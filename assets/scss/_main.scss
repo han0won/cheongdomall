@@ -1,18 +1,27 @@
 
 // 신상품
 .new-items{
-  .new-slide{
+  .new-card-wrap{
     width: 100%;
-    height: 100%;
   }
-  .new-item-card{
-    .img{
-      width: 305px;
-      height: 305px;
-      background-image: url(../../images/bacon01.jpg);
-      background-size: cover;
-      border-radius: 10px;
-      .img-tag{
+  .slick-list {
+    margin-right: -20px;
+  }
+  .slick-slide {
+    margin-right: 20px;
+  }
+  .new-thumbnail{
+    position: relative;
+    margin-bottom: 20px;
+    .new-anchor{
+      img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      p{
+        position: absolute;
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,9 +32,38 @@
         font-weight: 600;
         border-radius: 10px 0 10px 0;
       }
-      // .img-icon{
-        // 추가해야함
-      // }
+    }
+    .cart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .desc{
+    .txt{
+      color: $txt-disabled;
+    }
+    .tit{
+      margin: 15px 0 7px 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .price{
+      font-weight: 600;
+      .amount{
+        font-size: 26px;
+      }
+      .won{
+        font-size: 20px;
+      }
     }
   }
 }

@@ -8,13 +8,12 @@
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <!-- slick -->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="./assets/css/comm.css">
 <!-- slick -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./assets/js/comm.js"></script>
 </head>
 <body>
@@ -30,7 +29,7 @@
 
     <!-- 메인 배너 슬라이드 -->
     <div class="main-slide">
-      <!-- 스와이퍼 추가하기 -->
+      <!-- 슬라이드 추가하기 -->
     </div>
 
     <main id="main">
@@ -39,46 +38,136 @@
         <h2 class="tit">신상품</h2>
         <p>그 어디보다 신선한 청도몰&#33;</p>
         <!-- 신상품 슬라이드 -->
-        <div class="new-item-card-wrap">
-          <div class="new-item-card">
-            <div class="img">
-              <p class="img-tag">NEW</p>
-              <div class="img-icon"></div>
+        <div class="new-card-wrap">
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/carrot01.jpg" alt="당근">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
             </div>
-            <div class="txt-wrap">
-              <p>신선하고 맛있는 어쩌고 농산물&#33;</p>
-              <p>맛있는 상품 이름</p>
-              <p>25,000</p>
-              <p>원</p>
-            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
           </div>
-
-          <div class="new-item-card">
-            <div class="img">
-              <p class="img-tag">NEW</p>
-              <div class="img-icon"></div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/cabage01.jpg" alt="배추">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
             </div>
-            <div class="txt-wrap">
-              <p>신선하고 맛있는 어쩌고 농산물&#33;</p>
-              <p>맛있는 상품 이름</p>
-              <p>25,000</p>
-              <p>원</p>
-            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
           </div>
-          <div class="new-item-card">
-            <div class="img">
-              <p class="img-tag">NEW</p>
-              <div class="img-icon"></div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/strawberry01.jpg" alt="딸기">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
             </div>
-            <div class="txt-wrap">
-              <p>신선하고 맛있는 어쩌고 농산물&#33;</p>
-              <p>맛있는 상품 이름</p>
-              <p>25,000</p>
-              <p>원</p>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/meat01.jpg" alt="소고기">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
             </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/meat02.jpg" alt="소고기">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
+            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/ham01.jpg" alt="햄">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
+            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/bacon01.jpg" alt="베이컨">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
+            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="new-card">
+            <div class="new-thumbnail">
+              <a href="#" class="new-anchor">
+                <img src="./images/main/sauce01.jpg" alt="소스">
+                <p>NEW</p>
+              </a>
+              <button class="cart">카트</button>
+            </div>
+            <a href="#" class="desc">
+              <p class="txt">신선하고 맛있는 어쩌고 농산물&#33;</p>
+              <p class="tit">맛있는 상품 이름</p>
+              <div class="price">
+                <p class="amount">25,000<span class="won">원</span></p>
+              </div>
+            </a>
           </div>
         </div>
-        
       </section>
 
       <!-- 로컬푸드 배너 -->

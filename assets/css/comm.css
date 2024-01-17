@@ -155,18 +155,28 @@ body h2 {
   line-height: normal;
   color: #2E7602;
 }
-.new-items .new-slide {
+
+.new-items .new-card-wrap {
   width: 100%;
-  height: 100%;
 }
-.new-items .new-item-card .img {
-  width: 305px;
-  height: 305px;
-  background-image: url(../../images/bacon01.jpg);
-  background-size: cover;
+.new-items .slick-list {
+  margin-right: -20px;
+}
+.new-items .slick-slide {
+  margin-right: 20px;
+}
+.new-items .new-thumbnail {
+  position: relative;
+  margin-bottom: 20px;
+}
+.new-items .new-thumbnail .new-anchor img {
+  width: 100%;
   border-radius: 10px;
 }
-.new-items .new-item-card .img .img-tag {
+.new-items .new-thumbnail .new-anchor p {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,4 +186,34 @@ body h2 {
   color: #fff;
   font-weight: 600;
   border-radius: 10px 0 10px 0;
+}
+.new-items .new-thumbnail .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.new-items .desc .txt {
+  color: #777777;
+}
+.new-items .desc .tit {
+  margin: 15px 0 7px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.new-items .desc .price {
+  font-weight: 600;
+}
+.new-items .desc .price .amount {
+  font-size: 26px;
+}
+.new-items .desc .price .won {
+  font-size: 20px;
 }/*# sourceMappingURL=comm.css.map */
