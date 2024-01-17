@@ -27,6 +27,21 @@ li {
   list-style: none;
 }
 
+body {
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Pretendard-Regular", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #232527;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 a {
   color: #232527;
   text-decoration: none;
@@ -35,14 +50,7 @@ a:link, a:visited, a:active, a:hover {
   text-decoration: none;
 }
 
-body {
-  background: #fff;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Pretendard-Regular", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #232527;
-}
-body h2 {
+h2 {
   font-family: "BMJUA";
 }
 
@@ -56,33 +64,124 @@ body h2 {
 #header .nav-top {
   display: flex;
   justify-content: flex-end;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+#header .nav-top p {
+  font-size: 12px;
 }
 #header h1 {
   display: flex;
   justify-content: center;
-  margin: 10px auto 30px;
+  margin: 10px auto 65px;
+}
+#header h1 a {
+  width: 191px;
+  height: 90px;
+  background: url(../../images/comm/logo-web.png);
 }
 #header .nav-bottom {
+  position: relative;
+}
+#header .nav-bottom .lnb {
+  opacity: 0;
+  position: absolute;
+  top: -26px;
+  left: -20px;
+  padding: 20px;
+  border: 1px solid #E2E2E2;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  background-color: #fff;
+}
+#header .nav-bottom .lnb lnb-d1 a::after {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #CCE9A8;
+  border-radius: 20px;
+}
+#header .nav-bottom .lnb lnb-d1 a:hover a::after {
+  display: block;
+}
+#header .nav-bottom .lnb-btn-wrap > a {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
 }
-#header .nav-bottom .gnb-wrap > a {
+#header .nav-bottom .lnb-btn-wrap > a .ctr-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border-top-right-radius: 0;
+  background-color: #77B934;
+}
+#header .nav-bottom .lnb-btn-wrap > a i {
+  padding: 9px 11px;
+}
+#header .nav-bottom .lnb-btn-wrap > a p {
+  font-size: 18px;
+  font-family: "BMJUA";
+}
+#header .nav-bottom .lnb-menu-wrap {
   display: flex;
 }
-#header .nav-bottom .gnb-wrap > a:hover .depth1 {
-  opacity: 1;
-  visibility: visible;
+#header .nav-bottom .lnb-depth1 {
+  width: 180px;
+  padding: 20px 30px;
 }
-#header .nav-bottom .cartegory ul {
+#header .nav-bottom .lnb-depth1 .lnb-d1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  font-size: 14px;
+}
+#header .nav-bottom .lnb-depth1 .lnb-d1-2 a,
+#header .nav-bottom .lnb-depth1 .lnb-d1-3 a {
+  display: block;
+  padding: 10px 0;
+}
+#header .nav-bottom .lnb-depth2 {
+  position: relative;
+  width: 180px;
+  border-left: 1px solid #E2E2E2;
+}
+#header .nav-bottom .lnb-depth2 .lnb-d2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 30px;
+  font-size: 14px;
+}
+#header .nav-bottom .lnb-depth2 .lnb-d2 a {
+  display: block;
+  padding: 10px 0;
+}
+#header .nav-bottom #gnb {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#header .nav-bottom #gnb ul {
   display: flex;
 }
-#header .nav-bottom .cartegory li {
-  padding: 0 27px;
+#header .nav-bottom #gnb li {
+  padding: 0 25px;
+}
+#header .nav-bottom #gnb .nav-local {
+  color: #2E7602;
 }
 #header .nav-bottom .nav-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
 }
-#header .nav-bottom .nav-icon p {
+#header .nav-bottom .nav-icon button,
+#header .nav-bottom .nav-icon .btn-cart,
+#header .nav-bottom .nav-icon .btn-mypage {
   padding: 0 17px;
 }
 
@@ -187,6 +286,7 @@ body h2 {
   font-weight: 600;
   border-radius: 10px 0 10px 0;
 }
+
 .new-items .new-thumbnail .cart {
   display: flex;
   justify-content: center;
@@ -216,4 +316,43 @@ body h2 {
 }
 .new-items .desc .price .won {
   font-size: 20px;
+
+h3 {
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: "BMJUA";
+}
+
+.info-tit {
+  font-size: 18px;
+  color: #CCE9A8;
+}
+
+.info-why {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 140px 80px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-why .info-why-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1050px;
+}
+.info-why .why-box {
+  display: flex;
+  justify-content: space-between;
+}
+.info-why .info-why-img {
+  width: 505px;
+  height: 320px;
+  background-color: aliceblue;
+}
+
+.info-about .info-about-txt p {
+  font-size: 48px;
+
 }/*# sourceMappingURL=comm.css.map */
