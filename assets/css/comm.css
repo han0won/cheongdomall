@@ -154,4 +154,26 @@ body h2 {
   font-weight: bold;
   line-height: normal;
   color: #2E7602;
+}
+.new-items .new-slide {
+  width: 100%;
+  height: 100%;
+}
+.new-items .new-item-card .img {
+  width: 305px;
+  height: 305px;
+  background-image: url(../../images/bacon01.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.new-items .new-item-card .img .img-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 30px;
+  background-color: #FF8C00;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px 0 10px 0;
 }/*# sourceMappingURL=comm.css.map */
