@@ -1,3 +1,30 @@
+// 메인 슬라이드 배너
+.m-slide-wrap{
+  .slide-each{
+    // width: 1105px;
+    // height: 420px;
+    .m-s-img{
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+  }
+}
+
+// 페이지 가운데 정렬
+#main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// 타이틀 글자 기본 설정
+.title,
+.tit-txt{
+  text-align: center;
+}
+.tit-txt{
+  font-size: 20px;
+  color: $txt-secondary;
+}
 
 // 신상품
 .new-items{
