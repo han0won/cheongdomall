@@ -52,6 +52,7 @@ a:link, a:visited, a:active, a:hover {
 
 h2 {
   font-family: "BMJUA";
+  font-size: 50px;
 }
 
 #header {
@@ -255,6 +256,26 @@ h2 {
   color: #2E7602;
 }
 
+.m-slide-wrap .slide-each .m-s-img {
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title,
+.tit-txt {
+  text-align: center;
+}
+
+.tit-txt {
+  font-size: 20px;
+  color: #444444;
+}
+
 .new-items .new-card-wrap {
   width: 100%;
 }
@@ -286,7 +307,6 @@ h2 {
   font-weight: 600;
   border-radius: 10px 0 10px 0;
 }
-
 .new-items .new-thumbnail .cart {
   display: flex;
   justify-content: center;
@@ -355,5 +375,4 @@ h3 {
 
 .info-about .info-about-txt p {
   font-size: 48px;
-
 }/*# sourceMappingURL=comm.css.map */
