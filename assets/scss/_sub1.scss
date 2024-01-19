@@ -283,6 +283,7 @@ h3 {
 
     .info-various-wrap {
         display: flex;
+        justify-content: center;
         width: 100%;
         column-gap: 20px;
     }
@@ -290,10 +291,13 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 30%;
         height: 500px;
+        margin: 0 15px;
+        color: $w;
         border-radius: 20px;
         background-color: #E7F4D7;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .txt-wrap {
         padding: 0 0 30px 30px;
@@ -302,21 +306,24 @@ h3 {
             font-size: 32px;
         }
         p {
+            padding-top: 3px;
             font-size: 16px;
         }
     }
-    .vb-0,
-    .vb-4 {
-        width: 15%;
-        opacity: 0.5;
+    .vb-1 {
+        background-image: url(../../images/sub1/variouble_1.png);
+    }
+    .vb-2 {
+        background-image: url(../../images/sub1/variouble_2.png);
+    }
+    .vb-3 {
+        background-image: url(../../images/sub1/variouble_3.png);
     }
     .vb-0 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        background-image: url(../../images/sub1/variouble_3.png);
     }
     .vb-4 {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        background-image: url(../../images/sub1/variouble_1.png);
     }
 }
 
