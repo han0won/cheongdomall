@@ -568,7 +568,11 @@ h3 {
 }
 .info-fresh .info-fresh-wrap > p {
   padding-top: 100px;
-  font-size: 32px;
+  font-size: 28px;
+}
+.info-fresh span {
+  color: #2E7602;
+  font-weight: bold;
 }
 .info-fresh .Route-wrap {
   display: flex;
@@ -583,7 +587,7 @@ h3 {
 }
 .info-fresh .Route-box p {
   padding-top: 30px;
-  font-size: 24px;
+  font-size: 22px;
 }
 .info-fresh .Route-circle {
   display: flex;
@@ -601,11 +605,16 @@ h3 {
 .info-fresh .Route1 .Route-circle {
   background: #fff;
 }
+.info-fresh .Route-icon {
+  width: 100px;
+  height: 100px;
+}
 .info-fresh .down-arrow {
   margin: 80px 0;
+}
+.info-fresh .icon-downarrow {
   width: 40px;
   height: 40px;
-  background-color: #CCE9A8;
 }
 
 .info-various {

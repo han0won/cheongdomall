@@ -231,7 +231,11 @@ h3 {
     }
     .info-fresh-wrap > p {
         padding-top: 100px;
-        font-size: 32px;
+        font-size: 28px;
+    }
+    span {
+        color: $deep;
+        font-weight: bold;
     }
     .Route-wrap {
         display: flex;
@@ -246,7 +250,7 @@ h3 {
 
         p {
             padding-top: 30px;
-            font-size: 24px;
+            font-size: 22px;
         }
     }
     .Route-circle {
@@ -265,11 +269,16 @@ h3 {
             background: $w;
         }
     }
+    .Route-icon {
+        width: 100px;
+        height: 100px;
+    }
     .down-arrow {
         margin: 80px 0;
+    }
+    .icon-downarrow {
         width: 40px;
         height: 40px;
-        background-color: #CCE9A8;
     }
 }
 
