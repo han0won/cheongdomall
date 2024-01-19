@@ -535,6 +535,9 @@ h3 {
 .info-about h3 {
   padding-bottom: 80px;
 }
+.info-about .info-about-txt {
+  cursor: pointer;
+}
 .info-about .info-about-txt p {
   font-size: 50px;
   color: rgba(68, 68, 68, 0.3);
@@ -646,7 +649,10 @@ h3 {
 }
 .info-fresh .info-fresh-wrap > p {
   padding-top: 100px;
-  font-size: 32px;
+  font-size: 28px;
+}
+.info-fresh span {
+  font-weight: bold;
 }
 .info-fresh .Route-wrap {
   display: flex;
@@ -661,7 +667,7 @@ h3 {
 }
 .info-fresh .Route-box p {
   padding-top: 30px;
-  font-size: 24px;
+  font-size: 22px;
 }
 .info-fresh .Route-circle {
   display: flex;
@@ -679,11 +685,16 @@ h3 {
 .info-fresh .Route1 .Route-circle {
   background: #fff;
 }
+.info-fresh .Route-icon {
+  width: 100px;
+  height: 100px;
+}
 .info-fresh .down-arrow {
   margin: 80px 0;
+}
+.info-fresh .icon-downarrow {
   width: 40px;
   height: 40px;
-  background-color: #CCE9A8;
 }
 
 .info-various {
@@ -696,6 +707,7 @@ h3 {
 }
 .info-various .info-various-wrap {
   display: flex;
+  justify-content: center;
   width: 100%;
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -704,10 +716,13 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 30%;
   height: 500px;
+  margin: 0 15px;
+  color: #fff;
   border-radius: 20px;
   background-color: #E7F4D7;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .info-various .txt-wrap {
   padding: 0 0 30px 30px;
@@ -716,20 +731,23 @@ h3 {
   font-size: 32px;
 }
 .info-various .txt-wrap p {
+  padding-top: 3px;
   font-size: 16px;
 }
-.info-various .vb-0,
-.info-various .vb-4 {
-  width: 15%;
-  opacity: 0.5;
+.info-various .vb-1 {
+  background-image: url(../../images/sub1/variouble_1.png);
+}
+.info-various .vb-2 {
+  background-image: url(../../images/sub1/variouble_2.png);
+}
+.info-various .vb-3 {
+  background-image: url(../../images/sub1/variouble_3.png);
 }
 .info-various .vb-0 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  background-image: url(../../images/sub1/variouble_3.png);
 }
 .info-various .vb-4 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  background-image: url(../../images/sub1/variouble_1.png);
 }
 
 .info-banner {
