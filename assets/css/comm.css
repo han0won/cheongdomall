@@ -584,9 +584,30 @@ h3 {
   padding-bottom: 100px;
 }
 .info-why .info-why-img {
+  position: relative;
   width: 47%;
   height: 320px;
-  background-color: aliceblue;
+}
+.info-why .img-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.info-why .img-wrap::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  width: 120%;
+  height: 120%;
+  z-index: -100;
+  background-image: url(../../images/sub1/bgline.PNG);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .info-why .info-why-box {
   width: 50%;
@@ -680,7 +701,7 @@ h3 {
 }
 .info-fresh .Route1 {
   width: 100%;
-  background: #F5F5F5;
+  background: linear-gradient(to bottom, #F5F5F5 50%, rgb(255, 255, 255) 100%);
 }
 .info-fresh .Route1 .Route-circle {
   background: #fff;
@@ -695,6 +716,25 @@ h3 {
 .info-fresh .icon-downarrow {
   width: 40px;
   height: 40px;
+}
+.info-fresh .route2 {
+  position: relative;
+}
+.info-fresh .icon-sparkle {
+  position: absolute;
+}
+.info-fresh .icon-sparkle img {
+  width: 100%;
+  height: 100%;
+}
+.info-fresh .sparkle1 {
+  left: 900px;
+  width: 100px;
+  height: 100px;
+}
+.info-fresh .sparkle2 {
+  width: 80px;
+  height: 80px;
 }
 
 .info-various {
