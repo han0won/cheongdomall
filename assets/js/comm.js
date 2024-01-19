@@ -1,10 +1,13 @@
 $(document).ready(function() {
   // main: 메인 배너
-  $('.main-slide').slick({
+  $('.slide-wrap').slick({
     dots: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    // autoplay: true,
+    // autoplaySpeed: 3500,
     centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 3500,
+    variableWidth: true,
   });
 
   // main: 신상품
