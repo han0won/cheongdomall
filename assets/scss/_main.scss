@@ -1,13 +1,19 @@
 // 메인 슬라이드 배너
-.m-slide-wrap{
-  .slide-each{
-    // width: 1105px;
-    // height: 420px;
-    .m-s-img{
-      margin: 0 auto;
+.main-slide{
+  .slide{
+    padding: 0 15px;
+    a{
+      img{
+      width: 100%;
       border-radius: 20px;
+      }
     }
   }
+  // .slick-prev{
+  //   width: 70px;
+  //   height: 70px;
+  //   background: rgba(255, 255, 255, 0.7)fff;
+  // }
 }
 
 // 페이지 가운데 정렬
