@@ -116,6 +116,8 @@ h3 {
         padding-bottom: 80px;
     }
     .info-about-txt {
+        cursor: pointer;
+
         p {
             font-size: 50px;
             color: rgba(68, 68, 68, 0.3);
@@ -234,7 +236,6 @@ h3 {
         font-size: 28px;
     }
     span {
-        color: $deep;
         font-weight: bold;
     }
     .Route-wrap {
