@@ -7,14 +7,17 @@
   <!-- fonts -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-  <!-- slick -->
+  <!-- slide -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./assets/css/comm.css">
-<!-- slick -->
+  <!-- jq -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- slide --> 
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/comm.js"></script>
 </head>
 <body>
@@ -30,30 +33,36 @@
 
     <!-- 메인 배너 슬라이드 -->
     <div class="main-slide">
-      <div class="slide">
-        <a href="#">
-          <img src="./images/main/main-bnr01.jpg" alt="내용 작성" class="m-s-img">
-        </a>
+      <div class="slide-wrap">
+        <div class="slide">
+          <a href="#">
+            <img src="./images/main/main-bnr01.jpg" alt="내용 작성" class="m-s-img">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#">
+            <img src="./images/main/main-bnr02.jpg" alt="내용 작성" class="m-s-img">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#">
+            <img src="./images/main/main-bnr03.jpg" alt="내용 작성" class="m-s-img">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#">
+            <img src="./images/main/main-bnr04.jpg" alt="내용 작성" class="m-s-img">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#">
+            <img src="./images/main/main-bnr05.jpg" alt="내용 작성" class="m-s-img">
+          </a>
+        </div>
       </div>
-      <div class="slide">
-        <a href="#">
-          <img src="./images/main/main-bnr02.jpg" alt="내용 작성" class="m-s-img">
-        </a>
-      </div>
-      <div class="slide">
-        <a href="#">
-          <img src="./images/main/main-bnr03.jpg" alt="내용 작성" class="m-s-img">
-        </a>
-      </div>
-      <div class="slide">
-        <a href="#">
-          <img src="./images/main/main-bnr04.jpg" alt="내용 작성" class="m-s-img">
-        </a>
-      </div>
-      <div class="slide">
-        <a href="#">
-          <img src="./images/main/main-bnr05.jpg" alt="내용 작성" class="m-s-img">
-        </a>
+      <div class="pager">
+        <div class="prev">이전</div>
+        <div class="next">다음</div>
       </div>
     </div>
 
@@ -226,6 +235,23 @@
           </ul>
         </div>
         <!-- 슬라이드 추가 -->
+        <!-- test -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/main/bacon01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/meat01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/meat02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/sauce01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/strawberry01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/cabage01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/carrot01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/main/ham01.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+
         <div class="card-item best-item-card">
           <div class="card-img"></div>
           <div class="card-txt">

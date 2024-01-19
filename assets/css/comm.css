@@ -260,15 +260,59 @@ h2 {
   color: #2E7602;
 }
 
-.main-slide .slide {
-  padding: 0 15px;
+.main-slide {
+  position: relative;
 }
-.main-slide .slide a img {
-  width: 100%;
-  border-radius: 20px;
+.main-slide .pager {
+  z-index: 1;
+}
+.main-slide .pager .prev,
+.main-slide .pager .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #232527;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main-slide .pager .prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+.main-slide .pager .next {
+  position: absolute;
+  top: 40%;
+  right: 0;
 }
 
-#main {
+.slide-wrap {
+  position: relative;
+}
+.slide-wrap .slide {
+  margin-right: -30px;
+  transform: scale(0.9);
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+}
+.slide-wrap .slide a {
+  width: 1105px;
+  height: 420px;
+}
+.slide-wrap .slide a img {
+  border-radius: 20px;
+}
+.slide-wrap .slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.new-items,
+.farm,
+.review {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -343,6 +387,40 @@ h2 {
 }
 .new-items .desc .price .won {
   font-size: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: scale(0.84) translateZ(0);
+}
+
+.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+  transform: scale(1) translateZ(0);
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
 }
 
 .sub1-cont {
