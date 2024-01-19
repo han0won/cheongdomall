@@ -9,10 +9,12 @@
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/comm.css">
     <!-- slick -->
     <script type="text/javascript" src="//code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./assets/js/sub1.js"></script>
 </head>
 <body>
@@ -117,20 +119,20 @@
 <!-- 컨텐츠 -->
 <div id="container">
     <section class="info-fage info-fage1">
-        <p class="info-int1">
+        <p class="info-int1" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="1200">
             로컬푸드.
             <br>들어보신 적 있으세요?
         </p>
     </section>
     <section class="info-fage info-fage2">
-        <p class="info-int2">
+        <p class="info-int2" data-aos="fade-down" data-aos-duration="1200">
             매일 우리의 밥상에 올라가는 재료들.
             <br><span>안전하고 좋은 식품들</span>로만 채우고 싶으시죠?
             <br>그래서 로컬푸드가 탄생했습니다.
         </p>
     </section>
     <section class="sub1-cont info-what">
-        <p>what's</p>
+        <p data-aos="fade-right" data-aos-duration="1200">what's</p>
         <div class="sub1-slide">
             <div class="sub1-slide-inner">
                 <div class="slide-box">                
@@ -150,16 +152,18 @@
                 </div>
             </div>
         </div>
-        <p>local food?</p>
+        <p data-aos="fade-left" data-aos-duration="1200">local food?</p>
     </section>
     <section class="sub1-cont info-about">
-        <div class="info-about-img">
+        <div class="info-about-img" data-aos="fade-down" data-aos-duration="800">
             <img src="./images/sub1/about_img.png" alt="과일이 진열된 사진">
         </div>
         <div class="info-wrap">
             <p class="info-tit">ABOUT LOCAL FOOD</p>
-            <h3>로컬푸드가 뭐지?</h3>
-            <div class="info-about-txt">
+            <h3 data-aos="fade-down" data-aos-duration="800" data-aos-delay="300">
+                로컬푸드가 뭐지?
+            </h3>
+            <div class="info-about-txt" data-aos="fade-down" data-aos-duration="800" data-aos-delay="500">
                 <p><span>로컬푸드</span>라는 말, 생소하시죠?</p>
                 <p>로컬푸드는 <span>지역에서 생산한 먹거리</span>를</p>
                 <p><span>해당 지역에서 소비</span>하는 것을 말해요.</p>
@@ -171,9 +175,9 @@
     </section>
     <section class="sub1-cont info-why">
         <p class="info-tit">WHY LOCAL FOOD</p>
-        <h3>왜 로컬푸드일까?</h3>
+        <h3 data-aos="fade-down" data-aos-duration="800">왜 로컬푸드일까?</h3>
         <div class="info-why-wrap">
-            <div class="why-box info-why-l">
+            <div class="why-box info-why-l" data-aos="fade-right" data-aos-duration="1000">
                 <div class="info-why-box">
                     <div class="number-circle">1</div>
                     <strong><span>푸드 마일리지</span>를 줄여요!</strong>
@@ -186,7 +190,7 @@
                 </div>
                 <div class="info-why-img"></div>
             </div>
-            <div class="why-box info-why-r">
+            <div class="why-box info-why-r" data-aos="fade-left" data-aos-duration="1000">
                 <div class="info-why-img"></div>
                 <div class="info-why-box">
                     <div class="number-circle">2</div>
@@ -198,7 +202,7 @@
                     </p>
                 </div>
             </div>
-            <div class="why-box info-why-l">
+            <div class="why-box info-why-l" data-aos="fade-right" data-aos-duration="1000">
                 <div class="info-why-box">
                     <div class="number-circle">3</div>
                     <strong><span>모두에게 이익</span>이 돼요!</strong>
@@ -210,7 +214,7 @@
                 </div>
                 <div class="info-why-img"></div>
             </div>
-            <div class="why-box info-why-r">
+            <div class="why-box info-why-r" data-aos="fade-left" data-aos-duration="1000">
                 <div class="info-why-img"></div>
                 <div class="info-why-box">
                     <div class="number-circle">4</div>
@@ -226,7 +230,7 @@
     </section>
     <section class="sub1-cont info-fresh">
         <p class="info-tit">FRESH LOCAL FOOD</p>
-        <h3>로컬푸드가 신선한 이유!</h3>
+        <h3 data-aos="fade-down" data-aos-duration="800">로컬푸드가 신선한 이유!</h3>
         <div class="info-fresh-wrap Route1">
             <p>전통적 경로는 <span>길고 많은 과정</span>을 거쳐와요.</p>
             <div class="Route-wrap">
@@ -297,8 +301,10 @@
     </section>
     <section class="sub1-cont info-various">
         <p class="info-tit">VARIOUS LOCAL FOOD</p>
-        <h3>다양한 로컬푸드를 만나보세요!</h3>
-        <div class="info-various-wrap">
+        <h3 data-aos="fade-down" data-aos-duration="800">
+            다양한 로컬푸드를 만나보세요!
+        </h3>
+        <div class="info-various-wrap" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
             <div class="various-box vb-0">
                 <div class= "txt-wrap">
                     <strong>향긋한 두릅</strong>
@@ -393,6 +399,8 @@
         </div>
     </div>
 </footer>
-
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
