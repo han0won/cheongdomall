@@ -18,4 +18,17 @@ $(document).ready(function() {
     autoplaySpeed: 3000,
   });
 
+  
+
+// swiper test
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 5,
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 });
