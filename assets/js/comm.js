@@ -21,7 +21,7 @@ $(document).ready(function() {
   
 
 // swiper test
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".best-slide", {
     loop: true,
     slidesPerView: 5,
     centeredSlides: true,
@@ -31,4 +31,19 @@ $(document).ready(function() {
     },
   });
 
+// best item tabs
+const tabs = ('#best-tabs')
+
+tabs.find('.sec-best').removeClass('active')
+tabs.find('.sec-best:first-child').addClass('active')
+
+tabs.find('.sec-tit').on('click', function() {
+  tabs.find('.sec-best').removeClass('active')
+  (this).parent().addClass('active')
+})
+
+
+
+
+// !!!!never delete!!!!
 });

@@ -389,20 +389,42 @@ h2 {
   font-size: 20px;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.best-tabs {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.best-tabs .sec-tit {
+  color: #777777;
+  padding: 10px 30px;
+  margin-right: 20px;
+  border: 1px solid #E2E2E2;
+  border-radius: 25px;
+}
+.best-tabs .tab-cont {
+  display: none;
+}
+.best-tabs .active .sec-tit {
+  color: #fff;
+  background: #77B934;
+  font-weight: 600;
+}
+.best-tabs .active .tab-cont {
+  display: flex;
 }
 
-.swiper-slide {
+.best-slide {
+  width: 1440px;
+  height: 412px;
+}
+.best-slide .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.5;
 }
-
-.swiper-slide img {
+.best-slide .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
