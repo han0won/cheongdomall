@@ -178,19 +178,6 @@ h3 {
         width: 100%;
         height: 100%;
     }
-    .img-wrap::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 0;
-        display: inline-block;
-        width: 120%;
-        height: 120%;
-        z-index: -100;
-        background-image: url(../../images/sub1/bgline.PNG);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
     .info-why-box {
         width: 50%;
         padding: 0 30px;
@@ -229,14 +216,10 @@ h3 {
             color: $txt-secondary;
         }
     }
-    .info-why-l {
+    .box-reverse {
         display: flex;
-        .info-why-box {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            text-align: right;
-        }
+        flex-direction: row-reverse;
+
     }
 }
 
