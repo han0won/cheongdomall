@@ -41,54 +41,54 @@
                 </div>
                 <div class="lnb-menu-wrap">
                     <div class="lnb-depth1">
-                        <ul>
-                            <li class="lnb-d1 lnb-d1-1">
+                        <ul class="depth1">
+                            <li>
                                 <a href="#">로컬푸드란?</a>
                             </li>
-                            <li class="lnb-d1 lnb-d1-2">
-                                <a href="#">과일/채소/쌀</a>
-                                <a href="#">축산/수산</a>
-                                <a href="#">반찬/간식류</a>
-                                <a href="#">가공식품/양념류</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="vegetable">과일/채소/쌀</a>
+                                <ul class="depth2 li-vegetable">
+                                    <li><a href="#">과일</a></li>
+                                    <li><a href="#">채소</a></li>
+                                    <li><a href="#">건조/냉동과일</a></li>
+                                    <li><a href="#">견과류</a></li>
+                                    <li><a href="#">쌀/잡곡</a></li>
+                                </ul>
                             </li>
-                            <li class="lnb-d1 lnb-d1-3">
-                                <a href="#">신상품</a>
-                                <a href="#">베스트</a>
-                                <a href="#">선물세트</a>
-                                <a href="#">이벤트</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="meat">축산/수산</a>
+                                <ul class="depth2 li-meat">
+                                    <li><a href="#">소고기/돼지고기</a></li>
+                                    <li><a href="#">닭/오리/조류</a></li>
+                                    <li><a href="#">수산물</a></li>
+                                    <li><a href="#">기타 축수산물</a></li>
+                                </ul>
                             </li>
-                            <li class="lnb-d1 lnb-d1-4">
-                                <a href="#">고객센터</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="snack">반찬/간식류</a>
+                                <ul class="depth2 li-snack">
+                                    <li><a href="#">국/탕/찌개</a></li>
+                                    <li><a href="#">밑반찬</a></li>
+                                    <li><a href="#">김치/장아찌/젓갈</a></li>
+                                    <li><a href="#">통조림/햄/소시지</a></li>
+                                    <li><a href="#">간식류</a></li>
+                                </ul>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="lnb-depth2">
-                        <ul class="lnb-d2 lnb-d2-1">
-                            <li><a href="#">과일</a></li>
-                            <li><a href="#">채소</a></li>
-                            <li><a href="#">건조/냉동과일</a></li>
-                            <li><a href="#">견과류</a></li>
-                            <li><a href="#">쌀/잡곡</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-2">
-                            <li><a href="#">소고기/돼지고기</a></li>
-                            <li><a href="#">닭/오리/조류</a></li>
-                            <li><a href="#">수산물</a></li>
-                            <li><a href="#">기타 축수산물</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-3">
-                            <li><a href="#">국/탕/찌개</a></li>
-                            <li><a href="#">밑반찬</a></li>
-                            <li><a href="#">김치/장아찌/젓갈</a></li>
-                            <li><a href="#">통조림/햄/소시지</a></li>
-                            <li><a href="#">간식류</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-4">
-                            <li><a href="#">간편식</a></li>
-                            <li><a href="#">가공식품</a></li>
-                            <li><a href="#">양념/오일/소스</a></li>
-                            <li><a href="#">면/즙류</a></li>
-                            <li><a href="#">기타 가공식품</a></li>
+                            <li class="lnb-d1">
+                                <a href="#" class="sauce">가공식품/양념류</a>
+                                <ul class="depth2 li-sauce">
+                                    <li><a href="#">간편식</a></li>
+                                    <li><a href="#">가공식품</a></li>
+                                    <li><a href="#">양념/오일/소스</a></li>
+                                    <li><a href="#">면/즙류</a></li>
+                                    <li><a href="#">기타 가공식품</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb-d1"><a href="#">신상품</a></li>
+                            <li class="lnb-d1"><a href="#">베스트</a></li>
+                            <li class="lnb-d1"><a href="#">선물세트</a></li>
+                            <li class="lnb-d1"><a href="#">이벤트</a></li>
+                            <li class="lnb-d1"><a href="#">고객센터</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,15 +102,13 @@
                     <li><a href="#">이벤트</a></li>
                 </ul>
             </nav>
-            <div class="nav-icon">
-                <button type="button">
-                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
-                </button>
-                <div class="btn-cart">
-                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+            <div class="nav-icon-wrap">
+                <button type="button" class="nav-icon btn-search"></button>
+                <div class="btn-cart nav-icon">
+                    <img src="./images/comm/icon-cart.png" alt="장바구니 아이콘">
                 </div>
-                <div class="btn-mypage">
-                    <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+                <div class="btn-mypage nav-icon">
+                    <img src="./images/comm/icon-user.png" alt="마이페이지 아이콘">
                 </div>
             </div>
         </div>
