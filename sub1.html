@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로컬푸들란?</title>
+    <title>로컬푸드란?</title>
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- slick -->
@@ -41,54 +41,54 @@
                 </div>
                 <div class="lnb-menu-wrap">
                     <div class="lnb-depth1">
-                        <ul>
-                            <li class="lnb-d1 lnb-d1-1">
+                        <ul class="depth1">
+                            <li>
                                 <a href="#">로컬푸드란?</a>
                             </li>
-                            <li class="lnb-d1 lnb-d1-2">
-                                <a href="#">과일/채소/쌀</a>
-                                <a href="#">축산/수산</a>
-                                <a href="#">반찬/간식류</a>
-                                <a href="#">가공식품/양념류</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="vegetable">과일/채소/쌀</a>
+                                <ul class="depth2 li-vegetable">
+                                    <li><a href="#">과일</a></li>
+                                    <li><a href="#">채소</a></li>
+                                    <li><a href="#">건조/냉동과일</a></li>
+                                    <li><a href="#">견과류</a></li>
+                                    <li><a href="#">쌀/잡곡</a></li>
+                                </ul>
                             </li>
-                            <li class="lnb-d1 lnb-d1-3">
-                                <a href="#">신상품</a>
-                                <a href="#">베스트</a>
-                                <a href="#">선물세트</a>
-                                <a href="#">이벤트</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="meat">축산/수산</a>
+                                <ul class="depth2 li-meat">
+                                    <li><a href="#">소고기/돼지고기</a></li>
+                                    <li><a href="#">닭/오리/조류</a></li>
+                                    <li><a href="#">수산물</a></li>
+                                    <li><a href="#">기타 축수산물</a></li>
+                                </ul>
                             </li>
-                            <li class="lnb-d1 lnb-d1-4">
-                                <a href="#">고객센터</a>
+                            <li class="lnb-d1">
+                                <a href="#" class="snack">반찬/간식류</a>
+                                <ul class="depth2 li-snack">
+                                    <li><a href="#">국/탕/찌개</a></li>
+                                    <li><a href="#">밑반찬</a></li>
+                                    <li><a href="#">김치/장아찌/젓갈</a></li>
+                                    <li><a href="#">통조림/햄/소시지</a></li>
+                                    <li><a href="#">간식류</a></li>
+                                </ul>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="lnb-depth2">
-                        <ul class="lnb-d2 lnb-d2-1">
-                            <li><a href="#">과일</a></li>
-                            <li><a href="#">채소</a></li>
-                            <li><a href="#">건조/냉동과일</a></li>
-                            <li><a href="#">견과류</a></li>
-                            <li><a href="#">쌀/잡곡</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-2">
-                            <li><a href="#">소고기/돼지고기</a></li>
-                            <li><a href="#">닭/오리/조류</a></li>
-                            <li><a href="#">수산물</a></li>
-                            <li><a href="#">기타 축수산물</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-3">
-                            <li><a href="#">국/탕/찌개</a></li>
-                            <li><a href="#">밑반찬</a></li>
-                            <li><a href="#">김치/장아찌/젓갈</a></li>
-                            <li><a href="#">통조림/햄/소시지</a></li>
-                            <li><a href="#">간식류</a></li>
-                        </ul>
-                        <ul class="lnb-d2 lnb-d2-4">
-                            <li><a href="#">간편식</a></li>
-                            <li><a href="#">가공식품</a></li>
-                            <li><a href="#">양념/오일/소스</a></li>
-                            <li><a href="#">면/즙류</a></li>
-                            <li><a href="#">기타 가공식품</a></li>
+                            <li class="lnb-d1">
+                                <a href="#" class="sauce">가공식품/양념류</a>
+                                <ul class="depth2 li-sauce">
+                                    <li><a href="#">간편식</a></li>
+                                    <li><a href="#">가공식품</a></li>
+                                    <li><a href="#">양념/오일/소스</a></li>
+                                    <li><a href="#">면/즙류</a></li>
+                                    <li><a href="#">기타 가공식품</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb-d1"><a href="#">신상품</a></li>
+                            <li class="lnb-d1"><a href="#">베스트</a></li>
+                            <li class="lnb-d1"><a href="#">선물세트</a></li>
+                            <li class="lnb-d1"><a href="#">이벤트</a></li>
+                            <li class="lnb-d1"><a href="#">고객센터</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,15 +102,13 @@
                     <li><a href="#">이벤트</a></li>
                 </ul>
             </nav>
-            <div class="nav-icon">
-                <button type="button">
-                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
-                </button>
-                <div class="btn-cart">
-                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+            <div class="nav-icon-wrap">
+                <button type="button" class="nav-icon btn-search"></button>
+                <div class="btn-cart nav-icon">
+                    <img src="./images/comm/icon-cart.png" alt="장바구니 아이콘">
                 </div>
-                <div class="btn-mypage">
-                    <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+                <div class="btn-mypage nav-icon">
+                    <img src="./images/comm/icon-user.png" alt="마이페이지 아이콘">
                 </div>
             </div>
         </div>
@@ -119,20 +117,20 @@
 <!-- 컨텐츠 -->
 <div id="container">
     <section class="info-fage info-fage1">
-        <p class="info-int1" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="800">
+        <p class="info-int1" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="500">
             로컬푸드.
             <br>들어보신 적 있으세요?
         </p>
     </section>
     <section class="info-fage info-fage2">
-        <p class="info-int2" data-aos="fade-down" data-aos-duration="1000">
+        <p class="info-int2" data-aos="fade-down" data-aos-duration="700">
             매일 우리의 밥상에 올라가는 재료들.
             <br><span>안전하고 좋은 식품들</span>로만 채우고 싶으시죠?
             <br>그래서 로컬푸드가 탄생했습니다.
         </p>
     </section>
     <section class="sub-cont info-what">
-        <p data-aos="fade-right" data-aos-duration="800">what's</p>
+        <p data-aos="fade-right" data-aos-duration="700">what's</p>
         <div class="sub1-slide">
             <div class="sub1-slide-inner">
                 <div class="slide-box">                
@@ -152,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <p data-aos="fade-left" data-aos-duration="800">local food?</p>
+        <p data-aos="fade-left" data-aos-duration="700">local food?</p>
     </section>
     <section class="sub-cont info-about">
         <div class="info-about-img" data-aos="fade-down" data-aos-duration="800">
@@ -160,7 +158,7 @@
         </div>
         <div class="info-wrap">
             <p class="info-tit">ABOUT LOCAL FOOD</p>
-            <h3 data-aos="fade-down" data-aos-duration="800" data-aos-delay="300">
+            <h3 data-aos="fade-down" data-aos-duration="700" data-aos-delay="300">
                 로컬푸드가 뭐지?
             </h3>
             <div class="info-about-txt" data-aos="fade-down" data-aos-duration="800" data-aos-delay="500">
@@ -175,10 +173,15 @@
     </section>
     <section class="sub-cont info-why">
         <p class="info-tit">WHY LOCAL FOOD</p>
-        <h3 data-aos="fade-down" data-aos-duration="800">왜 로컬푸드일까?</h3>
+        <h3 data-aos="fade-down" data-aos-duration="700">왜 로컬푸드일까?</h3>
         <div class="info-why-wrap">
-            <div class="why-box info-why-l" data-aos="fade-right" data-aos-duration="1000">
-                <div class="info-why-box">
+            <div class="why-box box-reverse">
+                <div class="info-why-img">
+                    <div class="img-wrap">
+                        <img src="./images/sub1/fresh1.png" alt="푸드마일리지" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    </div>
+                </div>
+                <div class="info-why-box" data-aos="fade-right" data-aos-duration="1000">
                     <div class="number-circle">1</div>
                     <strong><span>푸드 마일리지</span>를 줄여요!</strong>
                     <p>
@@ -188,19 +191,14 @@
                         <br>또한 수송과정에서 발생하는 환경오염을 줄일 수 있어요.
                     </p>
                 </div>
-                <div class="info-why-img">
-                    <div class="img-wrap">
-                        <img src="./images/sub1/fresh1.png" alt="푸드마일리지">
-                    </div>
-                </div>
             </div>
-            <div class="why-box info-why-r" data-aos="fade-left" data-aos-duration="1000">
+            <div class="why-box">
                 <div class="info-why-img">
                     <div class="img-wrap">
-                        <img src="./images/sub1/fresh2.png" alt="신선함">
+                        <img src="./images/sub1/fresh2.png" alt="신선함" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     </div>
                 </div>
-                <div class="info-why-box">
+                <div class="info-why-box" data-aos="fade-left" data-aos-duration="1000">
                     <div class="number-circle">2</div>
                     <strong>빨리 받아서 <span>신선</span>해요!</strong>
                     <p>
@@ -210,8 +208,13 @@
                     </p>
                 </div>
             </div>
-            <div class="why-box info-why-l" data-aos="fade-right" data-aos-duration="1000">
-                <div class="info-why-box">
+            <div class="why-box box-reverse">
+                <div class="info-why-img">
+                    <div class="img-wrap">
+                        <img src="./images/sub1/fresh3.png" alt="이익" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    </div>
+                </div>
+                <div class="info-why-box" data-aos="fade-right" data-aos-duration="1000">
                     <div class="number-circle">3</div>
                     <strong><span>모두에게 이익</span>이 돼요!</strong>
                     <p>
@@ -220,19 +223,14 @@
                         <br>농부는 더 큰 이윤을 남길 수 있어요.
                     </p>
                 </div>
-                <div class="info-why-img">
-                    <div class="img-wrap">
-                        <img src="./images/sub1/fresh3.png" alt="이익">
-                    </div>
-                </div>
             </div>
-            <div class="why-box info-why-r" data-aos="fade-left" data-aos-duration="1000">
+            <div class="why-box" data-aos="fade-left" data-aos-duration="1000">
                 <div class="info-why-img">
                     <div class="img-wrap">
-                        <img src="./images/sub1/fresh4.png" alt="신뢰">
+                        <img src="./images/sub1/fresh4.png" alt="신뢰" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     </div>
                 </div>
-                <div class="info-why-box">
+                <div class="info-why-box" data-aos="fade-left" data-aos-duration="1000">
                     <div class="number-circle">4</div>
                     <strong><span>신뢰</span>할 수 있어요!</strong>
                     <p>
@@ -246,7 +244,7 @@
     </section>
     <section class="sub-cont info-fresh">
         <p class="info-tit">FRESH LOCAL FOOD</p>
-        <h3 data-aos="fade-down" data-aos-duration="800">로컬푸드가 신선한 이유!</h3>
+        <h3 data-aos="fade-down" data-aos-duration="700">로컬푸드가 신선한 이유!</h3>
         <div class="info-fresh-wrap Route1">
             <p>전통적 경로는 <span>길고 많은 과정</span>을 거쳐와요.</p>
             <div class="Route-wrap">
@@ -295,13 +293,15 @@
             </div>
         </div>
         <div class="info-fresh-wrap Route2">
-            <div class="icon-sparkle sparkle1">
-                <img src="./images/sub1/icon-sprkle1.png" alt="반짝 아이콘">
+            <div class="route-txt-wrap">
+                <div class="icon-sparkle sparkle1">
+                    <img src="./images/sub1/icon-sprkle1.png" alt="반짝 아이콘">
+                </div>
+                <div class="icon-sparkle sparkle2">
+                    <img src="./images/sub1/icon-sprkle2.png" alt="반짝 아이콘">
+                </div>
+                <p>로컬푸드는 생산자가 소비자에게 <span>바로 전달</span>해요!</p>
             </div>
-            <div class="icon-sparkle sparkle2">
-                <img src="./images/sub1/icon-sprkle2.png" alt="반짝 아이콘">
-            </div>
-            <p>로컬푸드는 생산자가 소비자에게 <span>바로 전달</span>해요!</p>
             <div class="Route-wrap">
                 <div class="Route-box" data-aos="fade-down" data-aos-duration="800">
                     <div class="Route-circle">
@@ -323,7 +323,7 @@
     </section>
     <section class="sub-cont info-various">
         <p class="info-tit">VARIOUS LOCAL FOOD</p>
-        <h3 data-aos="fade-down" data-aos-duration="800">
+        <h3 data-aos="fade-down" data-aos-duration="700">
             다양한 로컬푸드를 만나보세요!
         </h3>
         <div class="info-various-wrap" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
@@ -365,7 +365,7 @@
             <br>청도몰에서 만나보세요!
         </p>
         <div class="info-btn">
-            <a href="#">로컬푸드 만나러가기</a>
+            <a href="#"><strong>로컬푸드</strong> 만나러가기</a>
         </div>
     </div>
 </div>

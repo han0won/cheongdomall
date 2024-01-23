@@ -169,6 +169,10 @@ h3 {
         position: relative;
         width: 47%;
         height: 320px;
+        background-image: url(../../images/sub1/why_bg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .img-wrap {
         display: flex;
@@ -177,19 +181,10 @@ h3 {
         align-items: center;
         width: 100%;
         height: 100%;
-    }
-    .img-wrap::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 0;
-        display: inline-block;
-        width: 120%;
-        height: 120%;
-        z-index: -100;
-        background-image: url(../../images/sub1/bgline.PNG);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+
+        img {
+            animation: motion 0.6s linear 0s infinite alternate;
+        }
     }
     .info-why-box {
         width: 50%;
@@ -229,14 +224,10 @@ h3 {
             color: $txt-secondary;
         }
     }
-    .info-why-l {
+    .box-reverse {
         display: flex;
-        .info-why-box {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            text-align: right;
-        }
+        flex-direction: row-reverse;
+
     }
 }
 
@@ -302,8 +293,12 @@ h3 {
         width: 40px;
         height: 40px;
     }
-    .route2 {
-        position: relative;
+    .route-txt-wrap {
+            position: relative;
+            p {
+                padding-top: 100px;
+                font-size: 28px;
+            }
     }
     .icon-sparkle{
         position: absolute;
@@ -311,14 +306,22 @@ h3 {
         img {
             width: 100%;
             height: 100%;
+            animation: motion 0.6s linear 0s infinite alternate;
+            @keyframes motion {
+                0% {margin-top: -5px;}
+                100%{margin-top: 10px;}
+            }
         }
     }
     .sparkle1{
-        left: 900px;
+        top: 43px;
+        left: -130px;
         width: 100px;
         height: 100px;
     }
     .sparkle2{
+        top: 103px;
+        left: 550px;
         width: 80px;
         height: 80px;
     }
@@ -395,5 +398,14 @@ h3 {
         line-height: 75px;
         
     }
-
+    .info-btn {
+        a {
+            display: block;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 30px;
+            border: 1px solid $line;
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
 }
