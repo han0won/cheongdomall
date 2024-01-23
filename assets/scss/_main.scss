@@ -137,6 +137,33 @@
 }
 
 // 베스트상품
+.best-item{
+  .tab-btns{
+    display: flex;
+    justify-content: center;
+  .tab-btn{
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    color: $txt-disabled;
+    padding: 10px 30px;
+    margin-right: 20px;
+    border: 1px solid $line;
+    border-radius: 25px;
+    &.active{
+      color: $w;
+      background: $primary;
+      border: none;
+      font-weight: 600;
+    }
+  }
+}
+  .best-tab{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
 // test
 .swiper {
   width: 100%;
@@ -170,3 +197,62 @@
 .swiper-slide.swiper-slide-active {  
     opacity: 1;
   }
+
+.best-item{
+  .new-thumbnail{
+    position: relative;
+    margin-bottom: 20px;
+    .new-anchor{
+      img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      p{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 30px;
+        background-color: $point;
+        color: $w;
+        font-weight: 600;
+        border-radius: 10px 0 10px 0;
+      }
+    }
+    .cart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .desc{
+    .txt{
+      color: $txt-disabled;
+    }
+    .tit{
+      margin: 15px 0 7px 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .price{
+      font-weight: 600;
+      .amount{
+        font-size: 26px;
+      }
+      .won{
+        font-size: 20px;
+      }
+    }
+  }
+}

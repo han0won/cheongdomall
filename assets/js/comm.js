@@ -20,8 +20,8 @@ $(document).ready(function() {
 
   
 
-// swiper test
-  var swiper = new Swiper(".mySwiper", {
+// main: best slide
+  var swiper = new Swiper(".best-slide", {
     loop: true,
     slidesPerView: 5,
     centeredSlides: true,
@@ -30,5 +30,22 @@ $(document).ready(function() {
       prevEl: ".swiper-button-prev",
     },
   });
+  
+// best tabs
+$('.tab-btn').click(function(){
+  var $this = $(this);
+  var index = $this.index();
+  
+  $this.addClass('active');
+  $this.siblings('.tab-btn.active').removeClass('active');
+  
+  var $outer = $this.closest('.best-item');
+  var $current = $outer.find(' > .best-tabs > .best-tab.active');
+  var $post = $outer.find(' > .best-tabs > .best-tab').eq(index);
+  
+  $current.removeClass('active');
+  $post.addClass('active');
+  });
 
+// !!!!never delete!!!!
 });
