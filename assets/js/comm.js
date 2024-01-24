@@ -2,7 +2,12 @@
 $(document).ready(function(){
   $(".lnb-btn-wrap > a").click(function(){
     $(".lnb-menu-wrap").toggle();
-  });
+  }); // 카테고리 클릭 시 아래로 펼쳐짐
+
+  $(".lnb-btn-wrap > a").click(function(){
+    $(".ctr-btn > i").toggleClass("fa-xmark");
+    $(".lnb").toggleClass("lnb-click");
+ })
 });
 
 

@@ -93,10 +93,7 @@ h2 {
   top: -26px;
   left: -20px;
   padding: 20px;
-  border: 1px solid #E2E2E2;
-  border-radius: 25px;
-  border-top-right-radius: 0;
-  background-color: #fff;
+  border: 1px solid #fff;
 }
 #header .nav-bottom .lnb lnb-d1 a::after {
   content: "";
@@ -185,6 +182,12 @@ h2 {
   left: 220px;
   width: 180px;
   opacity: 0;
+}
+#header .nav-bottom .lnb-click {
+  border: 1px solid #E2E2E2;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  background-color: #fff;
 }
 #header .nav-bottom #gnb {
   display: flex;

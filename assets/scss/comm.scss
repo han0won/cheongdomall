@@ -36,10 +36,7 @@
             top: -26px;
             left: -20px;
             padding: 20px;
-            border: 1px solid $line;
-            border-radius: 25px;
-            border-top-right-radius: 0;
-            background-color: $w;
+            border: 1px solid $w;
 
             lnb-d1 a::after {
                 content: '';
@@ -132,6 +129,12 @@
                 width: 180px;
                 opacity: 0;
             }
+        }
+        .lnb-click {
+            border: 1px solid $line;
+            border-radius: 25px;
+            border-top-right-radius: 0;
+            background-color: $w;
         }
         
         #gnb {
