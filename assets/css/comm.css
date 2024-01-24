@@ -129,7 +129,7 @@ h2 {
   font-family: "BMJUA";
 }
 #header .nav-bottom .lnb .lnb-menu-wrap {
-  display: flex;
+  display: none;
 }
 #header .nav-bottom .lnb .lnb-depth1 {
   display: flex;
@@ -144,7 +144,7 @@ h2 {
 #header .nav-bottom .lnb .lnb-depth1 .lnb-d1 {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 #header .nav-bottom .lnb .lnb-depth1 .lnb-d1 a {
   position: relative;
@@ -169,6 +169,15 @@ h2 {
 }
 #header .nav-bottom .lnb .lnb-depth1 .lnb-d1 a:hover::after {
   display: block;
+}
+#header .nav-bottom .lnb .lnb-depth1 .d1-wide {
+  padding: 20px 0;
+}
+#header .nav-bottom .lnb .lnb-depth1 .d1-first {
+  padding: 20px 0 5px;
+}
+#header .nav-bottom .lnb .lnb-depth1 .d1-last {
+  padding: 5px 0 20px;
 }
 #header .nav-bottom .lnb .depth2 {
   position: absolute;

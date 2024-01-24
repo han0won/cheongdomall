@@ -1,3 +1,11 @@
+//Header
+$(document).ready(function(){
+  $(".lnb-btn-wrap > a").click(function(){
+    $(".lnb-menu-wrap").toggle();
+  });
+});
+
+
 $(document).ready(function() {
   // main: 메인 배너
   $('.slide-wrap').slick({

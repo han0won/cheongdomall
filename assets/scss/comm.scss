@@ -73,7 +73,8 @@
                 font-family: 'BMJUA';
             }
             .lnb-menu-wrap {
-                display: flex;
+                // display: flex;
+                display: none;
             }
             .lnb-depth1 {
                 display: flex;
@@ -88,7 +89,7 @@
                 .lnb-d1 {
                     display: flex;
                     flex-direction: column;
-                    padding: 20px 0;
+                    padding: 5px 0;
                     a {
                         position: relative;
                         padding: 10px 0;
@@ -113,6 +114,15 @@
                             display: block;
                         }
                     }
+                }
+                .d1-wide {
+                    padding: 20px 0;
+                }
+                .d1-first {
+                    padding: 20px 0 5px;
+                }
+                .d1-last {
+                    padding: 5px 0 20px;
                 }
             }
             .depth2 {
