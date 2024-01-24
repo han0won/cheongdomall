@@ -180,6 +180,12 @@
             border-top-right-radius: 0;
             background-color: $w;
         }
+        .lnb-click {
+            border: 1px solid $line;
+            border-radius: 25px;
+            border-top-right-radius: 0;
+            background-color: $w;
+        }
         
         #gnb {
             display: flex;
