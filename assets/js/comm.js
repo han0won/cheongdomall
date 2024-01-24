@@ -8,6 +8,10 @@ $(document).ready(function(){
     $(".ctr-btn > i").toggleClass("fa-xmark");
     $(".lnb").toggleClass("lnb-click");
   }); // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
+
+  $(".lnb-d1 > a").mouseenter(function() {
+    $(".depth2").addClass("open");
+  });
 });
 
 
