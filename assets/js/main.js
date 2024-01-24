@@ -18,7 +18,7 @@ $(document).ready(function() {
     autoplaySpeed: 3000,
   });
 
-// main: best slide
+// main: best slide * * * 수정할 부분 * * *
   var swiper = new Swiper(".best-slide", {
     loop: true,
     slidesPerView: 5,
@@ -46,6 +46,7 @@ $('.tab-btn').click(function(){
 
   // recommend
   var swiper = new Swiper(".reco-slide", {
+    loop: true,
     slidesPerView: "auto",
     spaceBetween: 40,
     pagination: {

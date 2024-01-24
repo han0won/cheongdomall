@@ -54,7 +54,12 @@
 .farm,
 .review{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 150px auto;
+}
+
+// section 사이 여백
+section{
+  margin-top: 150px;
 }
 
 // 타이틀 글자 기본 설정
@@ -240,7 +245,6 @@
 // 추천상품
 .reco-wrap {
   display: flex;
-  // justify-content: space-between;
   background: $bg-light;
   padding: 60px 0 60px 0;
   .title{
@@ -279,7 +283,6 @@
         }
       }
 
-      // 보이게끔 수정 필요
       .swiper-pagination{
         position: absolute;
         bottom: -60px;
@@ -316,3 +319,6 @@
     }
   }
 }
+
+
+// 농가스토리

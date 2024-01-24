@@ -319,7 +319,11 @@ h2 {
 .farm,
 .review {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 150px auto;
+}
+
+section {
+  margin-top: 150px;
 }
 
 .title,
