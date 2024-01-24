@@ -118,6 +118,9 @@ h2 {
   border-top-right-radius: 0;
   background-color: #77B934;
 }
+#header .nav-bottom .lnb .lnb-btn-wrap > a .fa-xmark {
+  padding-left: 12px;
+}
 #header .nav-bottom .lnb i {
   padding: 9px 11px;
 }
