@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // main: 메인 배너
+  // main: main banner
   $('.slide-wrap').slick({
     dots: true,
     prevArrow: $('.prev'),
@@ -10,7 +10,7 @@ $(document).ready(function() {
     variableWidth: true,
   });
 
-  // main: 신상품
+  // main: new items
   $('.new-card-wrap').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

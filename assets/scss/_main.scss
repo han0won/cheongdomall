@@ -71,6 +71,7 @@
 .new-items{
   .new-card-wrap{
     width: 100%;
+    margin-top: 60px;
   }
   .slick-list {
     margin-right: -20px;
@@ -141,6 +142,7 @@
   .tab-btns{
     display: flex;
     justify-content: center;
+    margin: 60px 0 70px 0;
   .tab-btn{
     font-size: 16px;
     font-family: 'Pretendard-Regular';
@@ -164,12 +166,11 @@
     }
   }
 }
-// test
+// best slide
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   display: flex;
@@ -177,7 +178,6 @@
   align-items: center;
   opacity: .5;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -185,73 +185,51 @@
   object-fit: cover;
   border-radius: 10px;
 }
-
 .swiper-backface-hidden .swiper-slide {
   transform: scale(.84) translateZ(0);
 }
-
 .swiper-backface-hidden .swiper-slide.swiper-slide-active {
   transform: scale(1) translateZ(0);
 }
-
 .swiper-slide.swiper-slide-active {  
     opacity: 1;
   }
 
-.best-item{
-  .new-thumbnail{
+.best-card{
+  .best-thumbnail{
     position: relative;
-    margin-bottom: 20px;
-    .new-anchor{
-      img{
-        width: 100%;
-        border-radius: 10px;
-      }
-      p{
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65px;
-        height: 30px;
-        background-color: $point;
-        color: $w;
-        font-weight: 600;
-        border-radius: 10px 0 10px 0;
-      }
-    }
-    .cart{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 50%;
-      cursor: pointer;
-    }
+  }
+  .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
   }
   .desc{
+    text-align: left;
     .txt{
+      margin: 20px 0 15px 0;
+      font-size: 20px;
       color: $txt-disabled;
     }
     .tit{
-      margin: 15px 0 7px 0;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 600;
     }
     .price{
       font-weight: 600;
       .amount{
-        font-size: 26px;
+        font-size: 30px;
       }
       .won{
-        font-size: 20px;
+        font-size: 24px;
       }
     }
   }

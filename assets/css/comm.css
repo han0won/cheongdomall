@@ -334,6 +334,7 @@ h2 {
 
 .new-items .new-card-wrap {
   width: 100%;
+  margin-top: 60px;
 }
 .new-items .slick-list {
   margin-right: -20px;
@@ -397,6 +398,7 @@ h2 {
 .best-item .tab-btns {
   display: flex;
   justify-content: center;
+  margin: 60px 0 70px 0;
 }
 .best-item .tab-btns .tab-btn {
   font-size: 16px;
@@ -454,57 +456,42 @@ h2 {
   opacity: 1;
 }
 
-.best-item .new-thumbnail {
+.best-card .best-thumbnail {
   position: relative;
-  margin-bottom: 20px;
 }
-.best-item .new-thumbnail .new-anchor img {
-  width: 100%;
-  border-radius: 10px;
-}
-.best-item .new-thumbnail .new-anchor p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65px;
-  height: 30px;
-  background-color: #FF8C00;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 10px 0 10px 0;
-}
-.best-item .new-thumbnail .cart {
+.best-card .cart {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  right: 20px;
+  bottom: 20px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
 }
-.best-item .desc .txt {
+.best-card .desc {
+  text-align: left;
+}
+.best-card .desc .txt {
+  margin: 20px 0 15px 0;
+  font-size: 20px;
   color: #777777;
 }
-.best-item .desc .tit {
-  margin: 15px 0 7px 0;
-  font-size: 20px;
+.best-card .desc .tit {
+  font-size: 24px;
   font-weight: 600;
 }
-.best-item .desc .price {
+.best-card .desc .price {
   font-weight: 600;
 }
-.best-item .desc .price .amount {
-  font-size: 26px;
+.best-card .desc .price .amount {
+  font-size: 30px;
 }
-.best-item .desc .price .won {
-  font-size: 20px;
+.best-card .desc .price .won {
+  font-size: 24px;
 }
 
 .sub-cont {
