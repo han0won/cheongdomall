@@ -10,26 +10,30 @@ $(document).ready(function(){
   }); // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
 
   $(".vegetable").mouseenter(function() {
-    $(".li-vegetable").toggleClass("open");
-  }).mouseleave(function() {
-    $(".li-vegetable").toggleClass("open");
+    $(".li-vegetable").addClass("open");
+  });
+  $(".meat, .snack, .sauce").mouseenter(function() {
+    $(".li-vegetable").removeClass("open");
   });
   $(".meat").mouseenter(function() {
-    $(".li-meat").toggleClass("open");
-  }).mouseleave(function() {
-    $(".li-meat").toggleClass("open");
+    $(".li-meat").addClass("open");
+  });
+  $(".vegetable, .snack, .sauce").mouseenter(function() {
+    $(".li-meat").removeClass("open");
   });
   $(".snack").mouseenter(function() {
-    $(".li-snack").toggleClass("open");
-  }).mouseleave(function() {
-    $(".li-snack").toggleClass("open");
+    $(".li-snack").addClass("open");
+  });
+  $(".meat, .vegetable, .sauce").mouseenter(function() {
+    $(".li-snack").removeClass("open");
   });
   $(".sauce").mouseenter(function() {
-    $(".li-sauce").toggleClass("open");
-  }).mouseleave(function() {
-    $(".li-sauce").toggleClass("open");
+    $(".li-sauce").addClass("open");
   });
-
+  $(".meat, .snack, .vegetable").mouseenter(function() {
+    $(".li-sauce").removeClass("open");
+  });
+  // 카테고리 depth1 마우스 오버 시 depth2 나타남
 });
 
 
