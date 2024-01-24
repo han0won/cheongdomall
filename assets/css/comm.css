@@ -422,20 +422,18 @@ h2 {
   display: block;
 }
 
-.swiper {
+.best-tab .best-slide {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
+.best-tab .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.5;
 }
-
-.swiper-slide img {
+.best-tab .swiper-slide .best-img {
   display: block;
   width: 100%;
   height: 100%;
@@ -443,16 +441,13 @@ h2 {
      object-fit: cover;
   border-radius: 10px;
 }
-
-.swiper-backface-hidden .swiper-slide {
+.best-tab .swiper-backface-hidden .swiper-slide {
   transform: scale(0.84) translateZ(0);
 }
-
-.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+.best-tab .swiper-backface-hidden .swiper-slide.swiper-slide-active {
   transform: scale(1) translateZ(0);
 }
-
-.swiper-slide.swiper-slide-active {
+.best-tab .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
 
@@ -492,6 +487,81 @@ h2 {
 }
 .best-card .desc .price .won {
   font-size: 24px;
+}
+
+.reco-wrap {
+  display: flex;
+  background: #F5F5F5;
+  padding: 60px 0 60px 0;
+}
+.reco-wrap .title {
+  width: 30%;
+  text-align: left;
+}
+.reco-wrap .reco-slide-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.reco-wrap .reco-slide-wrap .reco-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-slide {
+  display: flex;
+  width: 80%;
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-slide img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-slide img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-pagination {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  justify-content: left;
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-pagination-bullet {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  background: #777777;
+  border-radius: 25px;
+}
+.reco-wrap .reco-slide-wrap .reco-slide .swiper-pagination-bullet-active {
+  width: 50px;
+  height: 20px;
+  background: #444444;
+  border-radius: 25px;
+}
+.reco-wrap .card-txt {
+  color: #fff;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+.reco-wrap .card-txt .hash {
+  font-size: 20px;
+}
+.reco-wrap .card-txt .txt {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .sub-cont {
