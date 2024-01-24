@@ -7,7 +7,7 @@ $(document).ready(function(){
   $(".lnb-btn-wrap > a").click(function(){
     $(".ctr-btn > i").toggleClass("fa-xmark");
     $(".lnb").toggleClass("lnb-click");
- })
+  }); // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
 });
 
 
