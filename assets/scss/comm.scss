@@ -91,12 +91,26 @@
                     padding: 20px 0;
                     a {
                         position: relative;
-                        // width: 170px;
-                        height: 37px;
-            
-                        &:hover {
+                        padding: 10px 0;
+                        height: 37px;   
+                        z-index: 1; 
+                        &::after {
+                            content: "";
+                            display: none;
+                            position: absolute;
+                            top: 2px;
+                            left: -20px;
+                            width: 170px;
+                            height: 37px;
                             border-radius: 100px;
                             background-color: $light;
+                            z-index: -1;
+                        }      
+                        &:hover {
+                            font-weight: bold;
+                        }   
+                        &:hover::after {
+                            display: block;
                         }
                     }
                 }
