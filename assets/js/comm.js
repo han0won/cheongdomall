@@ -9,9 +9,27 @@ $(document).ready(function(){
     $(".lnb").toggleClass("lnb-click");
   }); // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
 
-  $(".lnb-d1 > a").mouseenter(function() {
-    $(".depth2").addClass("open");
+  $(".vegetable").mouseenter(function() {
+    $(".li-vegetable").toggleClass("open");
+  }).mouseleave(function() {
+    $(".li-vegetable").toggleClass("open");
   });
+  $(".meat").mouseenter(function() {
+    $(".li-meat").toggleClass("open");
+  }).mouseleave(function() {
+    $(".li-meat").toggleClass("open");
+  });
+  $(".snack").mouseenter(function() {
+    $(".li-snack").toggleClass("open");
+  }).mouseleave(function() {
+    $(".li-snack").toggleClass("open");
+  });
+  $(".sauce").mouseenter(function() {
+    $(".li-sauce").toggleClass("open");
+  }).mouseleave(function() {
+    $(".li-sauce").toggleClass("open");
+  });
+
 });
 
 
