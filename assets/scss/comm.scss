@@ -215,7 +215,11 @@
 #footer {
     width: 100%;
     background-color: $bg-light;
-    
+
+    .m-visible {
+        display: none;
+        visibility: hidden;
+    }    
     .f-wrap {
         max-width: 1440px;
         margin: 0 auto;
@@ -291,11 +295,15 @@
     @media screen and (max-width: 475px) {
         .f-wrap {
             padding: 20px 16px;
-
+            
             .f-left {
                 .f-top {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $line;
+
                     ul {
-                        justify-content: space-between;
+                        justify-content: flex-start;
+                        gap: 20px;
                     }
                     a {
                         font-size: 12px;
@@ -330,6 +338,11 @@
             }
             .m-hidden {
                 display: none;
+                visibility: hidden;
+            }
+            .m-visible {
+                display: block;
+                visibility: visible;
             }
         }
     }
