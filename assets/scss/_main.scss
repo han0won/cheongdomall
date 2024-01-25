@@ -253,6 +253,10 @@ h2{
   .title{
     width: 30%;
     text-align: left;
+    p{
+      font-size: 20px;
+      color: $txt-secondary;
+    }
   }
   .reco-slide-wrap{
     width: 100%;
@@ -274,15 +278,15 @@ h2{
           object-fit: cover;
           border-radius: 10px;
         }
-        // 왜안됨
-        img::before{
+        .card-img::before{
           content: '';
           position: absolute;
           top: 0;
           left: 0;
-          right: 0;
-          bottom: 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+          z-index: 1;
         }
       }
 
