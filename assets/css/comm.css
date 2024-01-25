@@ -83,7 +83,13 @@ h2 {
 #header h1 a {
   width: 191px;
   height: 90px;
+}
+#header h1 .logo-w {
   background: url(../../images/comm/logo-web.png);
+}
+#header h1 .logo-m {
+  display: none;
+  background: url(../../images/comm/logo-mob.png);
 }
 #header .nav-bottom {
   position: relative;
@@ -257,14 +263,59 @@ h2 {
 #header .nav-bottom .nav-icon-wrap img {
   vertical-align: top;
 }
+@media screen and (max-width: 475px) {
+  #header .h-wrap {
+    position: relative;
+    padding: 20px 16px 0;
+  }
+  #header .nav-top {
+    display: none;
+  }
+  #header #logo {
+    margin-bottom: 40px;
+  }
+  #header #logo a {
+    width: 130px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #header #logo .logo-w {
+    display: none;
+  }
+  #header #logo .logo-m {
+    display: block;
+  }
+  #header .nav-bottom {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  #header .nav-bottom .ctr-btn {
+    position: absolute;
+    top: 56px;
+  }
+  #header .nav-bottom #gnb ul {
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+  }
+  #header .nav-bottom #gnb li {
+    padding: 0;
+  }
+  #header .nav-bottom #gnb a {
+    font-size: 13px;
+  }
+  #header .nav-bottom .nav-icon-wrap {
+    top: 35px;
+    right: -16px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
 
 #footer {
   width: 100%;
   background-color: #F5F5F5;
-}
-#footer .m-visible {
-  display: none;
-  visibility: hidden;
 }
 #footer .f-wrap {
   max-width: 1440px;
@@ -369,14 +420,6 @@ h2 {
   #footer .f-wrap .f-right {
     display: none;
   }
-  #footer .f-wrap .m-hidden {
-    display: none;
-    visibility: hidden;
-  }
-  #footer .f-wrap .m-visible {
-    display: block;
-    visibility: visible;
-  }
 }
 
 .bottom-menu {
@@ -445,12 +488,28 @@ h2 {
 .bottom-menu .menu-icon .menu-icon-user {
   background-image: url(../../images/comm/icon-user-menu.png);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 476px) {
   .bottom-menu {
     display: none;
   }
 }
 
+@media screen and (max-width: 475px) {
+  .m-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .m-visible {
+    display: block;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 476px) {
+  .m-visible {
+    display: none;
+    visibility: hidden;
+  }
+}
 .main-slide {
   position: relative;
 }
