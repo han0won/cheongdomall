@@ -314,7 +314,14 @@
     width: 100%;
     background-color: $bg-light;
 
+<<<<<<< HEAD
    
+=======
+    .m-visible {
+        display: none;
+        visibility: hidden;
+    }    
+>>>>>>> c44d426 (푸터 반응형 모바일 완성)
     .f-wrap {
         max-width: 1440px;
         margin: 0 auto;
@@ -391,6 +398,7 @@
         .f-wrap {
             padding: 20px 16px;
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             .f-left {
                 .f-top {
@@ -402,11 +410,22 @@
                         gap: 20px;
 =======
 
+=======
+            
+>>>>>>> c44d426 (푸터 반응형 모바일 완성)
             .f-left {
                 .f-top {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $line;
+
                     ul {
+<<<<<<< HEAD
                         justify-content: space-between;
 >>>>>>> 368eb61 (모바일 버전 하단 고정 메뉴 추가)
+=======
+                        justify-content: flex-start;
+                        gap: 20px;
+>>>>>>> c44d426 (푸터 반응형 모바일 완성)
                     }
                     a {
                         font-size: 12px;
@@ -445,6 +464,11 @@
 =======
             .m-hidden {
                 display: none;
+                visibility: hidden;
+            }
+            .m-visible {
+                display: block;
+                visibility: visible;
             }
         }
     }

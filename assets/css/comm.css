@@ -262,6 +262,10 @@ h2 {
   width: 100%;
   background-color: #F5F5F5;
 }
+#footer .m-visible {
+  display: none;
+  visibility: hidden;
+}
 #footer .f-wrap {
   max-width: 1440px;
   margin: 0 auto;
@@ -331,8 +335,13 @@ h2 {
   #footer .f-wrap {
     padding: 20px 16px;
   }
+  #footer .f-wrap .f-left .f-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E2E2E2;
+  }
   #footer .f-wrap .f-left .f-top ul {
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
   }
   #footer .f-wrap .f-left .f-top a {
     font-size: 12px;
@@ -362,6 +371,11 @@ h2 {
   }
   #footer .f-wrap .m-hidden {
     display: none;
+    visibility: hidden;
+  }
+  #footer .f-wrap .m-visible {
+    display: block;
+    visibility: visible;
   }
 }
 
