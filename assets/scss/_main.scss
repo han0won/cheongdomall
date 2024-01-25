@@ -50,6 +50,7 @@
 }
 
 // 페이지 가운데 정렬
+
 .new-items,
 .farm,
 .review{
@@ -262,7 +263,7 @@ section{
       overflow: visible;
       .swiper-slide {
         display: flex;
-        width: 80%;
+        width: 60%;
         img {
           position: relative;
           display: block;
@@ -271,14 +272,14 @@ section{
           object-fit: cover;
           border-radius: 10px;
         }
-        img::after{
+        // 왜안됨
+        img::before{
           content: '';
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          // 왜안됨
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
         }
       }
@@ -322,3 +323,77 @@ section{
 
 
 // 농가스토리
+.farm{
+  .tab-btns{
+    display: flex;
+  }
+  .tab-btn{
+    margin-right: 35px;
+    button{
+      font-family: 'Pretendard-Regular';
+      font-weight: 500;
+      font-size: 20px;
+      color: $txt-disabled;
+      .line{
+        display: none;
+        margin: 8px 0 30px 0;
+        width: 100%;
+        height: 2px;
+        background: $txt-default;
+      }
+    }
+    &.active{
+      button{
+        color: $txt-default;
+        .line{
+          display: block;
+        }
+      }
+    }
+  }
+  .farm-tab{
+    position: relative;
+    display: none;
+    &.active{
+      display: block;
+    }
+    .farm-img{
+      width: 100%;
+      height: 485px;
+      border-radius: 20px;
+      &.online{
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/main/farm-farm.jpg) center center / cover;
+      }
+      &.water{
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/main/farm-water.jpg) center center / cover;
+      }
+    }
+    .txt-wrap{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: $w;
+      word-break: keep-all;
+      .tit{
+        font-family: 'BMJUA';
+        font-size: 50px;
+        line-height: normal;
+      }
+      .txt{
+        margin: 20px 0 45px 0;
+         font-weight: 500;
+         font-size: 20px;
+      }
+      .btn-more{
+        color: $txt-default;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 30px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 25px;
+      }
+    }
+  }
+}

@@ -55,6 +55,22 @@ $('.tab-btn').click(function(){
     },
   });
 
+  // farm story tabs
+  $('.tab-btn').click(function(){
+    var $this = $(this);
+    var index = $this.index();
+    
+    $this.addClass('active');
+    $this.siblings('.tab-btn.active').removeClass('active');
+    
+    var $outer = $this.closest('.farm');
+    var $current = $outer.find(' > .farm-tabs > .farm-tab.active');
+    var $post = $outer.find(' > .farm-tabs > .farm-tab').eq(index);
+    
+    $current.removeClass('active');
+    $post.addClass('active');
+    });
+
 
 // !!!!never delete!!!!
 });
