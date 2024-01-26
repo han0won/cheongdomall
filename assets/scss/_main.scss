@@ -1,7 +1,9 @@
 
 // 페이지 가운데 정렬
 .new-items,
-.farm{
+.reco-wrap,
+.farm,
+.review-wrap{
   max-width: 1440px;
   margin: 150px auto;
 }
@@ -252,7 +254,6 @@ h2{
 }
 .reco-wrap {
   margin: 0 auto;
-  max-width: 1440px;
   display: grid;
   grid-template-columns: 30% auto;
   .title{
@@ -430,7 +431,6 @@ h2{
   background: $bg-light;
   padding: 150px 0;
   .review-wrap{
-    max-width: 1440px;
     margin: 0 auto;
     .txt{
       font-size: 20px;
