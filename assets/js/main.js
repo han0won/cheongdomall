@@ -29,7 +29,7 @@ $(document).ready(function() {
     // Swiper 인스턴스를 초기화하는 함수
     function initSwiper(swiperElement) {
         return new Swiper(swiperElement, {
-            autoplay: true,
+            // autoplay: true,
             loop: true,
             slidesPerView: 5,
             centeredSlides: true,
@@ -72,6 +72,7 @@ $(document).ready(function() {
     },
   });
 
+  
   // farm story tabs
   $('.tab-btn').click(function(){
     var $this = $(this);
