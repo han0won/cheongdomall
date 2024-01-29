@@ -258,6 +258,9 @@ h2 {
 #header .nav-bottom #gnb .nav-local {
   color: #2E7602;
 }
+#header .nav-bottom #gnb a:hover {
+  color: #77B934;
+}
 #header .nav-bottom .nav-icon-wrap {
   display: flex;
   -moz-column-gap: 30px;
