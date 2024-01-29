@@ -15,6 +15,8 @@ $(document).ready(function() {
   $('.new-card-wrap').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
     // autoplay: true,
     autoplaySpeed: 3000,
   });
@@ -72,7 +74,7 @@ $(document).ready(function() {
     },
   });
 
-  
+
   // farm story tabs
   $('.tab-btn').click(function(){
     var $this = $(this);
