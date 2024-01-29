@@ -231,7 +231,6 @@
         }
     }
     @media screen and (max-width: 475px) {
-<<<<<<< HEAD
         position: fixed;
         top: 0;
         left: 0;
@@ -244,21 +243,12 @@
         .h-wrap {
             position: relative;
             padding: 10px 16px 15px;
-=======
-        .h-wrap {
-            position: relative;
-            padding: 20px 16px 0;
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
         }
         .nav-top {
             display: none;
         }
         #logo {
-<<<<<<< HEAD
             margin-bottom: 15px;
-=======
-            margin-bottom: 40px;
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
             a {
                 width: 130px;
                 height: 40px;
@@ -273,7 +263,6 @@
             }
         }
         .nav-bottom {
-<<<<<<< HEAD
             position: static;
             width: 100%;
 
@@ -299,26 +288,11 @@
                 ul {
                     justify-content: space-between;
                     width: 100%;
-=======
-            position: absolute;
-            top: 0;
-            left: 16px;
-
-            .ctr-btn {
-                position: absolute;
-                top: 56px;
-            }
-            #gnb {
-                ul {
-
-                    column-gap: 28px;
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
                 }
                 li {
                     padding: 0;
                 }
                 a {
-<<<<<<< HEAD
                     font-size: 14px;
                 }
                 .nav-local {
@@ -332,17 +306,6 @@
                 justify-content: flex-end;
                 column-gap: 18px;
             }
-=======
-                    font-size: 13px;
-                }
-            }
-            .nav-icon-wrap {
-                top: 35px;
-                right: -16px;
-                column-gap: 20px;
-            }
-
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
         }
     }
 }
@@ -350,19 +313,7 @@
 #footer {
     width: 100%;
     background-color: $bg-light;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
    
-=======
-    .m-visible {
-        display: none;
-        visibility: hidden;
-    }    
->>>>>>> c44d426 (푸터 반응형 모바일 완성)
-=======
-   
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
     .f-wrap {
         max-width: 1440px;
         margin: 0 auto;
@@ -404,7 +355,6 @@
             }
         }
     }
-
     .f-right {
        display: flex;
        flex-direction: column;
@@ -438,8 +388,6 @@
     @media screen and (max-width: 475px) {
         .f-wrap {
             padding: 20px 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
             
             .f-left {
                 .f-top {
@@ -447,26 +395,9 @@
                     border-bottom: 1px solid $line;
 
                     ul {
-                        justify-content: flex-start;
-                        gap: 20px;
-=======
-
-=======
-            
->>>>>>> c44d426 (푸터 반응형 모바일 완성)
-            .f-left {
-                .f-top {
-                    padding-bottom: 20px;
-                    border-bottom: 1px solid $line;
-
-                    ul {
-<<<<<<< HEAD
                         justify-content: space-between;
->>>>>>> 368eb61 (모바일 버전 하단 고정 메뉴 추가)
-=======
                         justify-content: flex-start;
                         gap: 20px;
->>>>>>> c44d426 (푸터 반응형 모바일 완성)
                     }
                     a {
                         font-size: 12px;
@@ -499,21 +430,14 @@
             .f-right {
                 display: none;
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
         }
-    }
-=======
-            .m-hidden {
-                display: none;
-                visibility: hidden;
-            }
-            .m-visible {
-                display: block;
-                visibility: visible;
-            }
-=======
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
+        .m-hidden {
+            display: none;
+            visibility: hidden;
+        }
+        .m-visible {
+            display: block;
+            visibility: visible;
         }
     }
 }
@@ -588,10 +512,8 @@
     @media screen and (min-width: 476px) {
         display: none;        
     }
->>>>>>> 368eb61 (모바일 버전 하단 고정 메뉴 추가)
 }
 
-<<<<<<< HEAD
 .bottom-menu {
     position: fixed;
     left: 0;
@@ -664,8 +586,6 @@
     }
 }
 
-=======
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
 @media screen and (max-width: 475px) {
     .m-hidden {
         display: none;
@@ -679,11 +599,7 @@
 @media screen and (min-width: 476px) {
     .m-visible {
         display: none;
-<<<<<<< HEAD
-        // visibility: hidden;
-=======
         visibility: hidden;
->>>>>>> 8386cbb (헤더 모바일 반응형 수정 중)
     }
 } 
 
