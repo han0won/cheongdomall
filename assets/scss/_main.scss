@@ -90,16 +90,17 @@ h2{
   .slick-dots {
     bottom: 15px;
     li {
-      width: 20px;
-      height: 10px;
-      background: $w;
+      width: 15px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.7);
       border-radius: 5px;
       border: 1px solid $line;
+      transition: width 0.2s;
       button::before {
         display:none;
       }
       &.slick-active{
-        width: 30px;
+        width: 40px;
         background: $primary;
         border: 1px solid $primary;
       }
