@@ -87,6 +87,24 @@ h2{
       display: block;
     }
   }
+  .slick-dots {
+    bottom: 15px;
+    li {
+      width: 20px;
+      height: 10px;
+      background: $w;
+      border-radius: 5px;
+      border: 1px solid $line;
+      button::before {
+        display:none;
+      }
+      &.slick-active{
+        width: 30px;
+        background: $primary;
+        border: 1px solid $primary;
+      }
+    }
+  }
 }
 
 // 신상품
