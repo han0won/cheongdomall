@@ -209,6 +209,9 @@
             .nav-local {
                 color: $deep;
             }
+            a:hover {
+                color: $primary;
+            }
         }
         .nav-icon-wrap {
             display: flex;
