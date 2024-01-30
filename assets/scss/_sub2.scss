@@ -201,4 +201,131 @@
             display: inline;
         }
     }
+    .notice-board {
+        .down-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .service-info {
+        margin-top: 60px;
+        padding: 0;
+
+        .search-wrap {
+            margin: 0;
+            padding: 0 0 60px;
+            border-radius: 0;
+
+            .search-form {
+                padding: 0 16px;
+                width: 100%;
+            }
+            .icon-search {
+                right: 33px;
+            }
+        }
+        .service-btn-wrap {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            width: 100%;
+
+            .service-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .bg-circle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                width: 70px;
+                height: 70px;
+                border-radius: 100px;
+                background-color: $w;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .service-wrap {
+            position: relative;
+            top: 0px;
+            justify-content: center;
+            margin: 0 16px;
+            padding: 22px 30px;
+            border: 1px solid $line;
+            border-radius: 10px;
+            background-color: $w;
+            box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.041);
+            
+            .service-box {
+                justify-content: space-between;
+                padding: 0;
+                column-gap: 0;
+                width: 100%;
+
+                .infocircle {
+                    margin: 0;
+                    // padding: 27px;
+                    width: 32px;
+                    height: 32px;
+                    background-color: transparent;
+                }
+                img {
+                    width: 100%;
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+                span {
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .service-board {
+        padding-bottom: 70px;
+        .board-title {
+            margin-bottom: 10px;
+        }
+        .list-wrap {
+            border: none;
+        }
+        .list-box {
+            padding: 22px 12px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+        .list-box:last-child {
+            border-bottom: none;
+          }
+        .date-wrap {
+            display: none;
+        }
+        .notice-board {
+            .down-icon {
+                display: block;
+            }
+        }
+        .down-icon {
+            width: 10px;
+        }
+        .btn-open {
+            margin-top: 10px;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid $line;
+            border-radius: 5px;
+        }
+    }
 }
