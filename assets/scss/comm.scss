@@ -445,6 +445,33 @@
     }
 }
 
+.mob-banner-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    height: 90px;
+    background-color: $brightest;
+    border-top: 1px solid $line;
+    border-bottom: 1px solid $line;
+
+    .icon-phone,
+    .banner-text {
+        display: flex;
+    }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    strong {
+        color: $deep;
+    }
+    span {
+        font-size: 12px;
+        color: $txt-secondary;
+    }
+}
+
 .bottom-menu {
     position: fixed;
     left: 0;
@@ -591,18 +618,16 @@
 
 @media screen and (max-width: 475px) {
     .m-hidden {
-        display: none;
-        visibility: hidden;
+        display: none !important;
     }
     .m-visible {
         display: block;
-        visibility: visible;
+
     }
 }
 @media screen and (min-width: 476px) {
     .m-visible {
         display: none;
-        visibility: hidden;
     }
 } 
 

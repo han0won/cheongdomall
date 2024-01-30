@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고객센터</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/comm.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="./assets/js/comm.js"></script>
 </head>
 <body>
 <!-- 헤더 -->
@@ -12,16 +16,42 @@
 <!-- 컨텐츠 -->
 <div id="container">
     <section class="sub-cont service-info">
-        <div class="titlearea">
+        <div class="titlearea m-hidden">
             <h2>고객센터</h2>
         </div>
         <div class="search-wrap">
-            <h3>안녕하세요 고객님, 무엇을 도와드릴까요?</h3>
+            <h3 class="m-hidden">안녕하세요 고객님, 무엇을 도와드릴까요?</h3>
+            <div class="service-btn-wrap m-visible">
+                <div class="service-btn btn-faq">
+                    <a href="#">
+                        <div class="bg-circle">
+                            <img src="" alt="">
+                        </div>
+                        <p>FAQ</p>
+                    </a>
+                </div>
+                <div class="service-btn btn-notice">
+                    <a href="#">
+                        <div class="bg-circle">
+                            <img src="" alt="">
+                        </div>
+                        <p>공지사항</p>
+                    </a>
+                </div>
+                <div class="service-btn btn-call">
+                    <a href="#">
+                        <div class="bg-circle">
+                            <img src="./images/sub2/icon_phone.png" alt="전화기">
+                        </div>
+                        <p>문의전화</p>
+                    </a>
+                </div>
+            </div>
             <form class="search-form">
                 <input type="text" placeholder="궁금하신 내용을 검색해보세요.">
                 <button type="submit" class="icon-search"></button>
             </form>
-            <div class="search-word">
+            <div class="search-word m-hidden">
                 <strong>추천검색어</strong>
                 <div class="word-wrap">
                     <p>회원</p>
@@ -35,7 +65,7 @@
             </div>
         </div>
         <div class="service-wrap">
-            <div class="service-number">
+            <div class="service-number m-hidden">
                 <p>고객센터 이용 안내</p>
                 <div class="number-box">
                     <img src="./images/sub2/icon_phone.png" alt="전화기">
@@ -47,16 +77,17 @@
                     <p>주말 및 공휴일 휴무</p>
                 </div>
             </div>
-            <span></span>
+            <span class="m-hidden"></span>
             <div class="service-box">
                 <div class="infobox">
                     <a href="#">
                     <div class="infocircle">
                         <img src="./images/sub2/icon_box.png" alt="주문배송조회">
                     </div>
-                    <p>주문배송조회</p>
+                    <p>주문조회</p>
                     </a>
                 </div>
+                <span class="m-visible"></span>
                 <div class="infobox">
                     <a href="#">
                         <div class="infocircle">
@@ -65,20 +96,22 @@
                         <p>1:1 문의</p>
                     </a>
                 </div>
+                <span class="m-visible"></span>
                 <div class="infobox">
                     <a href="#">
                         <div class="infocircle">
                             <img src="./images/sub2/icon_coupon.png" alt="쿠폰내역">
                         </div>
-                        <p>쿠폰 내역</p>
+                        <p>쿠폰내역</p>
                     </a>
                 </div>
+                <span class="m-visible"></span>
                 <div class="infobox">
                     <a href="#">
                         <div class="infocircle">
                             <img src="./images/sub2/icon_cash.png" alt="마일리지내역">
                         </div>
-                        <p>마일리지 내역</p>
+                        <p>마일리지</p>
                     </a>
                 </div>
             </div>
@@ -89,7 +122,7 @@
             <div class="board-title">
                 <h3>자주 묻는 <span>질문</span></h3>
                 <a href="#">
-                    <div class="goto-icon"></div>
+                    <div class="goto-icon m-hidden"></div>
                 </a>
             </div>  
             <div class="list-wrap">
@@ -139,12 +172,13 @@
                     </a>
                 </div>
             </div>
+            <a href="#" class="btn-open m-visible">전체보기</a>
         </div>
         <div class="notice-board">
             <div class="board-title">
                 <h3>공지사항</span></h3>
                 <a href="#">
-                    <div class="goto-icon"></div>
+                    <div class="goto-icon m-hidden"></div>
                 </a>
             </div>  
             <div class="list-wrap">
@@ -158,6 +192,7 @@
                         <p>등록일</p>
                         <p>2023-00-00</p>
                         </div>
+                        <div class="down-icon"></div>
                     </a>
                 </div>
                 <div class="list-box">
@@ -170,6 +205,7 @@
                         <p>등록일</p>
                         <p>2023-00-00</p>
                         </div>
+                        <div class="down-icon"></div>
                     </a>
                 </div>
                 <div class="list-box">
@@ -182,6 +218,7 @@
                         <p>등록일</p>
                         <p>2023-00-00</p>
                         </div>
+                        <div class="down-icon"></div>
                     </a>
                 </div>
                 <div class="list-box">
@@ -194,6 +231,7 @@
                         <p>등록일</p>
                         <p>2023-00-00</p>
                         </div>
+                        <div class="down-icon"></div>
                     </a>
                 </div>
                 <div class="list-box">
@@ -206,11 +244,26 @@
                         <p>등록일</p>
                         <p>2023-00-00</p>
                         </div>
+                        <div class="down-icon"></div>
                     </a>
                 </div>
             </div>
+            <a href="#" class="btn-open m-visible">전체보기</a>
         </div>
     </section>
+    <div class="mob-banner m-visible">
+        <div class="mob-banner-wrap">
+            <div class="icon-phone">
+                <img src="./images/sub2/icon_phone.png" alt="전화기">
+            </div>
+            <div class="banner-wrap">
+                <div class="banner-text">
+                    <p>고객센터 <strong>054.372.4174</strong></p>
+                </div>
+                <span>평일 09:00 - 18:00 (점심시간 12:30 - 13:30)</span>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- 푸터 -->
 <footer id="footer">
@@ -223,8 +276,8 @@
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보처리방침</a></li>
                     <li><a href="#">이용안내</a></li>
-                    <li><a href="#">입점안내/제휴안내</a></li>
-                    <li><a href="#">농가관리자페이지</a></li>
+                    <li class="m-hidden"><a href="#">입점안내/제휴안내</a></li>
+                    <li class="m-hidden"><a href="#">농가관리자페이지</a></li>
                 </ul>
             </div>
             <div class="f-middle">
@@ -232,18 +285,18 @@
                     <p>대표자 : 문종우
                     <span class="line"></span>
                     회사명 : 농업회사법인 엘푸드 주식회사
-                    <span class="line"></span>
-                    사업자등록번호 : 362-81-00829</p>
+                    <span class="line m-hidden"></span>
+                    <br class="m-visible">사업자등록번호 : 362-81-00829</p>
                     <p>전화 : 054-372-4174
                         <span class="line"></span>
                     팩스 : 054-372-4175</p>
                     <p>통신판매업신고번호 : 제 2017-5190058-30-2-00075 호</p>
                     <p>개인정보보호책임자 : 황다겸 (lfoodshop@naver.com)
-                    <span class="line"></span>
+                    <span class="line m-hidden"></span>
+                    <br class="m-visible">
                     호스팅 제공자 : (주)가비아씨엔에스</p>
                 </div>
-                <p>엘푸드(주)는 본사판매상품을 제외한 제품은 입점사가 등록한 일반상품의 거래당사자가 아니며,</p>
-                <p>입점판매자가 등록한 상품정보 및 거래에 대해 청도몰은 일체 책임을 지지 않습니다.</p>
+                <p>엘푸드(주)는 본사판매상품을 제외한 제품은 입점사가 등록한 일반상품의 거래당사자가 아니며, <br class="m-hidden">입점판매자가 등록한 상품정보 및 거래에 대해 청도몰은 일체 책임을 지지 않습니다.</br>
             </div>
             <div class="f-bottom">
                 <p class="copyright">
@@ -264,5 +317,40 @@
         </div>
     </div>
 </footer>
+<div class="bottom-menu">
+    <div class="bottom-menu-wrap">
+        <div class="menu-logo">
+            <a href="#">
+                <img src="./images/comm/logo-menu.png" alt="로고">
+            </a>
+        </div>
+        <div class="menu-icon-wrap">
+            <div class="menu-wrap">
+                <div class="menu-icon">
+                    <a href="#" class="menu-icon-bar">
+                        메뉴 바로가기
+                    </a>
+                </div>
+                <div class="menu-icon">
+                    <a href="#" class="menu-icon-search">
+                        검색하기
+                    </a>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <div class="menu-icon">
+                    <a href="#" class="menu-icon-cart">
+                        장바구니 바로가기
+                    </a>
+                </div>
+                <div class="menu-icon">
+                    <a href="#" class="menu-icon-user">
+                        마이페이지 가기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
