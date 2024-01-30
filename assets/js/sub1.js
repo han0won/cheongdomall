@@ -12,4 +12,14 @@ $('.info-various-wrap').slick({
   autoplay: true,
   autoplaySpeed: 1500,
   infinite: true, 
+  fade: false,
+  responsive: [
+    {
+      breakpoint: 476,
+      settings: {
+        slidesToShow: 1,
+        fade: true,
+      } 
+    }
+  ]
 });
