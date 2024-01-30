@@ -258,6 +258,13 @@ h2{
   .swiper-slide.swiper-slide-active {  
       opacity: 1;
   }
+  .best-scrollbar{
+    width: 80%;
+    position: relative;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+  }
 }
 .best-card{
   .best-thumbnail{
