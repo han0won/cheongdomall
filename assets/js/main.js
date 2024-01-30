@@ -3,8 +3,8 @@ $(document).ready(function() {
   // main banner
   $('.slide-wrap').slick({
     dots: true,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    prevArrow: $('.main-prev'),
+    nextArrow: $('.main-next'),
     // autoplay: true,
     // autoplaySpeed: 3500,
     centerMode: true,
@@ -15,8 +15,8 @@ $(document).ready(function() {
   $('.new-card-wrap').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    prevArrow: $('.new-prev'),
+    nextArrow: $('.new-next'),
     // autoplay: true,
     autoplaySpeed: 3000,
   });

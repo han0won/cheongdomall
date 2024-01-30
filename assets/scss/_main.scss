@@ -35,11 +35,11 @@ h2{
 // 메인 슬라이드 배너
 .main-slide{
   position: relative;
-  .pager{
+  .main-pager{
     z-index: 1;
     display: none;
-    .prev,
-    .next{
+    .main-prev,
+    .main-next{
       position: absolute;
       top: 45%;
       display: flex;
@@ -52,10 +52,10 @@ h2{
       border-radius: 50%;
       cursor: pointer;
     }
-    .prev{
+    .main-prev{
       left: 1%;
     }
-    .next{
+    .main-next{
       right: 1%;
     }
   }
@@ -81,7 +81,7 @@ h2{
   .slick-center{
     transform: scale(1);
     opacity: 1;
-    .pager{
+    .main-pager{
       display: block;
     }
   }
@@ -180,10 +180,10 @@ h2{
   }
   .new-slide-wrap{ 
     position: relative;
-    .pager{
+    .new-pager{
       z-index: 1;
-      .prev,
-      .next{
+      .new-prev,
+      .new-next{
         position: absolute;
         top: 30%;
         display: flex;
@@ -196,10 +196,10 @@ h2{
         border-radius: 50%;
         cursor: pointer;
       }
-      .prev{
+      .new-prev{
         left: 1%;
       }
-      .next{
+      .new-next{
         right: 1%;
       }
     }
