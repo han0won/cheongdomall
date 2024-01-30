@@ -188,17 +188,25 @@ h2{
       .new-prev,
       .new-next{
         position: absolute;
-        top: 30%;
-        width: 50px;
-        height: 50px;
+        top: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
         cursor: pointer;
-        filter: grayscale(100%) brightness(0%) invert(100%);
+        img{
+          width: 25px;
+          height: auto;
+        }
       }
       .new-prev{
-        left: 1%;
+        left: 1.5%;
       }
       .new-next{
-        right: 1%;
+        right: 1.5%;
       }
     }
   }
