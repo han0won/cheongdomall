@@ -3,8 +3,6 @@ $(document).ready(function() {
   // main banner
   $('.slide-wrap').slick({
     dots: true,
-    prevArrow: $('.main-prev'),
-    nextArrow: $('.main-next'),
     // autoplay: true,
     // autoplaySpeed: 3500,
     centerMode: true,

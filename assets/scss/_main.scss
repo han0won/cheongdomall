@@ -1,6 +1,7 @@
 
 // 페이지 가운데 정렬
-.new-items,
+// .new-items,
+.new-card-wrap,
 .reco-wrap,
 .farm,
 .review-wrap{
@@ -34,76 +35,48 @@ h2{
 
 // 메인 슬라이드 배너
 .main-slide{
-  position: relative;
-  .main-pager{
-    z-index: 1;
-    display: none;
-    .main-prev,
-    .main-next{
-      position: absolute;
-      top: 45%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 50%;
-      cursor: pointer;
-      img{
-        width: 25px;
-        height: auto;
-      }
-    }
-    .main-prev{
-      left: 1%;
-    }
-    .main-next{
-      right: 1%;
-    }
-  }
-}
-.slide-wrap{
-  position: relative;
-  .slide{
-    margin-right: -30px;
-    transform: scale(0.9);
-    opacity: .4;
-    transition: all .3s ease-in-out;
-    border: 1px solid $line;
-    border-radius: 20px;
-    a{
-      width: 1105px;
-      height: 420px;
-      border-radius: inherit;
-      img{
-        border-radius: inherit;
-      }
-    }
-  }
-  .slick-center{
-    transform: scale(1);
-    opacity: 1;
-    .main-pager{
-      display: block;
-    }
-  }
-  .slick-dots {
-    bottom: 15px;
-    li {
-      width: 15px;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 5px;
+  .slide-wrap{
+    position: relative;
+    .slide{
+      margin-right: -30px;
+      transform: scale(0.9);
+      opacity: .4;
+      transition: all .3s ease-in-out;
       border: 1px solid $line;
-      transition: width 0.2s;
-      button::before {
-        display:none;
+      border-radius: 20px;
+      a{
+        width: 1105px;
+        height: 420px;
+        border-radius: inherit;
+        img{
+          border-radius: inherit;
+        }
       }
-      &.slick-active{
-        width: 40px;
-        background: $primary;
-        border: 1px solid $primary;
+    }
+    .slick-center{
+      transform: scale(1);
+      opacity: 1;
+      .main-pager{
+        display: block;
+      }
+    }
+    .slick-dots {
+      bottom: 15px;
+      li {
+        width: 15px;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        border: 1px solid $line;
+        transition: width 0.2s;
+        button::before {
+          display:none;
+        }
+        &.slick-active{
+          width: 40px;
+          background: $primary;
+          border: 1px solid $primary;
+        }
       }
     }
   }
@@ -114,6 +87,7 @@ h2{
   .new-card-wrap{
     width: 100%;
     margin-top: 60px;
+    z-index: 1;
   }
   .slick-list {
     margin-right: -20px;
@@ -148,8 +122,8 @@ h2{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       position: absolute;
       bottom: 15px;
       right: 15px;
@@ -157,8 +131,8 @@ h2{
       border-radius: 50%;
       cursor: pointer;
       img{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
@@ -184,29 +158,21 @@ h2{
   .new-slide-wrap{ 
     position: relative;
     .new-pager{
-      z-index: 1;
       .new-prev,
       .new-next{
         position: absolute;
         top: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
         cursor: pointer;
         img{
-          width: 25px;
+          width: 40px;
           height: auto;
         }
       }
       .new-prev{
-        left: 1.5%;
+        left: 5%;
       }
       .new-next{
-        right: 1.5%;
+        right: 5%;
       }
     }
   }
