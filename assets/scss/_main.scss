@@ -1,7 +1,7 @@
 
 // 페이지 가운데 정렬
 // .new-items,
-.new-card-wrap,
+.new-items,
 .reco-wrap,
 .farm,
 .review-wrap{
@@ -10,12 +10,9 @@
 }
 
 // section 사이 여백
-.new-items,
 .localfood,
 .best-item,
-.recommend,
-.farm,
-.review
+.recommend
 {
   margin-top: 150px;
 }
@@ -56,9 +53,6 @@ h2{
     .slick-center{
       transform: scale(1);
       opacity: 1;
-      .main-pager{
-        display: block;
-      }
     }
     .slick-dots {
       bottom: 15px;
@@ -152,27 +146,6 @@ h2{
       }
       .won{
         font-size: 20px;
-      }
-    }
-  }
-  .new-slide-wrap{ 
-    position: relative;
-    .new-pager{
-      .new-prev,
-      .new-next{
-        position: absolute;
-        top: 35%;
-        cursor: pointer;
-        img{
-          width: 40px;
-          height: auto;
-        }
-      }
-      .new-prev{
-        left: 5%;
-      }
-      .new-next{
-        right: 5%;
       }
     }
   }
