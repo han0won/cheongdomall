@@ -82,6 +82,31 @@ h2{
     width: 100%;
     margin-top: 60px;
     z-index: 1;
+    .slick-dots {
+      bottom: -60px;
+      li {
+        width: 3.5%;
+        margin: 0 auto;
+        height: 1px;
+        background: $line;
+        cursor: auto;
+        transition: all 0.3s ease;
+        // transform: scaleX() 300ms;
+        button{
+          pointer-events: none;
+          &::before {
+            display:none;
+          }
+        }
+        &.slick-active{
+          width: 23%;
+          height: 3px;
+          top: -1px;
+          border-radius: 50px;
+          background: $primary;
+        }
+      }
+    }
   }
   .slick-list {
     margin-right: -20px;
@@ -259,11 +284,17 @@ h2{
       opacity: 1;
   }
   .best-scrollbar{
-    width: 80%;
+    margin: 0 auto;
+    width: 50%;
+    height: 1px;
+    background: $line;
     position: relative;
     bottom: -40px;
-    right: 0;
-    left: 0;
+    .swiper-scrollbar-drag{
+      height: 3px;
+      top: -1px;
+      background: $primary;
+    }
   }
 }
 .best-card{

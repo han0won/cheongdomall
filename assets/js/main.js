@@ -26,14 +26,14 @@ $(document).ready(function() {
     let swipers = []
     function initSwiper(swiperElement) {
         return new Swiper(swiperElement, {
-            // autoplay: true,
-            loop: true,
-            loopAdditionalSlides : 1,
+            initialSlide: 2,
+            autoplay: true,
+            // loop: true,
+            // loopAdditionalSlides : 1,
             slidesPerView: 5,
             centeredSlides: true,
             scrollbar: {
               el: ".best-scrollbar",
-              clickable: true,
             },
         })
     }
