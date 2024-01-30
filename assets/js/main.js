@@ -76,6 +76,10 @@ $(document).ready(function() {
 
 
   // farm story tabs
+  $(document).ready(function() {
+    $('.tab-btn:first-child').addClass('active');
+    $('.farm-tab:first-child').addClass('active');
+});
   $('.tab-btn').click(function(){
     var $this = $(this);
     var index = $this.index();
@@ -84,8 +88,8 @@ $(document).ready(function() {
     $this.siblings('.tab-btn.active').removeClass('active');
     
     var $outer = $this.closest('.farm');
-    var $current = $outer.find(' > .farm-tabs > .farm-tab.active');
-    var $post = $outer.find(' > .farm-tabs > .farm-tab').eq(index);
+    var $current = $outer.find('.farm-tabs .farm-tab.active');
+    var $post = $outer.find('.farm-tabs .farm-tab').eq(index);
     
     $current.removeClass('active');
     $post.addClass('active');
