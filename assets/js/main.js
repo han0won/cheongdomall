@@ -1,48 +1,61 @@
 $(document).ready(function() {
-  // main: main banner
+
+  // main banner
   $('.slide-wrap').slick({
+    arrows: false,
     dots: true,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
-    // autoplay: true,
-    // autoplaySpeed: 3500,
+    autoplay: true,
+    autoplaySpeed: 3500,
     centerMode: true,
     variableWidth: true,
   });
 
-  // main: new items
-  $('.new-card-wrap').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 3000,
-  });
-
-// main: best slide * * * 수정할 부분 * * *
-  var swiper = new Swiper(".best-slide", {
+  // new items
+  var swiper = new Swiper(".new-slide", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     loop: true,
-    slidesPerView: 5,
-    centeredSlides: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    slidesPerView: 4,
+    spaceBetween: 20,
+    scrollbar: {
+      el: ".new-scrollbar",
     },
   });
-// best tabs
-$('.tab-btn').click(function(){
-  var $this = $(this);
-  var index = $this.index();
-  
-  $this.addClass('active');
-  $this.siblings('.tab-btn.active').removeClass('active');
-  
-  var $outer = $this.closest('.best-item');
-  var $current = $outer.find(' > .best-tabs > .best-tab.active');
-  var $post = $outer.find(' > .best-tabs > .best-tab').eq(index);
-  
-  $current.removeClass('active');
-  $post.addClass('active');
-  });
+
+//  best tabs, swiper
+    const tabButtons = document.querySelectorAll('.tab-btn')
+    const tabs = document.querySelectorAll('.best-tab')
+    let swipers = []
+    function initSwiper(swiperElement) {
+        return new Swiper(swiperElement, {
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            initialSlide: 2,
+            slidesPerView: 5,
+            centeredSlides: true,
+            scrollbar: {
+              el: ".best-scrollbar",
+            },
+        })
+    }
+    function changeTab(index) {
+        tabButtons.forEach((button) => button.classList.remove('active'))
+        tabs.forEach((tab) => tab.classList.remove('active'))
+        tabButtons[index].classList.add('active')
+        tabs[index].classList.add('active')
+        if (!swipers[index]) {
+            const swiperElement = tabs[index].querySelector('.swiper')
+            swipers[index] = initSwiper(swiperElement)
+        }
+    }
+    tabButtons.forEach((button, index) => {
+        button.addEventListener('click', () => changeTab(index))
+    })
+    changeTab(0)
 
   // recommend
   var swiper = new Swiper(".reco-slide", {
@@ -50,23 +63,24 @@ $('.tab-btn').click(function(){
     slidesPerView: "auto",
     spaceBetween: 40,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".reco-pagination",
       clickable: true,
     },
   });
 
   // farm story tabs
+  $(document).ready(function() {
+    $('.tab-btn:first-child').addClass('active');
+    $('.farm-tab:first-child').addClass('active');
+});
   $('.tab-btn').click(function(){
     var $this = $(this);
     var index = $this.index();
-    
     $this.addClass('active');
     $this.siblings('.tab-btn.active').removeClass('active');
-    
     var $outer = $this.closest('.farm');
-    var $current = $outer.find(' > .farm-tabs > .farm-tab.active');
-    var $post = $outer.find(' > .farm-tabs > .farm-tab').eq(index);
-    
+    var $current = $outer.find('.farm-tabs .farm-tab.active');
+    var $post = $outer.find('.farm-tabs .farm-tab').eq(index);
     $current.removeClass('active');
     $post.addClass('active');
     });
