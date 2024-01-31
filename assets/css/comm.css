@@ -356,6 +356,31 @@ h2 {
   }
 }
 
+#header-sub {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #E2E2E2;
+}
+#header-sub .top-icon-back {
+  position: absolute;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+#header-sub p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #footer {
   width: 100%;
   background-color: #F5F5F5;
@@ -639,10 +664,9 @@ h2 {
 .bottom-menu .menu-icon .menu-icon-user {
   background-image: url(../../images/comm/icon-user-menu.png);
 }
-@media screen and (min-width: 476px) {
-  .bottom-menu {
-    display: none;
-  }
+
+.m-visible {
+  display: none;
 }
 
 @media screen and (max-width: 475px) {
@@ -653,21 +677,12 @@ h2 {
     display: block;
   }
 }
-@media screen and (min-width: 476px) {
-  .m-visible {
-    display: none;
-  }
-}
 .new-items,
 .reco-wrap,
 .farm,
 .review-wrap {
   max-width: 1440px;
   margin: 150px auto;
-}
-
-section {
-  margin-top: 150px;
 }
 
 h2 {
@@ -1192,7 +1207,6 @@ h2 {
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 80px;
-  overflow: hidden;
 }
 
 h3 {
@@ -1239,6 +1253,9 @@ h3 {
   color: #CCE9A8;
 }
 
+.info-what {
+  overflow: hidden;
+}
 .info-what p {
   font-size: 100px;
   font-weight: bold;
@@ -1506,6 +1523,7 @@ h3 {
   margin: 0;
   padding: 100px 0 0;
   max-width: none;
+  overflow: hidden;
 }
 .info-various .info-various-wrap {
   display: flex;
@@ -1648,6 +1666,9 @@ h3 {
   }
   .info-about .info-wrap .info-about-txt span {
     font-weight: bold;
+  }
+  .info-why {
+    overflow: hidden;
   }
   .info-why .why-box {
     flex-direction: column;
@@ -1937,12 +1958,13 @@ h3 {
 
 @media screen and (max-width: 475px) {
   .service-info {
+    position: relative;
     margin-top: 60px;
     padding: 0;
   }
   .service-info .search-wrap {
     margin: 0;
-    padding: 0 0 60px;
+    padding: 0 0 70px;
     border-radius: 0;
   }
   .service-info .search-wrap .search-form {
@@ -1951,6 +1973,9 @@ h3 {
   }
   .service-info .search-wrap .icon-search {
     right: 33px;
+  }
+  .service-info .search-wrap input {
+    font-size: 14px;
   }
   .service-info .service-btn-wrap {
     display: flex;
@@ -1977,11 +2002,13 @@ h3 {
     text-align: center;
   }
   .service-info .service-wrap {
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 210px;
     justify-content: center;
+    z-index: 100;
     margin: 0 16px;
     padding: 22px 30px;
+    width: calc(100% - 32px);
     border: 1px solid #E2E2E2;
     border-radius: 10px;
     background-color: #fff;
@@ -2012,7 +2039,7 @@ h3 {
     height: 50px;
   }
   .service-board {
-    padding-bottom: 70px;
+    padding: 130px 16px 70px;
   }
   .service-board .board-title {
     margin-bottom: 10px;
@@ -2021,7 +2048,7 @@ h3 {
     border: none;
   }
   .service-board .list-box {
-    padding: 22px 12px;
+    padding: 22px 5px;
   }
   .service-board .list-box p {
     font-size: 14px;
