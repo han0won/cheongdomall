@@ -208,14 +208,15 @@
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: $bp-mobile) {
     .service-info {
+        position: relative;
         margin-top: 60px;
         padding: 0;
 
         .search-wrap {
             margin: 0;
-            padding: 0 0 60px;
+            padding: 0 0 70px;
             border-radius: 0;
 
             .search-form {
@@ -224,6 +225,9 @@
             }
             .icon-search {
                 right: 33px;
+            }
+            input {
+                font-size: 14px;
             }
         }
         .service-btn-wrap {
@@ -252,11 +256,13 @@
             }
         }
         .service-wrap {
-            position: relative;
-            top: 0px;
+            position: absolute;
+            top: 210px;
             justify-content: center;
+            z-index: 100;
             margin: 0 16px;
             padding: 22px 30px;
+            width: calc(100% - 32px);
             border: 1px solid $line;
             border-radius: 10px;
             background-color: $w;
@@ -290,7 +296,7 @@
         }
     }
     .service-board {
-        padding-bottom: 70px;
+        padding: 130px 16px 70px;
         .board-title {
             margin-bottom: 10px;
         }
@@ -298,7 +304,7 @@
             border: none;
         }
         .list-box {
-            padding: 22px 12px;
+            padding: 22px 5px;
 
             p {
                 font-size: 14px;

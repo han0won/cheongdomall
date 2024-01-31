@@ -2,7 +2,6 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 100px 80px ;
-    overflow: hidden;
 }
 
 
@@ -52,6 +51,8 @@ h3 {
 }
 
 .info-what {
+    overflow: hidden;
+    
     p {
         font-size: 100px;
         font-weight: bold;
@@ -328,6 +329,7 @@ h3 {
     margin: 0;
     padding: 100px 0 0;
     max-width: none;
+    overflow: hidden;
 
     .info-various-wrap {
         display: flex;
@@ -404,7 +406,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: $bp-mobile) {
     .sub-cont {
         padding: 50px 16px;
     }
@@ -484,6 +486,8 @@ h3 {
         }
     }
     .info-why {
+        overflow: hidden;
+
         .why-box {
             flex-direction: column;
             padding-bottom: 0;
