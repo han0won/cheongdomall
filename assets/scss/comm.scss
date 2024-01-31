@@ -260,6 +260,29 @@
             }
         }
     }
+    @media screen and (max-width: $bp-tablet) {
+        max-width: 800px;
+
+        .h-wrap {
+            padding: 20px 16px 30px;
+        }
+        .nav-bottom {
+            .lnb {
+                left: 0;
+                padding-left: 0;
+            }
+            #gnb {
+                font-size: 14px;
+
+                li {
+                    padding: 0 10px;
+                }
+            }
+            .nav-icon-wrap {
+                column-gap: 20px;
+            }
+        }
+    }
     @media screen and (max-width: $bp-mobile) {
         position: fixed;
         top: 0;
@@ -332,32 +355,7 @@
             }
         }
     }
-    @media screen and (max-width: $bp-tablet) {
-        max-width: 768px;
-
-        .h-wrap {
-            padding: 20px 16px 30px;
-        }
-        .nav-bottom {
-            .lnb {
-                left: 0;
-                padding-left: 0;
-            }
-            #gnb {
-                font-size: 14px;
-
-                li {
-                    padding: 0 10px;
-                }
-            }
-            .nav-icon-wrap {
-                column-gap: 20px;
-            }
-        }
-    }
 }
-
-
 
 #footer {
     width: 100%;
@@ -432,6 +430,39 @@
             font-weight: bold;
             line-height: normal;
             color: $deep;
+        }
+    }
+    @media screen and (max-width: $bp-tablet) {
+        .f-wrap {
+            max-width: 800px;
+            padding: 60px 16px 80px;
+        }
+        .f-left {
+            .f-top {
+                ul {
+                    column-gap: 0;
+                    justify-content: space-between;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+            .f-middle {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .f-right {
+            strong {
+                font-size: 24px;
+            }
+            .number {
+                font-size: 32px;
+            }
+            p {
+                font-size: 12px;
+            }
         }
     }
     @media screen and (max-width: $bp-mobile) {
