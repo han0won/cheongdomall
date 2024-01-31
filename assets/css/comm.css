@@ -724,10 +724,24 @@ h2 {
 .review {
   margin-top: 150px;
 }
+@media screen and (max-width: 475px) {
+  .new-items,
+  .best-item,
+  .farm,
+  .review {
+    margin-top: 100px;
+  }
+}
 
 .localfood,
 .recommend {
   margin-top: 210px;
+}
+@media screen and (max-width: 475px) {
+  .localfood,
+  .recommend {
+    margin-top: 160px;
+  }
 }
 
 h2 {
@@ -815,6 +829,11 @@ h2 {
 .new-items .new-slide {
   width: 100%;
   margin-top: 60px;
+}
+@media screen and (max-width: 475px) {
+  .new-items .new-slide {
+    margin-top: 24px;
+  }
 }
 .new-items .new-thumbnail {
   position: relative;
@@ -933,6 +952,11 @@ h2 {
   height: 650px;
   overflow: hidden;
 }
+@media screen and (max-width: 475px) {
+  .localfood .video-wrap {
+    height: 600px;
+  }
+}
 .localfood .video-wrap .bnr-video {
   width: 100%;
   height: 100%;
@@ -968,9 +992,23 @@ h2 {
 .localfood .video-wrap .txt-wrap .btn-more {
   color: #fff;
   font-size: 24px;
+  font-weight: 600;
   background: #FF8C00;
   padding: 17px 25px;
   border-radius: 50px;
+}
+@media screen and (max-width: 475px) {
+  .localfood .video-wrap .txt-wrap {
+    font-size: 18px;
+  }
+  .localfood .video-wrap .txt-wrap .tit {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+  .localfood .video-wrap .txt-wrap .btn-more {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
 }
 
 .best-item .tab-btns {
