@@ -23,9 +23,9 @@
 <header id="header">
     <div class="h-wrap">
         <div class="nav-top">
-            <p>회원가입</p>
-            <p>로그인</p>
-            <p>고객센터</p>
+            <a href="#"><p>회원가입</p></a>
+            <a href="#"><p>로그인</p></a>
+            <a href="#"><p>고객센터</p></a>
         </div>
         <h1 id="logo" class="logo">
             <a href="#" class="logo-w"></a> 
@@ -98,6 +98,7 @@
             <nav id="gnb">
                 <ul>
                     <li><a href="#" class="nav-local">로컬푸드란?</a></li>
+                    <li class="m-visible"><span></span></li>
                     <li><a href="#">신상품</a></li>
                     <li><a href="#">베스트</a></li>
                     <li><a href="#">선물세트</a></li>
@@ -105,12 +106,20 @@
                 </ul>
             </nav>
             <div class="nav-icon-wrap">
-                <button type="button" class="nav-icon btn-search"></button>
+                <button type="button" class="nav-icon btn-search">
+                    <a href="#">
+                    <img src="./images/comm/icon-search.png" alt="장바구니 아이콘">  
+                    </a>
+                </button>
                 <div class="btn-cart nav-icon">
-                    <img src="./images/comm/icon-cart.png" alt="장바구니 아이콘">
+                    <a href="#">
+                        <img src="./images/comm/icon-cart.png" alt="장바구니 아이콘">
+                    </a>
                 </div>
                 <div class="btn-mypage nav-icon m-hidden">
-                    <img src="./images/comm/icon-user.png" alt="마이페이지 아이콘">
+                    <a href="#">
+                        <img src="./images/comm/icon-user.png" alt="마이페이지 아이콘">
+                    </a>
                 </div>
             </div>
         </div>
@@ -121,14 +130,14 @@
     <section class="info-fage info-fage1">
         <p class="info-int1" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="500">
             로컬푸드.
-            <br>들어보신 적 있으세요?
+            <br>들어보신 적 <br class="m-visible">있으세요?
         </p>
     </section>
     <section class="info-fage info-fage2">
         <p class="info-int2" data-aos="fade-down" data-aos-duration="700">
-            매일 우리의 밥상에 올라가는 재료들.
-            <br><span>안전하고 좋은 식품들</span>로만 채우고 싶으시죠?
-            <br>그래서 로컬푸드가 탄생했습니다.
+            매일 우리의 밥상에 <br class="m-visible">올라가는 재료들.
+            <br><span>안전하고 좋은 식품들</span>로만 <br class="m-visible">채우고 싶으시죠?
+            <br><br class="m-visible">그래서 로컬푸드가 탄생했습니다.
         </p>
     </section>
     <section class="sub-cont info-what">
@@ -187,10 +196,9 @@
                     <div class="number-circle">1</div>
                     <strong><span>푸드 마일리지</span>를 줄여요!</strong>
                     <p>
-                        푸드 마일리지는 식재료가 소비자의 식탁에 오르기까지
-                        <br>소요된 거리를 말해요. 가능한 가까운 곳에서
-                        <br>생산된 농산물을 소비하는 것이 식품의 안정성을 높일 수 있고
-                        <br>또한 수송과정에서 발생하는 환경오염을 줄일 수 있어요.
+                        가능한 가까운 곳에서 생산된 농산물을
+                        <br>소비하는 것이 식품의 안정성을 높일 수 있고 또한
+                        <br>수송과정에서 발생하는 환경오염을 줄일 수 있어요.
                     </p>
                 </div>
             </div>
@@ -246,7 +254,7 @@
     </section>
     <section class="sub-cont info-fresh">
         <p class="info-tit">FRESH LOCAL FOOD</p>
-        <h3 data-aos="fade-down" data-aos-duration="700">로컬푸드가 신선한 이유!</h3>
+        <h3 data-aos="fade-down" data-aos-duration="700">로컬푸드가 <br class="m-visible">신선한 이유!</h3>
         <div class="info-fresh-wrap Route1">
             <p>전통적 경로는 <span>길고 많은 과정</span>을 거쳐와요.</p>
             <div class="Route-wrap">
@@ -302,7 +310,7 @@
                 <div class="icon-sparkle sparkle2">
                     <img src="./images/sub1/icon-sprkle2.png" alt="반짝 아이콘">
                 </div>
-                <p>로컬푸드는 생산자가 소비자에게 <span>바로 전달</span>해요!</p>
+                <p>로컬푸드는 소비자에게 <span>바로 전달</span>해요!</p>
             </div>
             <div class="Route-wrap">
                 <div class="Route-box" data-aos="fade-down" data-aos-duration="800">
@@ -326,7 +334,7 @@
     <section class="sub-cont info-various">
         <p class="info-tit">VARIOUS LOCAL FOOD</p>
         <h3 data-aos="fade-down" data-aos-duration="700">
-            다양한 로컬푸드를 만나보세요!
+            다양한 로컬푸드를 <br class="m-visible">만나보세요!
         </h3>
         <div class="info-various-wrap" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
             <div class="various-box vb-0">
@@ -368,6 +376,19 @@
         </p>
         <div class="info-btn">
             <a href="#"><strong>로컬푸드</strong> 만나러가기</a>
+        </div>
+    </div>
+    <div class="mob-banner m-visible">
+        <div class="mob-banner-wrap">
+            <div class="icon-phone">
+                <img src="./images/sub2/icon_phone.png" alt="전화기">
+            </div>
+            <div class="banner-wrap">
+                <div class="banner-text">
+                    <p>고객센터 <strong>054.372.4174</strong></p>
+                </div>
+                <span>평일 09:00 - 18:00 (점심시간 12:30 - 13:30)</span>
+            </div>
         </div>
     </div>
 </div>
