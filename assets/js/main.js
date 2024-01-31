@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   // main banner
   $('.slide-wrap').slick({
+    arrows: false,
     dots: true,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -10,13 +11,27 @@ $(document).ready(function() {
   });
 
   // new items
-  $('.new-card-wrap').slick({
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+  var swiper = new Swiper(".new-slide", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    scrollbar: {
+      el: ".new-scrollbar",
+    },
   });
+
+  // $('.new-card-wrap').slick({
+  //   arrows: false,
+  //   dots: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   slidesToShow: 4,
+  //   swipeToSlide: true,
+  // });
 
 // 
 
@@ -26,10 +41,11 @@ $(document).ready(function() {
     let swipers = []
     function initSwiper(swiperElement) {
         return new Swiper(swiperElement, {
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
             initialSlide: 2,
-            autoplay: true,
-            // loop: true,
-            // loopAdditionalSlides : 1,
             slidesPerView: 5,
             centeredSlides: true,
             scrollbar: {

@@ -1,20 +1,23 @@
 
 // 페이지 가운데 정렬
-// .new-items,
 .new-items,
 .reco-wrap,
 .farm,
 .review-wrap{
   max-width: 1440px;
-  margin: 150px auto;
+  margin: 0 auto;
 }
 
 // section 사이 여백
-.localfood,
+.new-items,
 .best-item,
-.recommend
-{
+.farm,
+.review{
   margin-top: 150px;
+}
+.localfood,
+.recommend{
+  margin-top: 210px;
 }
 
 // 타이틀 글자 기본 설정
@@ -78,41 +81,10 @@ h2{
 
 // 신상품
 .new-items{
-  .new-card-wrap{
+  position: relative;
+  .new-slide{
     width: 100%;
     margin-top: 60px;
-    z-index: 1;
-    .slick-dots {
-      bottom: -60px;
-      li {
-        width: 3.5%;
-        margin: 0 auto;
-        height: 1px;
-        background: $line;
-        cursor: auto;
-        transition: all 0.3s ease;
-        // transform: scaleX() 300ms;
-        button{
-          pointer-events: none;
-          &::before {
-            display:none;
-          }
-        }
-        &.slick-active{
-          width: 23%;
-          height: 3px;
-          top: -1px;
-          border-radius: 50px;
-          background: $primary;
-        }
-      }
-    }
-  }
-  .slick-list {
-    margin-right: -20px;
-  }
-  .slick-slide {
-    margin-right: 20px;
   }
   .new-thumbnail{
     position: relative;
@@ -172,6 +144,21 @@ h2{
       .won{
         font-size: 20px;
       }
+    }
+  }
+  .new-scrollbar{
+    max-width: 1440px;
+    width: 90%;
+    height: 1px;
+    background: $line;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    .swiper-scrollbar-drag{
+      height: 3px;
+      top: -1px;
+      background: $primary;
     }
   }
 }
@@ -256,6 +243,7 @@ h2{
 }
 // best slide
 .best-tab{
+  position: relative;
   .best-slide {
     width: 100%;
     height: 100%;
@@ -284,12 +272,14 @@ h2{
       opacity: 1;
   }
   .best-scrollbar{
-    margin: 0 auto;
-    width: 50%;
+    max-width: 1440px;
+    width: 90%;
     height: 1px;
     background: $line;
-    position: relative;
+    position: absolute;
     bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
     .swiper-scrollbar-drag{
       height: 3px;
       top: -1px;
