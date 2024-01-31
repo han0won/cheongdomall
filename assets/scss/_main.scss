@@ -1,11 +1,15 @@
 
 // 페이지 가운데 정렬
 .new-items,
+.best-item,
 .reco-wrap,
 .farm,
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 20px;
+  }
 }
 
 // section 사이 여백
@@ -23,14 +27,24 @@
 // 타이틀 글자 기본 설정
 h2{
   margin-bottom: 15px;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
 }
 .title,
 .tit-txt{
   text-align: center;
+  @media screen and (max-width: $bp-mobile) {
+    text-align: left;
+  }
 }
 .tit-txt{
   font-size: 20px;
   color: $txt-secondary;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 16px;
+  }
 }
 
 // 메인 슬라이드 배너
@@ -50,13 +64,6 @@ h2{
         border-radius: inherit;
         img{
           border-radius: inherit;
-        }
-      }
-      @media screen and (max-width: $bp-mobile) {
-        a{
-          width: 375px;
-          height: 495px;
-          border-radius: none;
         }
       }
     }
@@ -89,6 +96,9 @@ h2{
 // 신상품
 .new-items{
   position: relative;
+  @media screen and (max-width: $bp-mobile) {
+    margin-right: -20px;
+  }
   .new-slide{
     width: 100%;
     margin-top: 60px;
@@ -96,6 +106,9 @@ h2{
   .new-thumbnail{
     position: relative;
     margin-bottom: 20px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 10px;
+    }
     .new-anchor{
       img{
         width: 100%;
@@ -114,6 +127,11 @@ h2{
         color: $w;
         font-weight: 600;
         border-radius: 10px 0 10px 0;
+        @media screen and (max-width: $bp-mobile) {
+          font-size: 14px;
+          width: 54px;
+          height: 25px;
+        }
       }
     }
     .cart{
@@ -131,6 +149,15 @@ h2{
       img{
         width: 25px;
         height: 25px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        img{
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -150,6 +177,23 @@ h2{
       }
       .won{
         font-size: 20px;
+      }
+    }
+    @media screen and (max-width: $bp-mobile) {
+      .txt{
+        font-size: 13px;
+      }
+      .tit{
+        margin: 10px 0 5px 0;
+        font-size: 16px;
+      }
+      .price{
+        .amount{
+          font-size: 16px;
+        }
+        .won{
+          font-size: 16px;
+        }
       }
     }
   }

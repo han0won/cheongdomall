@@ -13,11 +13,11 @@ $(document).ready(function() {
         // breakpoint: 1024,
         // settings: {
         // },
-        breakpoint: 475,
-        settings: {
-          slideToShow: 1,
-          // 수정필요
-        },
+        // breakpoint: 475,
+        // settings: {
+        //   slideToShow: 1,
+        //   // 수정필요
+        // },
       }
     ]
   });
@@ -29,10 +29,18 @@ $(document).ready(function() {
       disableOnInteraction: false,
     },
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1.8,
     spaceBetween: 20,
     scrollbar: {
       el: ".new-scrollbar",
+    },
+    breakpoints: {
+      476: {
+        slidesPerView: 2.8,
+      },
+      1025: {
+        slidesPerView: 4,
+      },
     },
   });
 
