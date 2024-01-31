@@ -753,6 +753,13 @@ h2 {
 .main-slide .slide-wrap .slide a img {
   border-radius: inherit;
 }
+@media screen and (max-width: 475px) {
+  .main-slide .slide-wrap .slide a {
+    width: 375px;
+    height: 495px;
+    border-radius: none;
+  }
+}
 .main-slide .slide-wrap .slick-center {
   transform: scale(1);
   opacity: 1;

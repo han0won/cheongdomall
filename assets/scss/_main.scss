@@ -52,6 +52,13 @@ h2{
           border-radius: inherit;
         }
       }
+      @media screen and (max-width: $bp-mobile) {
+        a{
+          width: 375px;
+          height: 495px;
+          border-radius: none;
+        }
+      }
     }
     .slick-center{
       transform: scale(1);

@@ -8,6 +8,18 @@ $(document).ready(function() {
     autoplaySpeed: 3500,
     centerMode: true,
     variableWidth: true,
+    responsive: [
+      {
+        // breakpoint: 1024,
+        // settings: {
+        // },
+        breakpoint: 475,
+        settings: {
+          slideToShow: 1,
+          // 수정필요
+        },
+      }
+    ]
   });
 
   // new items
