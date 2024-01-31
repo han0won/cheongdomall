@@ -1358,6 +1358,11 @@ h2 {
   background: #F5F5F5;
   padding: 150px 0;
 }
+@media screen and (max-width: 475px) {
+  .review {
+    padding: 70px 0;
+  }
+}
 .review .review-wrap {
   margin: 0 auto;
 }
@@ -1437,6 +1442,45 @@ h2 {
 .review .review-list .card-wrap .under-wrap .product {
   font-size: 14px;
   color: #444444;
+}
+@media screen and (max-width: 475px) {
+  .review .review-list {
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .review .review-list .card-wrap {
+    height: 272px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .review .review-list .card-wrap .img-big {
+    width: 100%;
+    height: calc(100% - 185px);
+    border-radius: 5px;
+  }
+  .review .review-list .card-wrap .star {
+    display: none;
+  }
+  .review .review-list .card-wrap .desc {
+    font-size: 12px;
+  }
+  .review .review-list .card-wrap .name {
+    display: none;
+  }
+  .review .review-list .card-wrap .line {
+    width: 100%;
+    height: 1px;
+    margin: 24px 0 7px 0;
+  }
+  .review .review-list .card-wrap .under-wrap .img-small {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 17px;
+  }
+  .review .review-list .card-wrap .under-wrap .product {
+    font-size: 10px;
+  }
 }
 .review .bnr {
   display: flex;
