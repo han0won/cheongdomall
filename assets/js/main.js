@@ -24,17 +24,6 @@ $(document).ready(function() {
     },
   });
 
-  // $('.new-card-wrap').slick({
-  //   arrows: false,
-  //   dots: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   slidesToShow: 4,
-  //   swipeToSlide: true,
-  // });
-
-// 
-
 //  best tabs, swiper
     const tabButtons = document.querySelectorAll('.tab-btn')
     const tabs = document.querySelectorAll('.best-tab')
