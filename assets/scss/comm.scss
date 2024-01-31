@@ -42,7 +42,7 @@
             top: -26px;
             left: -20px;
             padding: 20px;
-            border: 1px solid $w;
+            border: 1px solid transparent;
 
             lnb-d1 a::after {
                 content: '';
@@ -217,7 +217,7 @@
             display: flex;
             column-gap: 30px;
             position: absolute;
-            top: 0;
+            top: -5px;
             right: 0;
             height: 27px;
 
@@ -333,6 +333,27 @@
         }
     }
     @media screen and (max-width: $bp-tablet) {
+        max-width: 768px;
+
+        .h-wrap {
+            padding: 20px 16px 30px;
+        }
+        .nav-bottom {
+            .lnb {
+                left: 0;
+                padding-left: 0;
+            }
+            #gnb {
+                font-size: 14px;
+
+                li {
+                    padding: 0 10px;
+                }
+            }
+            .nav-icon-wrap {
+                column-gap: 20px;
+            }
+        }
     }
 }
 

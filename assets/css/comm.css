@@ -99,7 +99,7 @@ h2 {
   top: -26px;
   left: -20px;
   padding: 20px;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
 }
 #header .nav-bottom .lnb lnb-d1 a::after {
   content: "";
@@ -266,7 +266,7 @@ h2 {
   -moz-column-gap: 30px;
        column-gap: 30px;
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 0;
   height: 27px;
 }
@@ -372,6 +372,29 @@ h2 {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 1024px) {
+  #header {
+    max-width: 768px;
+  }
+  #header .h-wrap {
+    padding: 20px 16px 30px;
+  }
+  #header .nav-bottom .lnb {
+    left: 0;
+    padding-left: 0;
+  }
+  #header .nav-bottom #gnb {
+    font-size: 14px;
+  }
+  #header .nav-bottom #gnb li {
+    padding: 0 10px;
+  }
+  #header .nav-bottom .nav-icon-wrap {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+
 #footer {
   width: 100%;
   background-color: #F5F5F5;
