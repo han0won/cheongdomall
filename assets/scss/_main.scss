@@ -308,6 +308,15 @@ h2{
       font-weight: 600;
     }
   }
+  @media screen and (max-width: $bp-mobile) {
+    justify-content: left;
+    margin: 24px 0 20px 0;
+    .tab-btn{
+      font-size: 4vw;
+      padding: 1.8vw 5vw;
+      margin-right: 2vw;
+    }
+  }
 }
   .best-tab{
     display: none;

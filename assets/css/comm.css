@@ -1031,6 +1031,17 @@ h2 {
   border: none;
   font-weight: 600;
 }
+@media screen and (max-width: 475px) {
+  .best-item .tab-btns {
+    justify-content: left;
+    margin: 24px 0 20px 0;
+  }
+  .best-item .tab-btns .tab-btn {
+    font-size: 4vw;
+    padding: 1.8vw 5vw;
+    margin-right: 2vw;
+  }
+}
 .best-item .best-tab {
   display: none;
 }
