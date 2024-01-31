@@ -1,8 +1,4 @@
-.sub-cont {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 100px 80px ;
-}
+
 
 
 
@@ -52,7 +48,7 @@ h3 {
 
 .info-what {
     overflow: hidden;
-    
+
     p {
         font-size: 100px;
         font-weight: bold;
@@ -327,7 +323,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 100px 0 0;
     max-width: none;
     overflow: hidden;
 
@@ -407,9 +402,6 @@ h3 {
 }
 
 @media screen and (max-width: $bp-mobile) {
-    .sub-cont {
-        padding: 50px 16px;
-    }
     .info-tit {
         padding-bottom: 5px;
         font-size: 12px;
