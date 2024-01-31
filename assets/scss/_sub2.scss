@@ -46,7 +46,7 @@
         }
         .search-word {
             display: flex;
-            margin-top: 20px;
+            margin-top: 30px;
 
             strong {
                 margin-right: 36px;
@@ -208,6 +208,48 @@
     }
 }
 
+
+@media screen and (max-width: $bp-tablet) {
+    .service-info {
+        padding-top: 50px;
+        h2 {
+            font-size: 40px;
+        }
+        .search-wrap {
+            h3 {
+                padding-bottom: 20px;
+            }
+            .search-word {
+                .word-wrap {
+                    column-gap: 20px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .service-wrap {
+            flex-direction: column;
+            overflow: hidden;
+
+            .service-number{
+                display: flex;
+
+                > p,
+                .number-box {
+                    height: 50%;
+                }
+                .hours-info {
+                    margin-top: 0;
+                }
+            }
+            span {
+                width: 768px;
+                height: 1px;
+            }
+        }
+    }
+}
 @media screen and (max-width: $bp-mobile) {
     .service-info {
         position: relative;

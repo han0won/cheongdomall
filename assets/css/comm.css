@@ -64,7 +64,7 @@ h2 {
   margin: 0 auto;
 }
 #header .h-wrap {
-  padding: 20px 80px 30px;
+  padding: 20px 80px 10px;
 }
 #header .nav-top {
   display: flex;
@@ -308,7 +308,7 @@ h2 {
     max-width: 800px;
   }
   #header .h-wrap {
-    padding: 20px 16px 30px;
+    padding: 20px 16px 10px;
   }
   #header .nav-bottom .lnb {
     left: 0;
@@ -536,6 +536,23 @@ h2 {
   #footer .m-visible {
     display: block;
     visibility: visible;
+  }
+}
+
+.sub-cont {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 80px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-cont {
+    max-width: 800px;
+    padding: 100px 16px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .sub-cont {
+    padding: 50px 16px;
   }
 }
 
@@ -1255,12 +1272,6 @@ h2 {
   background: url(../../images/main/review-icon-coin.svg) center center/contain no-repeat;
 }
 
-.sub-cont {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 100px 80px;
-}
-
 h3 {
   padding-bottom: 100px;
   font-size: 60px;
@@ -1573,7 +1584,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 100px 0 0;
   max-width: none;
   overflow: hidden;
 }
@@ -1648,9 +1658,6 @@ h3 {
 }
 
 @media screen and (max-width: 475px) {
-  .sub-cont {
-    padding: 50px 16px;
-  }
   .info-tit {
     padding-bottom: 5px;
     font-size: 12px;
@@ -1857,7 +1864,7 @@ h3 {
 }
 .service-info .search-wrap .search-word {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .service-info .search-wrap .search-word strong {
   margin-right: 36px;
@@ -2008,6 +2015,42 @@ h3 {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .service-info {
+    padding-top: 50px;
+  }
+  .service-info h2 {
+    font-size: 40px;
+  }
+  .service-info .search-wrap h3 {
+    padding-bottom: 20px;
+  }
+  .service-info .search-wrap .search-word .word-wrap {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .service-info .search-wrap .search-word .word-wrap p {
+    font-size: 14px;
+  }
+  .service-info .service-wrap {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .service-info .service-wrap .service-number {
+    display: flex;
+  }
+  .service-info .service-wrap .service-number > p,
+  .service-info .service-wrap .service-number .number-box {
+    height: 50%;
+  }
+  .service-info .service-wrap .service-number .hours-info {
+    margin-top: 0;
+  }
+  .service-info .service-wrap span {
+    width: 768px;
+    height: 1px;
+  }
+}
 @media screen and (max-width: 475px) {
   .service-info {
     position: relative;

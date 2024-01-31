@@ -8,7 +8,7 @@
     max-width: 1440px;
     margin: 0 auto;
     .h-wrap {
-        padding: 20px 80px 30px;
+        padding: 20px 80px 10px;
     }
     .nav-top {
         display: flex;
@@ -264,7 +264,7 @@
         max-width: 800px;
 
         .h-wrap {
-            padding: 20px 16px 30px;
+            padding: 20px 16px 10px;
         }
         .nav-bottom {
             .lnb {
@@ -521,6 +521,22 @@
         }
     }
 }
+
+.sub-cont {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 80px ;
+    @media screen and (max-width: $bp-tablet) {
+        max-width: 800px;
+        padding: 100px 16px;
+    } 
+    @media screen and (max-width: $bp-mobile) {
+        padding: 50px 16px;
+    }
+}
+
+
+
 
 .mob-banner-wrap {
     display: flex;
