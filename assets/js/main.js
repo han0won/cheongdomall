@@ -24,7 +24,7 @@ $(document).ready(function() {
     },
   });
 
-//  best tabs, swiper
+//  best tabs, slider
     const tabButtons = document.querySelectorAll('.tab-btn')
     const tabs = document.querySelectorAll('.best-tab')
     let swipers = []
