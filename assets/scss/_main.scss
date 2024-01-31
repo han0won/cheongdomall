@@ -520,6 +520,9 @@ h2{
 .farm{
   h2{
     margin-bottom: 30px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 20px;
+    }
   }
   .tab-btns{
     display: flex;
@@ -547,10 +550,22 @@ h2{
         }
       }
     }
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 5vw;
+      button{
+        font-size: 4.5vw;
+        .line{
+          height: 2px;
+        }
+      }
+    }
   }
   .farm-tab{
     position: relative;
     display: none;
+    @media screen and (max-width: $bp-mobile) {
+      margin: 0 -20px;
+    }
     &.active{
       display: block;
     }
@@ -563,6 +578,10 @@ h2{
       }
       &.water{
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/main/farm-water.jpg) center center / cover;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        height: 300px;
+        border-radius: 10px;
       }
     }
     .txt-wrap{
@@ -580,8 +599,8 @@ h2{
       }
       .txt{
         margin: 20px 0 45px 0;
-         font-weight: 500;
-         font-size: 20px;
+        font-weight: 500;
+        font-size: 20px;
       }
       .btn-more{
         color: $txt-default;
@@ -590,6 +609,22 @@ h2{
         padding: 10px 30px;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        .tit{
+          font-size: 24px;
+          margin-bottom: 20px;
+          span{
+            display: none;
+          }
+        }
+        .txt{
+          display: none;
+        }
+        .btn-more{
+          font-size: 11px;
+          padding: 5px 12px;
+        }
       }
     }
   }

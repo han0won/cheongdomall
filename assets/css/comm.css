@@ -1240,6 +1240,11 @@ h2 {
 .farm h2 {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 475px) {
+  .farm h2 {
+    margin-bottom: 20px;
+  }
+}
 .farm .tab-btns {
   display: flex;
 }
@@ -1265,9 +1270,25 @@ h2 {
 .farm .tab-btn.active button .line {
   display: block;
 }
+@media screen and (max-width: 475px) {
+  .farm .tab-btn {
+    margin-right: 5vw;
+  }
+  .farm .tab-btn button {
+    font-size: 4.5vw;
+  }
+  .farm .tab-btn button .line {
+    height: 2px;
+  }
+}
 .farm .farm-tab {
   position: relative;
   display: none;
+}
+@media screen and (max-width: 475px) {
+  .farm .farm-tab {
+    margin: 0 -20px;
+  }
 }
 .farm .farm-tab.active {
   display: block;
@@ -1282,6 +1303,12 @@ h2 {
 }
 .farm .farm-tab .farm-img.water {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/main/farm-water.jpg) center center/cover;
+}
+@media screen and (max-width: 475px) {
+  .farm .farm-tab .farm-img {
+    height: 300px;
+    border-radius: 10px;
+  }
 }
 .farm .farm-tab .txt-wrap {
   position: absolute;
@@ -1309,6 +1336,22 @@ h2 {
   padding: 10px 30px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
+}
+@media screen and (max-width: 475px) {
+  .farm .farm-tab .txt-wrap .tit {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .farm .farm-tab .txt-wrap .tit span {
+    display: none;
+  }
+  .farm .farm-tab .txt-wrap .txt {
+    display: none;
+  }
+  .farm .farm-tab .txt-wrap .btn-more {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
 }
 
 .review {
