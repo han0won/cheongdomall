@@ -825,8 +825,9 @@ h2 {
   position: relative;
 }
 @media screen and (max-width: 475px) {
-  .new-items {
+  .new-items .new-slide-wrap {
     margin-right: -20px;
+    overflow: hidden;
   }
 }
 .new-items .new-slide {
@@ -835,7 +836,19 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .new-items .new-slide {
-    margin-top: 24px;
+    margin: 24px -20px 0 0;
+    overflow: visible;
+  }
+  .new-items .new-slide::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }
 .new-items .new-thumbnail {
