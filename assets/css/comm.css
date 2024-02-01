@@ -64,7 +64,7 @@ h2 {
   margin: 0 auto;
 }
 #header .h-wrap {
-  padding: 20px 80px 10px;
+  padding: 20px 80px 20px;
 }
 #header .nav-top {
   display: flex;
@@ -98,6 +98,7 @@ h2 {
   position: absolute;
   top: -26px;
   left: -20px;
+  z-index: 100;
   padding: 20px;
   border: 1px solid transparent;
 }
@@ -308,11 +309,21 @@ h2 {
     max-width: 800px;
   }
   #header .h-wrap {
-    padding: 20px 16px 10px;
+    padding: 20px 16px 20px;
   }
-  #header .nav-bottom .lnb {
-    left: 0;
-    padding-left: 0;
+  #header .nav-bottom .lnb .ctr-btn {
+    width: 30px;
+    height: 30px;
+  }
+  #header .nav-bottom .lnb i {
+    padding: 7px 8px;
+  }
+  #header .nav-bottom .lnb .fa-xmark {
+    padding-left: 9px;
+  }
+  #header .nav-bottom .lnb p {
+    font-size: 16px;
+    line-height: 2;
   }
   #header .nav-bottom #gnb {
     font-size: 14px;
@@ -1286,7 +1297,7 @@ h3 {
   color: #CCE9A8;
 }
 
-.info-fage {
+.info-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1298,21 +1309,21 @@ h3 {
   color: #fff;
 }
 
-.info-fage1 {
+.info-page1 {
   background-image: url(../../images/sub1/infopage1.png);
 }
-.info-fage1 .info-int1 {
+.info-page1 .info-int1 {
   font-size: 60px;
 }
 
-.info-fage2 {
+.info-page2 {
   margin-bottom: 100px;
   background-image: url(../../images/sub1/infopage2.png);
 }
-.info-fage2 .info-int2 {
+.info-page2 .info-int2 {
   font-size: 40px;
 }
-.info-fage2 .info-int2 span {
+.info-page2 .info-int2 span {
   color: #CCE9A8;
 }
 
@@ -1445,9 +1456,6 @@ h3 {
   align-items: center;
   width: 100%;
   height: 100%;
-}
-.info-why .img-wrap img {
-  width: 80%;
 }
 .info-why .info-why-box {
   width: 50%;
@@ -1632,7 +1640,7 @@ h3 {
 }
 
 .info-banner {
-  margin: 200px 0 0 0;
+  margin: 100px 0 0 0;
   max-width: none;
   display: flex;
   flex-direction: column;
@@ -1657,6 +1665,113 @@ h3 {
   background: rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width: 1024px) {
+  .info-tit {
+    font-size: 16px;
+  }
+  h3 {
+    padding-bottom: 50px;
+    font-size: 50px;
+  }
+  .info-page {
+    height: 700px;
+  }
+  .info-page1 .info-int1 {
+    font-size: 50px;
+  }
+  .info-page2 .info-int2 {
+    font-size: 30px;
+  }
+  .info-what .sub1-slide {
+    justify-content: space-between;
+  }
+  .info-what .sub1-slide-inner {
+    margin: 0;
+  }
+  .info-about h3 {
+    padding-bottom: 50px;
+  }
+  .info-about .info-about-img {
+    width: 30%;
+    height: 463px;
+  }
+  .info-about .info-wrap {
+    padding-left: 20px;
+    width: 70%;
+  }
+  .info-about .info-about-txt p {
+    font-size: 36px;
+  }
+  .info-why {
+    overflow: hidden;
+  }
+  .info-why .why-box {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .info-why .info-why-img,
+  .info-why .info-why-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+  .info-why .info-why-img strong,
+  .info-why .info-why-box strong {
+    font-size: 28px;
+  }
+  .info-why .info-why-img p,
+  .info-why .info-why-box p {
+    font-size: 16px;
+    margin: 16px 0 40px;
+  }
+  .info-why .info-why-img .number-circle,
+  .info-why .info-why-box .number-circle {
+    margin: 30px 0;
+  }
+  .info-why .info-why-img {
+    width: 500px;
+    height: 320px;
+  }
+  .info-why .info-why-box {
+    width: 100%;
+  }
+  .info-why .img-wrap {
+    padding: 60px 0;
+  }
+  .info-fresh .info-fresh-wrap > p {
+    font-size: 24px;
+  }
+  .info-fresh .route-txt-wrap p {
+    font-size: 24px;
+  }
+  .info-fresh .sparkle1 {
+    top: 60px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+  }
+  .info-fresh .sparkle2 {
+    top: 130px;
+    left: 360px;
+    width: 40px;
+    height: 40px;
+  }
+  .info-banner {
+    margin: 0;
+    padding: 50px 16px;
+  }
+  .info-banner p {
+    padding: 0 0 30px;
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .info-banner .info-btn a {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 475px) {
   .info-tit {
     padding-bottom: 5px;
@@ -1666,17 +1781,17 @@ h3 {
     padding: 0 0 50px;
     font-size: 36px;
   }
-  .info-fage {
+  .info-page {
     height: 550px;
   }
-  .info-fage .info-int1 {
+  .info-page .info-int1 {
     font-size: 40px;
   }
-  .info-fage .info-int2 {
+  .info-page .info-int2 {
     font-size: 20px;
   }
-  .info-fage1 {
-    margin-top: 115px;
+  .info-page1 {
+    margin-top: 60px;
   }
   .info-what p {
     font-size: 58px;
@@ -1726,40 +1841,32 @@ h3 {
   .info-about .info-wrap .info-about-txt span {
     font-weight: bold;
   }
-  .info-why {
-    overflow: hidden;
-  }
-  .info-why .why-box {
-    flex-direction: column;
-    padding-bottom: 0;
-  }
   .info-why .info-why-img,
   .info-why .info-why-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
     width: 100%;
-    text-align: center;
   }
   .info-why .info-why-img strong,
   .info-why .info-why-box strong {
-    font-size: 28px;
+    font-size: 24px;
   }
   .info-why .info-why-img p,
   .info-why .info-why-box p {
-    font-size: 16px;
-    margin: 16px 0 40px;
+    font-size: 14px;
+  }
+  .info-why .info-why-img p:last-child,
+  .info-why .info-why-box p:last-child {
+    margin-bottom: 50px;
   }
   .info-why .info-why-img .number-circle,
   .info-why .info-why-box .number-circle {
-    margin: 30px 0;
+    margin: 20px 0;
   }
   .info-why .info-why-img {
-    height: auto;
+    height: 240px;
   }
-  .info-why .img-wrap {
-    padding: 60px 0;
+  .info-why img {
+    padding: 15px;
+    width: 100%;
   }
   .info-fresh {
     padding: 50px 0 0;
@@ -1791,7 +1898,6 @@ h3 {
     height: 50px;
   }
   .info-fresh .sparkle2 {
-    top: 130px;
     left: 260px;
     width: 40px;
     height: 40px;
@@ -1886,7 +1992,7 @@ h3 {
   border-bottom: 2px solid #232527;
 }
 .service-info .service-wrap .service-number {
-  padding: 40px 80px 40px 60px;
+  padding: 40px 60px;
 }
 .service-info .service-wrap .service-number > p {
   margin-bottom: 5px;
@@ -1911,11 +2017,13 @@ h3 {
   height: 230px;
   background-color: #E2E2E2;
 }
-.service-info .service-wrap .service-box {
+.service-info .service-wrap .service-box .service-box-wrap {
   display: flex;
+  justify-content: space-between;
   -moz-column-gap: 26px;
        column-gap: 26px;
-  padding: 40px 60px 40px 80px;
+  padding: 40px 60px;
+  width: 100%;
 }
 .service-info .service-wrap .service-box a {
   display: flex;
@@ -1930,7 +2038,10 @@ h3 {
   width: 150px;
   height: 150px;
   border-radius: 150px;
-  background-color: #F5F5F5;
+  background: #F5F5F5;
+}
+.service-info .service-wrap .service-box .infocircle:hover {
+  background: #E7F4D7;
 }
 .service-info .service-wrap .service-box p {
   display: inline;
@@ -2036,19 +2147,43 @@ h3 {
     flex-direction: column;
     overflow: hidden;
   }
+  .service-info .service-wrap .service-box .service-box-wrap {
+    padding: 40px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
   .service-info .service-wrap .service-number {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    width: 100%;
+  }
+  .service-info .service-wrap .service-number .service-number-wrap p {
+    font-size: 24px;
+    font-weight: bold;
   }
   .service-info .service-wrap .service-number > p,
   .service-info .service-wrap .service-number .number-box {
     height: 50%;
   }
-  .service-info .service-wrap .service-number .hours-info {
+  .service-info .service-wrap .service-number .service-span1 {
+    height: 110px;
+  }
+  .service-info .service-wrap .service-number .hours-info,
+  .service-info .service-wrap .service-number .hours-info p:first-child {
     margin-top: 0;
   }
-  .service-info .service-wrap span {
+  .service-info .service-wrap .service-span2 {
     width: 768px;
     height: 1px;
+  }
+  .service-info .service-wrap .service-box {
+    width: 100%;
+  }
+  .service-info .service-wrap .service-box .infocircle {
+    width: 130px;
+    height: 130px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -2109,7 +2244,7 @@ h3 {
     background-color: #fff;
     box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.041);
   }
-  .service-info .service-wrap .service-box {
+  .service-info .service-wrap .service-box .service-box-wrap {
     justify-content: space-between;
     padding: 0;
     -moz-column-gap: 0;
