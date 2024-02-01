@@ -1372,115 +1372,82 @@ h2 {
 .review .review-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
   margin-top: 60px;
 }
-.review .review-list li {
-  flex: 1;
-}
 .review .review-list .card-wrap {
-  height: 550px;
+  position: relative;
+  width: calc(25% - 20px);
+  height: auto;
   background: #fff;
   padding: 21px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.review .review-list .card-wrap .img-big {
+.review .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.review .card .img-big {
   width: 100%;
-  height: calc(100% - 185px);
-  border-radius: 20px;
+  height: 23vw;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
-.review .review-list .card-wrap .img-big.meat {
-  background: url(../../images/main/review-01.jpg) center center/cover;
+.review .card .img-big.meat {
+  background: url(/images/main/review-01.jpg) center center/cover;
 }
-.review .review-list .card-wrap .img-big.straw {
-  background: url(../../images/main/review-02.jpg) center center/cover;
+.review .card .img-big.straw {
+  background: url(/images/main/review-02.jpg) center center/cover;
 }
-.review .review-list .card-wrap .img-big.carrot {
-  background: url(../../images/main/review-03.jpg) center center/cover;
+.review .card .img-big.carrot {
+  background: url(/images/main/review-03.jpg) center center/cover;
 }
-.review .review-list .card-wrap .img-big.noodle {
-  background: url(../../images/main/review-04.jpg) center center/cover;
+.review .card .img-big.noodle {
+  background: url(/images/main/review-04.jpg) center center/cover;
 }
-.review .review-list .card-wrap .star {
+.review .card .star {
   font-size: 24px;
   color: #FF8C00;
-  margin: 10px 0 6px 0;
 }
-.review .review-list .card-wrap .name {
+.review .card .desc {
+  margin: 6px 0 20px 0;
+}
+.review .card .name {
   font-size: 12px;
   color: #777777;
-  margin-top: 20px;
 }
-.review .review-list .card-wrap .line {
+.review .card .line {
   width: 100%;
   height: 1px;
   background: #E2E2E2;
   margin: 15px 0;
 }
-.review .review-list .card-wrap .under-wrap {
+.review .card .under-wrap {
   display: flex;
   align-items: center;
 }
-.review .review-list .card-wrap .under-wrap .img-small {
+.review .card .under-wrap .img-small {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  margin-right: 17px;
 }
-.review .review-list .card-wrap .under-wrap .img-small.meat {
-  background: url(../../images/main/best-meat01.jpg) center center/cover;
+.review .card .under-wrap .img-small.meat {
+  background: url(/images/main/best-meat01.jpg) center center/cover;
 }
-.review .review-list .card-wrap .under-wrap .img-small.straw {
-  background: url(../../images/main/new-strawberry01.jpg) center center/cover;
+.review .card .under-wrap .img-small.straw {
+  background: url(/images/main/new-strawberry01.jpg) center center/cover;
 }
-.review .review-list .card-wrap .under-wrap .img-small.carrot {
-  background: url(../../images/main/new-carrot01.jpg) center center/cover;
+.review .card .under-wrap .img-small.carrot {
+  background: url(/images/main/new-carrot01.jpg) center center/cover;
 }
-.review .review-list .card-wrap .under-wrap .img-small.noodle {
-  background: url(../../images/main/best-processed06.jpg) center center/cover;
+.review .card .under-wrap .img-small.noodle {
+  background: url(/images/main/best-processed06.jpg) center center/cover;
 }
-.review .review-list .card-wrap .under-wrap .product {
+.review .card .under-wrap .product {
   font-size: 14px;
-  color: #444444;
-}
-@media screen and (max-width: 475px) {
-  .review .review-list {
-    gap: 12px;
-    margin-top: 24px;
-  }
-  .review .review-list .card-wrap {
-    height: 272px;
-    padding: 12px;
-    border-radius: 10px;
-  }
-  .review .review-list .card-wrap .img-big {
-    width: 100%;
-    height: calc(100% - 185px);
-    border-radius: 5px;
-  }
-  .review .review-list .card-wrap .star {
-    display: none;
-  }
-  .review .review-list .card-wrap .desc {
-    font-size: 12px;
-  }
-  .review .review-list .card-wrap .name {
-    display: none;
-  }
-  .review .review-list .card-wrap .line {
-    width: 100%;
-    height: 1px;
-    margin: 24px 0 7px 0;
-  }
-  .review .review-list .card-wrap .under-wrap .img-small {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    margin-right: 17px;
-  }
-  .review .review-list .card-wrap .under-wrap .product {
-    font-size: 10px;
-  }
+  margin-left: 17px;
 }
 .review .bnr {
   display: flex;
