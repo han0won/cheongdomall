@@ -1,13 +1,17 @@
 
 // 페이지 가운데 정렬
 .new-items,
-.best-item,
 .reco-wrap,
 .farm,
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
   @media screen and (max-width: $bp-mobile) {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: $bp-mobile) {
+  .best-item{
     padding: 0 20px;
   }
 }
@@ -19,14 +23,14 @@
 .review{
   margin-top: 150px;
   @media screen and (max-width: $bp-mobile) {
-   margin-top: 100px;     
+    margin-top: 100px;     
   }
 }
 .localfood,
 .recommend{
   margin-top: 210px;
   @media screen and (max-width: $bp-mobile) {
-   margin-top: 160px;     
+    margin-top: 160px;     
   }
 }
 
@@ -326,6 +330,11 @@ h2{
   }
 }
 // best slide
+.best-tabs{
+  @media screen and (max-width: $bp-mobile) {
+    margin-right: -20px;
+  }
+}
 .best-tab{
   position: relative;
   .best-slide {
@@ -338,6 +347,9 @@ h2{
     justify-content: center;
     align-items: center;
     opacity: .5;
+    @media screen and (max-width: $bp-mobile) {
+      opacity: 1;
+    }
     .best-img {
       display: block;
       width: 100%;
@@ -348,6 +360,9 @@ h2{
   }
   .swiper-backface-hidden .swiper-slide {
     transform: scale(.84) translateZ(0);
+    @media screen and (max-width: $bp-mobile) {
+      transform: none;
+    }
   }
   .swiper-backface-hidden .swiper-slide.swiper-slide-active {
     transform: scale(1) translateZ(0);
@@ -391,6 +406,16 @@ h2{
       width: 20px;
       height: 20px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 35px;
+      height: 35px;
+      right: 10px;
+      bottom: 10px;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
   .desc{
     text-align: left;
@@ -410,6 +435,23 @@ h2{
       }
       .won{
         font-size: 24px;
+      }
+    }
+    @media screen and (max-width: $bp-mobile) {
+      .txt{
+        margin: 10px 0;
+        font-size: 13px;
+      }
+      .tit{
+        font-size: 16px;
+      }
+      .price{
+        .amount{
+          font-size: 16px;
+        }
+        .won{
+          font-size: 16px;
+        }
       }
     }
   }

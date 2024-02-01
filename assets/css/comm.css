@@ -701,7 +701,6 @@ h2 {
   }
 }
 .new-items,
-.best-item,
 .reco-wrap,
 .farm,
 .review-wrap {
@@ -710,7 +709,6 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .new-items,
-  .best-item,
   .reco-wrap,
   .farm,
   .review-wrap {
@@ -718,6 +716,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 475px) {
+  .best-item {
+    padding: 0 20px;
+  }
+}
 .new-items,
 .best-item,
 .farm,
@@ -1049,6 +1052,12 @@ h2 {
   display: block;
 }
 
+@media screen and (max-width: 475px) {
+  .best-tabs {
+    margin-right: -20px;
+  }
+}
+
 .best-tab {
   position: relative;
 }
@@ -1063,6 +1072,11 @@ h2 {
   align-items: center;
   opacity: 0.5;
 }
+@media screen and (max-width: 475px) {
+  .best-tab .swiper-slide {
+    opacity: 1;
+  }
+}
 .best-tab .swiper-slide .best-img {
   display: block;
   width: 100%;
@@ -1073,6 +1087,11 @@ h2 {
 }
 .best-tab .swiper-backface-hidden .swiper-slide {
   transform: scale(0.84) translateZ(0);
+}
+@media screen and (max-width: 475px) {
+  .best-tab .swiper-backface-hidden .swiper-slide {
+    transform: none;
+  }
 }
 .best-tab .swiper-backface-hidden .swiper-slide.swiper-slide-active {
   transform: scale(1) translateZ(0);
@@ -1116,6 +1135,18 @@ h2 {
   width: 20px;
   height: 20px;
 }
+@media screen and (max-width: 475px) {
+  .best-card .cart {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .best-card .cart img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .best-card .desc {
   text-align: left;
 }
@@ -1136,6 +1167,21 @@ h2 {
 }
 .best-card .desc .price .won {
   font-size: 24px;
+}
+@media screen and (max-width: 475px) {
+  .best-card .desc .txt {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  .best-card .desc .tit {
+    font-size: 16px;
+  }
+  .best-card .desc .price .amount {
+    font-size: 16px;
+  }
+  .best-card .desc .price .won {
+    font-size: 16px;
+  }
 }
 
 .recommend {

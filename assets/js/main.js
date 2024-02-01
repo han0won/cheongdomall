@@ -15,8 +15,8 @@ $(document).ready(function() {
         // },
         // breakpoint: 475,
         // settings: {
-        //   slideToShow: 1,
-        //   // 수정필요
+        //   centerMode: false,
+        //   slidesToShow: 1,
         // },
       }
     ]
@@ -29,17 +29,19 @@ $(document).ready(function() {
       disableOnInteraction: false,
     },
     loop: true,
-    slidesPerView: 1.8,
-    spaceBetween: 20,
+    slidesPerView: 1.5,
+    spaceBetween: 15,
     scrollbar: {
       el: ".new-scrollbar",
     },
     breakpoints: {
       476: {
         slidesPerView: 2.8,
+        spaceBetween: 20,
       },
       1025: {
         slidesPerView: 4,
+        spaceBetween: 20,
       },
     },
   });
@@ -54,11 +56,28 @@ $(document).ready(function() {
               delay: 3000,
               disableOnInteraction: false,
             },
-            initialSlide: 2,
-            slidesPerView: 5,
-            centeredSlides: true,
+            loop: true,
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 15,
             scrollbar: {
               el: ".best-scrollbar",
+            },
+            breakpoints: {
+              476: {
+                loop: false,
+                initialSlide: 2,
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 0,
+              },
+              1025: {
+                loop: false,
+                initialSlide: 2,
+                slidesPerView: 5,
+                centeredSlides: true,
+                spaceBetween: 0,
+              },
             },
         })
     }
