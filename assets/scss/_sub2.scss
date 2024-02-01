@@ -98,10 +98,13 @@
             background-color: $line;
         }
         .service-box {
-            display: flex;
-            column-gap: 26px;
-            padding: 40px 60px 40px 80px;
-
+            .service-box-wrap {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 26px;
+                padding: 40px 60px;
+                width: 100%;
+            }
             a {
                 display: flex;
                 flex-direction: column;
@@ -115,7 +118,11 @@
                 width: 150px;
                 height: 150px;
                 border-radius: 150px;
-                background-color: $bg-light;
+                background: $bg-light;
+
+                &:hover {
+                    background: $brightest;
+                }
             }
             p {
                 display: inline;
@@ -234,18 +241,39 @@
 
             .service-number{
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px 60px;
+                width: 100%;
+
+                .service-number-wrap p {
+                    font-size: 24px;
+                    font-weight: bold;        
+                }
 
                 > p,
                 .number-box {
                     height: 50%;
                 }
-                .hours-info {
+                .service-span1 {
+                    height: 110px;
+                }
+                .hours-info,
+                .hours-info p:first-child {
                     margin-top: 0;
                 }
             }
-            span {
+            .service-span2 {
                 width: 768px;
                 height: 1px;
+            }
+            .service-box {
+                width: 100%;
+
+                .infocircle {
+                    width: 130px;
+                    height: 130px;
+                }
             }
         }
     }

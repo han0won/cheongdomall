@@ -64,7 +64,7 @@ h2 {
   margin: 0 auto;
 }
 #header .h-wrap {
-  padding: 20px 80px 10px;
+  padding: 20px 80px 20px;
 }
 #header .nav-top {
   display: flex;
@@ -98,6 +98,7 @@ h2 {
   position: absolute;
   top: -26px;
   left: -20px;
+  z-index: 100;
   padding: 20px;
   border: 1px solid transparent;
 }
@@ -308,11 +309,21 @@ h2 {
     max-width: 800px;
   }
   #header .h-wrap {
-    padding: 20px 16px 10px;
+    padding: 20px 16px 20px;
   }
-  #header .nav-bottom .lnb {
-    left: 0;
-    padding-left: 0;
+  #header .nav-bottom .lnb .ctr-btn {
+    width: 30px;
+    height: 30px;
+  }
+  #header .nav-bottom .lnb i {
+    padding: 7px 8px;
+  }
+  #header .nav-bottom .lnb .fa-xmark {
+    padding-left: 9px;
+  }
+  #header .nav-bottom .lnb p {
+    font-size: 16px;
+    line-height: 2;
   }
   #header .nav-bottom #gnb {
     font-size: 14px;
@@ -1911,11 +1922,13 @@ h3 {
   height: 230px;
   background-color: #E2E2E2;
 }
-.service-info .service-wrap .service-box {
+.service-info .service-wrap .service-box .service-box-wrap {
   display: flex;
+  justify-content: space-between;
   -moz-column-gap: 26px;
        column-gap: 26px;
-  padding: 40px 60px 40px 80px;
+  padding: 40px 60px;
+  width: 100%;
 }
 .service-info .service-wrap .service-box a {
   display: flex;
@@ -1930,7 +1943,10 @@ h3 {
   width: 150px;
   height: 150px;
   border-radius: 150px;
-  background-color: #F5F5F5;
+  background: #F5F5F5;
+}
+.service-info .service-wrap .service-box .infocircle:hover {
+  background: #E7F4D7;
 }
 .service-info .service-wrap .service-box p {
   display: inline;
@@ -2038,17 +2054,36 @@ h3 {
   }
   .service-info .service-wrap .service-number {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    width: 100%;
+  }
+  .service-info .service-wrap .service-number .service-number-wrap p {
+    font-size: 24px;
+    font-weight: bold;
   }
   .service-info .service-wrap .service-number > p,
   .service-info .service-wrap .service-number .number-box {
     height: 50%;
   }
-  .service-info .service-wrap .service-number .hours-info {
+  .service-info .service-wrap .service-number .service-span1 {
+    height: 110px;
+  }
+  .service-info .service-wrap .service-number .hours-info,
+  .service-info .service-wrap .service-number .hours-info p:first-child {
     margin-top: 0;
   }
-  .service-info .service-wrap span {
+  .service-info .service-wrap .service-span2 {
     width: 768px;
     height: 1px;
+  }
+  .service-info .service-wrap .service-box {
+    width: 100%;
+  }
+  .service-info .service-wrap .service-box .infocircle {
+    width: 130px;
+    height: 130px;
   }
 }
 @media screen and (max-width: 475px) {

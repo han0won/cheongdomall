@@ -8,7 +8,7 @@
     max-width: 1440px;
     margin: 0 auto;
     .h-wrap {
-        padding: 20px 80px 10px;
+        padding: 20px 80px 20px;
     }
     .nav-top {
         display: flex;
@@ -41,6 +41,7 @@
             position: absolute;
             top: -26px;
             left: -20px;
+            z-index: 100;
             padding: 20px;
             border: 1px solid transparent;
 
@@ -264,12 +265,24 @@
         max-width: 800px;
 
         .h-wrap {
-            padding: 20px 16px 10px;
+            padding: 20px 16px 20px;
         }
         .nav-bottom {
             .lnb {
-                left: 0;
-                padding-left: 0;
+                .ctr-btn {
+                    width: 30px;
+                    height: 30px;
+                }
+                i {
+                    padding: 7px 8px;
+                }
+                .fa-xmark {
+                    padding-left: 9px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 2;
+                }
             }
             #gnb {
                 font-size: 14px;
