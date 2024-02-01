@@ -641,6 +641,9 @@ h2{
     margin: 0 auto;
     .txt{
       font-size: 20px;
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 16px;
+      }
     }
   }
   .review-list{
@@ -656,6 +659,15 @@ h2{
       padding: 21px;
       border-radius: 10px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      margin-top: 24px;
+      gap: 12px;
+      .card-wrap{
+        width: calc(50% - 6px);
+        padding: 11px;
+        border: 1px solid $line;
+      }
+    }
   }
   .card{
     display: flex;
@@ -664,7 +676,6 @@ h2{
     height: 100%;
     .img-big{
       width: 100%;
-      // height: 289px;
       height: 23vw;
       margin-bottom: 10px;
       border-radius: 5px;
@@ -723,6 +734,36 @@ h2{
         margin-left: 17px;
       }
     }
+    @media screen and (max-width: $bp-mobile) {
+      .img-big{
+        width: 100%;
+        height: 45vw;
+        margin-bottom: 7px;
+      }
+      .star{
+        font-size: 18px;
+      }
+      .desc{
+        margin-top: 7px;
+      }
+      .name{
+        display: none;
+      }
+      .line{
+        width: 100%;
+        margin: 15px 0 10px 0;
+      }
+      .under-wrap{
+        .img-small{
+          width: 25px;
+          height: 25px;
+        }
+        .product{
+          font-size: 10px;
+          margin-left: 5px;
+        }
+      }
+    }
   }
   .bnr{
     display: flex;
@@ -746,10 +787,30 @@ h2{
       font-family: 'BMJUA';
       span{
         color: $point;
+        br{
+          display: none;
+        }
       }
     }
     .coin{
       background: url(../../images/main/review-icon-coin.svg) center center / contain no-repeat;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      gap: 15px;
+      height: 100px;
+      margin-top: 30px;
+      .icon{
+        width: 60px;
+        height: 60px;
+      }
+      p{
+        font-size: 28px;
+        span{
+          br{
+            display: block;
+          }
+        }
+      }
     }
   }
 }

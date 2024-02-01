@@ -1369,6 +1369,11 @@ h2 {
 .review .review-wrap .txt {
   font-size: 20px;
 }
+@media screen and (max-width: 475px) {
+  .review .review-wrap .txt {
+    font-size: 16px;
+  }
+}
 .review .review-list {
   display: flex;
   flex-wrap: wrap;
@@ -1382,6 +1387,17 @@ h2 {
   background: #fff;
   padding: 21px;
   border-radius: 10px;
+}
+@media screen and (max-width: 475px) {
+  .review .review-list {
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .review .review-list .card-wrap {
+    width: calc(50% - 6px);
+    padding: 11px;
+    border: 1px solid #E2E2E2;
+  }
 }
 .review .card {
   display: flex;
@@ -1449,6 +1465,34 @@ h2 {
   font-size: 14px;
   margin-left: 17px;
 }
+@media screen and (max-width: 475px) {
+  .review .card .img-big {
+    width: 100%;
+    height: 45vw;
+    margin-bottom: 7px;
+  }
+  .review .card .star {
+    font-size: 18px;
+  }
+  .review .card .desc {
+    margin-top: 7px;
+  }
+  .review .card .name {
+    display: none;
+  }
+  .review .card .line {
+    width: 100%;
+    margin: 15px 0 10px 0;
+  }
+  .review .card .under-wrap .img-small {
+    width: 25px;
+    height: 25px;
+  }
+  .review .card .under-wrap .product {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
 .review .bnr {
   display: flex;
   justify-content: center;
@@ -1474,8 +1518,28 @@ h2 {
 .review .bnr p span {
   color: #FF8C00;
 }
+.review .bnr p span br {
+  display: none;
+}
 .review .bnr .coin {
   background: url(../../images/main/review-icon-coin.svg) center center/contain no-repeat;
+}
+@media screen and (max-width: 475px) {
+  .review .bnr {
+    gap: 15px;
+    height: 100px;
+    margin-top: 30px;
+  }
+  .review .bnr .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .review .bnr p {
+    font-size: 28px;
+  }
+  .review .bnr p span br {
+    display: block;
+  }
 }
 
 .sub-cont {
