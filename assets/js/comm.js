@@ -1,11 +1,23 @@
 //Header
 $(document).ready(function(){
   // 카테고리 클릭 시 아래로 펼쳐짐
+  function toggleLnbMenu() {
+    $(".lnb-menu-wrap").toggle();
+  }
   if ($(window).width() > 475) {
     $(".lnb-btn-wrap > a").click(function(){
       $(".lnb-menu-wrap").toggle();
     }); 
-  };
+  }
+  $(window).resize(function () {
+    if ($(window).width() > 475) {
+        $(".lnb-btn-wrap > a").unbind('click', toggleLnbMenu);
+        $(".lnb-btn-wrap > a").click(toggleLnbMenu);
+    } else {
+        $(".lnb-btn-wrap > a").unbind('click', toggleLnbMenu);
+        $(".lnb-menu-wrap").hide();
+    }
+  });
 
   // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
   $(".lnb-btn-wrap > a").click(function(){
