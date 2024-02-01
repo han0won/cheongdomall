@@ -482,6 +482,10 @@ h2{
   margin: 0 auto;
   display: grid;
   grid-template-columns: 30% auto;
+  
+  // @media screen and (max-width: $bp-mobile) {
+    // ****************수정할 곳*********************
+  // }
   .title{
     z-index: 2;
     text-align: left;
@@ -862,6 +866,7 @@ h2{
       }
       p{
         font-size: 24px;
+        line-height: normal;
         span{
           br{
             display: block;
