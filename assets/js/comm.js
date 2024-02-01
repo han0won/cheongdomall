@@ -1,14 +1,19 @@
 //Header
 $(document).ready(function(){
-  $(".lnb-btn-wrap > a").click(function(){
-    $(".lnb-menu-wrap").toggle();
-  }); // 카테고리 클릭 시 아래로 펼쳐짐
+  // 카테고리 클릭 시 아래로 펼쳐짐
+  if ($(window).width() > 475) {
+    $(".lnb-btn-wrap > a").click(function(){
+      $(".lnb-menu-wrap").toggle();
+    }); 
+  };
 
+  // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
   $(".lnb-btn-wrap > a").click(function(){
     $(".ctr-btn > i").toggleClass("fa-xmark");
     $(".lnb").toggleClass("lnb-click");
-  }); // 카테고리 클릭 시 아이콘 변경, 테두리 나타남 
+  }); 
 
+  // 카테고리 depth1 마우스 오버 시 depth2 나타남
   $(".vegetable").mouseenter(function() {
     $(".li-vegetable").addClass("open");
   });
@@ -33,8 +38,10 @@ $(document).ready(function(){
   $(".meat, .snack, .vegetable").mouseenter(function() {
     $(".li-sauce").removeClass("open");
   });
-  // 카테고리 depth1 마우스 오버 시 depth2 나타남
+
+  
 });
+
 
 
 $(document).ready(function() {

@@ -70,7 +70,7 @@
         border-bottom: 2px solid $txt-default;
 
         .service-number {
-            padding: 40px 80px 40px 60px;
+            padding: 40px 60px;
 
             > p {
                 margin-bottom: 5px;
@@ -239,11 +239,17 @@
             flex-direction: column;
             overflow: hidden;
 
+            .service-box {
+                .service-box-wrap {
+                    padding: 40px;
+                    column-gap: 0;
+                }
+            }
             .service-number{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 40px 60px;
+                padding: 40px 40px;
                 width: 100%;
 
                 .service-number-wrap p {
@@ -339,11 +345,12 @@
             box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.041);
             
             .service-box {
+                .service-box-wrap {
                 justify-content: space-between;
                 padding: 0;
                 column-gap: 0;
                 width: 100%;
-
+                }
                 .infocircle {
                     margin: 0;
                     // padding: 27px;
