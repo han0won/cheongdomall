@@ -975,6 +975,7 @@ h2 {
 @media screen and (max-width: 475px) {
   .main-slide-wrap .swiper-pagination {
     position: absolute;
+    bottom: 20px;
   }
 }
 
@@ -986,7 +987,7 @@ h2 {
     display: block;
     z-index: 1;
     position: absolute;
-    bottom: 250px;
+    bottom: 240px;
     left: 0;
     width: 100%;
     height: auto;
@@ -995,7 +996,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 20px 30px 20px;
+    padding: 25px 20px 0 20px;
     background: #fff;
     border-radius: 15px 15px 0;
     box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.03);
@@ -1040,8 +1041,13 @@ h2 {
   position: relative;
 }
 @media screen and (max-width: 475px) {
+  .new-items {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 475px) {
   .new-items .new-slide-wrap {
-    margin-right: -20px;
+    margin: -20px;
     overflow: hidden;
   }
 }
