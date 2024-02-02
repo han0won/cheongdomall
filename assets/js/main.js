@@ -4,10 +4,19 @@ $(document).ready(function() {
   var swiper = new Swiper(".main-slide-wrap", {
     autoplay: true,
     loop: true,
-    slidesPerView: 1.4,
-    centeredSlides: true,
+    slidesPerView: 1,
+    // centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
+    },
+    breakpoints: {
+      // 476: {
+        
+      // },
+      1025: {
+        slidesPerView: 1.4,
+        centeredSlides: true,
+      },
     },
   });
 
