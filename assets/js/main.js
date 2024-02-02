@@ -100,10 +100,18 @@ $(document).ready(function() {
   var swiper = new Swiper(".reco-slide", {
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 15,
     pagination: {
       el: ".reco-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      476: {
+        spaceBetween: 40,
+      },
+      // 1025: {
+        
+      // },
     },
   });
 

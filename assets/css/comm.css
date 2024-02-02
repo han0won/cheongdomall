@@ -1208,6 +1208,13 @@ h2 {
   display: grid;
   grid-template-columns: 30% auto;
 }
+@media screen and (max-width: 475px) {
+  .reco-wrap {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+  }
+}
 .reco-wrap .title {
   z-index: 2;
   text-align: left;
@@ -1215,6 +1222,17 @@ h2 {
 .reco-wrap .title p {
   font-size: 20px;
   color: #444444;
+}
+@media screen and (max-width: 475px) {
+  .reco-wrap .title {
+    grid-column: 1;
+  }
+}
+@media screen and (max-width: 475px) {
+  .reco-wrap .reco-slide-wrap {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 .reco-wrap .reco-slide-wrap .reco-slide {
   position: relative;
@@ -1237,6 +1255,11 @@ h2 {
   display: flex;
   width: 80%;
 }
+@media screen and (max-width: 475px) {
+  .reco-wrap .reco-slide-wrap .reco-slide .swiper-slide {
+    width: 95%;
+  }
+}
 .reco-wrap .reco-slide-wrap .reco-slide .swiper-slide .card-img {
   border-radius: 10px;
 }
@@ -1250,6 +1273,11 @@ h2 {
   height: 60%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   z-index: 1;
+}
+@media screen and (max-width: 475px) {
+  .reco-wrap .reco-slide-wrap .reco-slide .swiper-slide .card-img::before {
+    height: 85%;
+  }
 }
 .reco-wrap .reco-slide-wrap .reco-slide .swiper-slide img {
   position: relative;
@@ -1274,6 +1302,18 @@ h2 {
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (max-width: 475px) {
+  .reco-wrap .reco-slide-wrap .reco-slide .card-txt {
+    left: 15px;
+    bottom: 15px;
+  }
+  .reco-wrap .reco-slide-wrap .reco-slide .card-txt .hash {
+    font-size: 14px;
+  }
+  .reco-wrap .reco-slide-wrap .reco-slide .card-txt .txt {
+    font-size: 18px;
+  }
+}
 .reco-wrap .swiper-pagination {
   grid-column: 2;
   margin-top: 30px;
@@ -1282,6 +1322,13 @@ h2 {
   bottom: 0;
   text-align: left;
 }
+@media screen and (max-width: 475px) {
+  .reco-wrap .swiper-pagination {
+    margin-top: 0;
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
 .reco-wrap .swiper-pagination-bullet {
   margin-right: 15px;
   width: 20px;
@@ -1289,11 +1336,24 @@ h2 {
   background: #777777;
   border-radius: 25px;
 }
+@media screen and (max-width: 475px) {
+  .reco-wrap .swiper-pagination-bullet {
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
 .reco-wrap .swiper-pagination-bullet-active {
   width: 50px;
   height: 20px;
   background: #444444;
   border-radius: 25px;
+}
+@media screen and (max-width: 475px) {
+  .reco-wrap .swiper-pagination-bullet-active {
+    width: 27px;
+    height: 10px;
+  }
 }
 
 .farm h2 {
