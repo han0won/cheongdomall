@@ -1045,12 +1045,6 @@ h2 {
     margin-top: 150px;
   }
 }
-@media screen and (max-width: 475px) {
-  .new-items .new-slide-wrap {
-    margin: -20px;
-    overflow: hidden;
-  }
-}
 .new-items .new-slide {
   width: 100%;
   margin-top: 60px;

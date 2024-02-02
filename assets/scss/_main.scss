@@ -214,12 +214,6 @@ h2{
   @media screen and (max-width: $bp-mobile) {
     margin-top: 150px;
   }
-  .new-slide-wrap{
-    @media screen and (max-width: $bp-mobile) {
-      margin: -20px;
-      overflow: hidden;
-    }
-  }
   .new-slide{
     width: 100%;
     margin-top: 60px;
