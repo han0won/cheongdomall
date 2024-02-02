@@ -7,6 +7,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3500,
     centerMode: true,
+    slidesToShow: 3,
     variableWidth: true,
     responsive: [
       {
@@ -31,9 +32,6 @@ $(document).ready(function() {
     loop: true,
     slidesPerView: 1.5,
     spaceBetween: 15,
-    scrollbar: {
-      el: ".new-scrollbar",
-    },
     breakpoints: {
       476: {
         slidesPerView: 2.8,
@@ -60,9 +58,6 @@ $(document).ready(function() {
             slidesPerView: 1.5,
             centeredSlides: false,
             spaceBetween: 15,
-            scrollbar: {
-              el: ".best-scrollbar",
-            },
             breakpoints: {
               476: {
                 loop: false,
@@ -81,18 +76,19 @@ $(document).ready(function() {
             },
         })
     }
+
     function changeTab(index) {
-        tabButtons.forEach((button) => button.classList.remove('active'))
-        tabs.forEach((tab) => tab.classList.remove('active'))
-        tabButtons[index].classList.add('active')
-        tabs[index].classList.add('active')
-        if (!swipers[index]) {
-            const swiperElement = tabs[index].querySelector('.swiper')
-            swipers[index] = initSwiper(swiperElement)
-        }
+      tabButtons.forEach((button) => button.classList.remove('active'))
+      tabs.forEach((tab) => tab.classList.remove('active'))
+      tabButtons[index].classList.add('active')
+      tabs[index].classList.add('active')
+      if (!swipers[index]) {
+        const swiperElement = tabs[index].querySelector('.swiper')
+        swipers[index] = initSwiper(swiperElement)
+      }
     }
     tabButtons.forEach((button, index) => {
-        button.addEventListener('click', () => changeTab(index))
+      button.addEventListener('click', () => changeTab(index))
     })
     changeTab(0)
 

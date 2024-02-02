@@ -60,7 +60,6 @@ h2{
 // 메인 슬라이드 배너
 .main-slide{
   .slide-wrap{
-    position: relative;
     .slide{
       margin-right: -30px;
       transform: scale(0.9);
@@ -225,21 +224,6 @@ h2{
       }
     }
   }
-  .new-scrollbar{
-    max-width: 1440px;
-    width: 90%;
-    height: 1px;
-    background: $line;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    .swiper-scrollbar-drag{
-      height: 3px;
-      top: -1px;
-      background: $primary;
-    }
-  }
 }
 
 // 로컬푸드
@@ -384,21 +368,6 @@ h2{
   }
   .swiper-slide.swiper-slide-active {  
       opacity: 1;
-  }
-  .best-scrollbar{
-    max-width: 1440px;
-    width: 90%;
-    height: 1px;
-    background: $line;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    .swiper-scrollbar-drag{
-      height: 3px;
-      top: -1px;
-      background: $primary;
-    }
   }
 }
 .best-card{

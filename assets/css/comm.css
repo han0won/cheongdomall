@@ -778,9 +778,6 @@ h2 {
   }
 }
 
-.main-slide .slide-wrap {
-  position: relative;
-}
 .main-slide .slide-wrap .slide {
   margin-right: -30px;
   transform: scale(0.9);
@@ -945,21 +942,6 @@ h2 {
     font-size: 16px;
   }
 }
-.new-items .new-scrollbar {
-  max-width: 1440px;
-  width: 90%;
-  height: 1px;
-  background: #E2E2E2;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.new-items .new-scrollbar .swiper-scrollbar-drag {
-  height: 3px;
-  top: -1px;
-  background: #77B934;
-}
 
 .localfood .video-wrap {
   position: relative;
@@ -1111,21 +1093,6 @@ h2 {
 }
 .best-tab .swiper-slide.swiper-slide-active {
   opacity: 1;
-}
-.best-tab .best-scrollbar {
-  max-width: 1440px;
-  width: 90%;
-  height: 1px;
-  background: #E2E2E2;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.best-tab .best-scrollbar .swiper-scrollbar-drag {
-  height: 3px;
-  top: -1px;
-  background: #77B934;
 }
 
 .best-card .best-thumbnail {
