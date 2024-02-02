@@ -50,8 +50,6 @@ $(document).ready(function(){
   $(".meat, .snack, .vegetable").mouseenter(function() {
     $(".li-sauce").removeClass("open");
   });
-
-  
 });
 
 
@@ -75,35 +73,4 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3000,
   });
-
-  
-
-// main: best slide
-  var swiper = new Swiper(".best-slide", {
-    loop: true,
-    slidesPerView: 5,
-    centeredSlides: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  
-// best tabs
-$('.tab-btn').click(function(){
-  var $this = $(this);
-  var index = $this.index();
-  
-  $this.addClass('active');
-  $this.siblings('.tab-btn.active').removeClass('active');
-  
-  var $outer = $this.closest('.best-item');
-  var $current = $outer.find(' > .best-tabs > .best-tab.active');
-  var $post = $outer.find(' > .best-tabs > .best-tab').eq(index);
-  
-  $current.removeClass('active');
-  $post.addClass('active');
-  });
-
-// !!!!never delete!!!!
 });
