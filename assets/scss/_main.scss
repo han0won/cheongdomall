@@ -114,53 +114,6 @@ h2{
   }
 }
 
-
-
-
-// .main-slide{
-//   .slide-wrap{
-//     .slide{
-//       margin-right: -30px;
-//       transform: scale(0.9);
-//       opacity: .4;
-//       transition: all .3s ease-in-out;
-//       border: 1px solid $line;
-//       border-radius: 20px;
-//       a{
-//         width: 1105px;
-//         height: 420px;
-//         border-radius: inherit;
-//         img{
-//           border-radius: inherit;
-//         }
-//       }
-//     }
-//     .slick-center{
-//       transform: scale(1);
-//       opacity: 1;
-//     }
-//     .slick-dots {
-//       bottom: 15px;
-//       li {
-//         width: 15px;
-//         height: 8px;
-//         background: rgba(255, 255, 255, 0.7);
-//         border-radius: 5px;
-//         border: 1px solid $line;
-//         transition: width 0.2s;
-//         button::before {
-//           display:none;
-//         }
-//         &.slick-active{
-//           width: 40px;
-//           background: $primary;
-//           border: 1px solid $primary;
-//         }
-//       }
-//     }
-//   }
-// }
-
 // 신상품
 .new-items{
   position: relative;

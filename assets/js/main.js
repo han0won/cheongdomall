@@ -11,28 +11,6 @@ $(document).ready(function() {
     },
   });
 
-  // $('.slide-wrap').slick({
-  //   arrows: false,
-  //   dots: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 3500,
-  //   centerMode: true,
-  //   slidesToShow: 3,
-  //   variableWidth: true,
-  //   responsive: [
-  //     {
-  //       // breakpoint: 1024,
-  //       // settings: {
-  //       // },
-  //       // breakpoint: 475,
-  //       // settings: {
-  //       //   centerMode: false,
-  //       //   slidesToShow: 1,
-  //       // },
-  //     }
-  //   ]
-  // });
-
   // new items
   var swiper = new Swiper(".new-slide", {
     autoplay: {
