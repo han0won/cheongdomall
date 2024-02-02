@@ -13,13 +13,26 @@ $('.info-various-wrap').slick({
   autoplaySpeed: 1500,
   infinite: true, 
   fade: false,
+  arrows: false,
   responsive: [
     {
-      breakpoint: 476,
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 550,
       settings: {
         slidesToShow: 1,
-        fade: true,
-      } 
+        fade: true
+      }
     }
   ]
 });
