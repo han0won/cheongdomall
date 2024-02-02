@@ -1406,7 +1406,7 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .farm .farm-tab {
-    margin: 0 -20px;
+    margin: -5px -20px 0 -20px;
   }
 }
 .farm .farm-tab.active {
@@ -1459,7 +1459,7 @@ h2 {
 @media screen and (max-width: 475px) {
   .farm .farm-tab .txt-wrap .tit {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .farm .farm-tab .txt-wrap .tit span {
     display: none;
@@ -1468,8 +1468,8 @@ h2 {
     display: none;
   }
   .farm .farm-tab .txt-wrap .btn-more {
-    font-size: 11px;
-    padding: 5px 12px;
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
 

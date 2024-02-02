@@ -664,7 +664,7 @@ h2{
     position: relative;
     display: none;
     @media screen and (max-width: $bp-mobile) {
-      margin: 0 -20px;
+      margin: -5px -20px 0 -20px;
     }
     &.active{
       display: block;
@@ -713,7 +713,7 @@ h2{
       @media screen and (max-width: $bp-mobile) {
         .tit{
           font-size: 24px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           span{
             display: none;
           }
@@ -722,8 +722,8 @@ h2{
           display: none;
         }
         .btn-more{
-          font-size: 11px;
-          padding: 5px 12px;
+          font-size: 12px;
+          padding: 10px 20px;
         }
       }
     }
