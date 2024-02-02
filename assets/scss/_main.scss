@@ -632,6 +632,7 @@ h2{
   .farm-tab{
     position: relative;
     display: none;
+    margin-top: 1px;
     @media screen and (max-width: $bp-mobile) {
       margin: -5px -20px 0 -20px;
     }

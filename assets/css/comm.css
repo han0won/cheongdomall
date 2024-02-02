@@ -1370,6 +1370,7 @@ h2 {
 .farm .farm-tab {
   position: relative;
   display: none;
+  margin-top: 1px;
 }
 @media screen and (max-width: 475px) {
   .farm .farm-tab {
