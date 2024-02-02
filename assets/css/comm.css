@@ -1043,6 +1043,7 @@ h2 {
 @media screen and (max-width: 475px) {
   .new-items {
     margin-top: 150px;
+    overflow: hidden;
   }
 }
 .new-items .new-slide {
