@@ -1,13 +1,23 @@
 $(document).ready(function() {
 
   // main banner
-  $('.slide-wrap').slick({
-    arrows: false,
-    dots: true,
+  var swiper = new Swiper(".main-slide-wrap", {
     autoplay: true,
-    autoplaySpeed: 3500,
-    centerMode: true,
-    variableWidth: true,
+    loop: true,
+    slidesPerView: 1,
+    // centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      // 476: {
+        
+      // },
+      1025: {
+        slidesPerView: 1.4,
+        centeredSlides: true,
+      },
+    },
   });
 
   // new items
@@ -17,14 +27,21 @@ $(document).ready(function() {
       disableOnInteraction: false,
     },
     loop: true,
-    slidesPerView: 4,
-    spaceBetween: 20,
-    scrollbar: {
-      el: ".new-scrollbar",
+    slidesPerView: 1.5,
+    spaceBetween: 15,
+    breakpoints: {
+      476: {
+        slidesPerView: 2.8,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
     },
   });
 
-//  best tabs, swiper
+//  best tabs, slider
     const tabButtons = document.querySelectorAll('.tab-btn')
     const tabs = document.querySelectorAll('.best-tab')
     let swipers = []
@@ -34,26 +51,41 @@ $(document).ready(function() {
               delay: 3000,
               disableOnInteraction: false,
             },
-            initialSlide: 2,
-            slidesPerView: 5,
-            centeredSlides: true,
-            scrollbar: {
-              el: ".best-scrollbar",
+            loop: true,
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            spaceBetween: 15,
+            breakpoints: {
+              476: {
+                loop: false,
+                initialSlide: 2,
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 0,
+              },
+              1025: {
+                loop: false,
+                initialSlide: 2,
+                slidesPerView: 5,
+                centeredSlides: true,
+                spaceBetween: 0,
+              },
             },
         })
     }
+
     function changeTab(index) {
-        tabButtons.forEach((button) => button.classList.remove('active'))
-        tabs.forEach((tab) => tab.classList.remove('active'))
-        tabButtons[index].classList.add('active')
-        tabs[index].classList.add('active')
-        if (!swipers[index]) {
-            const swiperElement = tabs[index].querySelector('.swiper')
-            swipers[index] = initSwiper(swiperElement)
-        }
+      tabButtons.forEach((button) => button.classList.remove('active'))
+      tabs.forEach((tab) => tab.classList.remove('active'))
+      tabButtons[index].classList.add('active')
+      tabs[index].classList.add('active')
+      if (!swipers[index]) {
+        const swiperElement = tabs[index].querySelector('.swiper')
+        swipers[index] = initSwiper(swiperElement)
+      }
     }
     tabButtons.forEach((button, index) => {
-        button.addEventListener('click', () => changeTab(index))
+      button.addEventListener('click', () => changeTab(index))
     })
     changeTab(0)
 
@@ -61,10 +93,18 @@ $(document).ready(function() {
   var swiper = new Swiper(".reco-slide", {
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 15,
     pagination: {
       el: ".reco-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      476: {
+        spaceBetween: 40,
+      },
+      // 1025: {
+        
+      // },
     },
   });
 

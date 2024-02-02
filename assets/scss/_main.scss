@@ -1,11 +1,20 @@
 
 // 페이지 가운데 정렬
+.cate-wrap,
 .new-items,
 .reco-wrap,
 .farm,
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: $bp-mobile) {
+  .best-item{
+    padding: 0 20px;
+  }
 }
 
 // section 사이 여백
@@ -14,66 +23,160 @@
 .farm,
 .review{
   margin-top: 150px;
+  @media screen and (max-width: $bp-mobile) {
+    margin-top: 100px;     
+  }
 }
 .localfood,
 .recommend{
   margin-top: 210px;
+  @media screen and (max-width: $bp-mobile) {
+    margin-top: 160px;     
+  }
 }
 
 // 타이틀 글자 기본 설정
 h2{
   margin-bottom: 15px;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
 }
 .title,
 .tit-txt{
   text-align: center;
+  @media screen and (max-width: $bp-mobile) {
+    text-align: left;
+  }
 }
 .tit-txt{
   font-size: 20px;
   color: $txt-secondary;
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 16px;
+  }
 }
 
 // 메인 슬라이드 배너
-.main-slide{
-  .slide-wrap{
-    position: relative;
-    .slide{
-      margin-right: -30px;
-      transform: scale(0.9);
-      opacity: .4;
-      transition: all .3s ease-in-out;
-      border: 1px solid $line;
+.main-slide-wrap{
+  width: 100%;
+  height: 420px;
+  @media screen and (max-width: $bp-mobile) {
+    height: 500px;
+  }
+  .main-slide{
+    opacity: .5;
+    transition: all .4s ease-in-out;
+    @media screen and (max-width: $bp-mobile) {
+      opacity: 1;
+      transition: none;
+    }
+    .main-img{
+      width: 100%;
+      height: 100%;
       border-radius: 20px;
-      a{
-        width: 1105px;
-        height: 420px;
-        border-radius: inherit;
-        img{
-          border-radius: inherit;
+      border: 1px solid $line;
+      &.bnr01{
+        background: url(/images/main/main-bnr01.jpg) center center / cover;
+      }
+      &.bnr02{
+        background: url(/images/main/main-bnr02.jpg) center center / cover;
+      }
+      &.bnr03{
+        background: url(/images/main/main-bnr03.jpg) center center / cover;
+      }
+      &.bnr04{
+        background: url(/images/main/main-bnr04.jpg) center center / cover;
+      }
+      &.bnr05{
+        background: url(/images/main/main-bnr05.jpg) center center / cover;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        border-radius: 0;
+        border: none;
+        &.bnr01{
+          background: url(/images/main/main-bnr01-m.jpg) center center / cover;
+        }
+        &.bnr02{
+          background: url(/images/main/main-bnr02-m.jpg) center center / cover;
+        }
+        &.bnr03{
+          background: url(/images/main/main-bnr03-m.jpg) center center / cover;
+        }
+        &.bnr04{
+          background: url(/images/main/main-bnr04-m.jpg) center center / cover;
+        }
+        &.bnr05{
+          background: url(/images/main/main-bnr05-m.jpg) center center / cover;
         }
       }
     }
-    .slick-center{
+  }
+  &.swiper-backface-hidden .swiper-slide {
+    transform: scale(.93) translateZ(0);
+    @media screen and (max-width: $bp-mobile) {
       transform: scale(1);
-      opacity: 1;
     }
-    .slick-dots {
-      bottom: 15px;
-      li {
-        width: 15px;
-        height: 8px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 5px;
-        border: 1px solid $line;
-        transition: width 0.2s;
-        button::before {
-          display:none;
+  }
+  &.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0);
+  }
+  .swiper-slide.swiper-slide-active {  
+    opacity: 1;
+  }
+  .swiper-pagination-bullet{
+    margin-right: 6px;
+    width: 15px;
+    height: 8px;
+    background: $w;
+    border-radius: 25px;
+    border: 1px solid $line;
+    opacity: .8;
+  }
+  .swiper-pagination-bullet-active{
+    width: 40px;
+    height: 8px;
+    background: $primary;
+    border-radius: 25px;
+    border: none;
+  }
+}
+
+// 모바일 카테고리
+.mo-category{
+  display: none;
+  @media screen and (max-width: $bp-mobile) {
+    display: block;
+    width: 100%;
+    height: auto;
+    .cate-wrap{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 25px 0 25px;
+      border-radius: 15px 0;
+      .icon-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .icon{
+        padding: 15px;
+        background: $bg-light;
+        border-radius: 50%;
+        .icon-img{
+          width: 30px;
+          height: 30px;
+          &.vegi{
+            background: url(/images/comm/icon-cart.png);
+          }
         }
-        &.slick-active{
-          width: 40px;
-          background: $primary;
-          border: 1px solid $primary;
-        }
+      }
+      p{
+        font-size: 12px;
       }
     }
   }
@@ -82,13 +185,37 @@ h2{
 // 신상품
 .new-items{
   position: relative;
+  .new-slide-wrap{
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: -20px;
+      overflow: hidden;
+    }
+  }
   .new-slide{
     width: 100%;
     margin-top: 60px;
+    @media screen and (max-width: $bp-mobile) {
+      margin: 24px -20px 0 0;
+      overflow: visible;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $w;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
   }
   .new-thumbnail{
     position: relative;
     margin-bottom: 20px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 10px;
+    }
     .new-anchor{
       img{
         width: 100%;
@@ -107,6 +234,11 @@ h2{
         color: $w;
         font-weight: 600;
         border-radius: 10px 0 10px 0;
+        @media screen and (max-width: $bp-mobile) {
+          font-size: 14px;
+          width: 54px;
+          height: 25px;
+        }
       }
     }
     .cart{
@@ -124,6 +256,15 @@ h2{
       img{
         width: 25px;
         height: 25px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        img{
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -145,20 +286,22 @@ h2{
         font-size: 20px;
       }
     }
-  }
-  .new-scrollbar{
-    max-width: 1440px;
-    width: 90%;
-    height: 1px;
-    background: $line;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    .swiper-scrollbar-drag{
-      height: 3px;
-      top: -1px;
-      background: $primary;
+    @media screen and (max-width: $bp-mobile) {
+      .txt{
+        font-size: 13px;
+      }
+      .tit{
+        margin: 10px 0 5px 0;
+        font-size: 16px;
+      }
+      .price{
+        .amount{
+          font-size: 16px;
+        }
+        .won{
+          font-size: 16px;
+        }
+      }
     }
   }
 }
@@ -171,6 +314,9 @@ h2{
     max-width: 100%;
     height: 650px;
     overflow: hidden;
+    @media screen and (max-width: $bp-mobile) {
+      height: 600px;
+    }
     .bnr-video{
       width: 100%;
       height: 100%;
@@ -204,9 +350,21 @@ h2{
       .btn-more{
         color: $w;
         font-size: 24px;
+        font-weight: 600;
         background: $point;
         padding: 17px 25px;
         border-radius: 50px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 18px;
+        .tit{
+          font-size: 64px;
+          margin-bottom: 40px;
+        }
+        .btn-more{
+          font-size: 18px;
+          padding: 10px 20px;
+        }
       }
     }
   }
@@ -233,6 +391,15 @@ h2{
       font-weight: 600;
     }
   }
+  @media screen and (max-width: $bp-mobile) {
+    justify-content: left;
+    margin: 24px 0 20px 0;
+    .tab-btn{
+      font-size: 4vw;
+      padding: 1.8vw 5vw;
+      margin-right: 2vw;
+    }
+  }
 }
   .best-tab{
     display: none;
@@ -242,6 +409,11 @@ h2{
   }
 }
 // best slide
+.best-tabs{
+  @media screen and (max-width: $bp-mobile) {
+    margin-right: -20px;
+  }
+}
 .best-tab{
   position: relative;
   .best-slide {
@@ -254,6 +426,9 @@ h2{
     justify-content: center;
     align-items: center;
     opacity: .5;
+    @media screen and (max-width: $bp-mobile) {
+      opacity: 1;
+    }
     .best-img {
       display: block;
       width: 100%;
@@ -264,27 +439,15 @@ h2{
   }
   .swiper-backface-hidden .swiper-slide {
     transform: scale(.84) translateZ(0);
+    @media screen and (max-width: $bp-mobile) {
+      transform: none;
+    }
   }
   .swiper-backface-hidden .swiper-slide.swiper-slide-active {
     transform: scale(1) translateZ(0);
   }
   .swiper-slide.swiper-slide-active {  
       opacity: 1;
-  }
-  .best-scrollbar{
-    max-width: 1440px;
-    width: 90%;
-    height: 1px;
-    background: $line;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    .swiper-scrollbar-drag{
-      height: 3px;
-      top: -1px;
-      background: $primary;
-    }
   }
 }
 .best-card{
@@ -307,6 +470,16 @@ h2{
       width: 20px;
       height: 20px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 35px;
+      height: 35px;
+      right: 10px;
+      bottom: 10px;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
   .desc{
     text-align: left;
@@ -328,6 +501,23 @@ h2{
         font-size: 24px;
       }
     }
+    @media screen and (max-width: $bp-mobile) {
+      .txt{
+        margin: 10px 0;
+        font-size: 13px;
+      }
+      .tit{
+        font-size: 16px;
+      }
+      .price{
+        .amount{
+          font-size: 16px;
+        }
+        .won{
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 
@@ -341,6 +531,12 @@ h2{
   margin: 0 auto;
   display: grid;
   grid-template-columns: 30% auto;
+  
+  @media screen and (max-width: $bp-mobile) {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+  }
   .title{
     z-index: 2;
     text-align: left;
@@ -348,8 +544,15 @@ h2{
       font-size: 20px;
       color: $txt-secondary;
     }
+    @media screen and (max-width: $bp-mobile) {
+      grid-column: 1;
+    }
   }
   .reco-slide-wrap{
+    @media screen and (max-width: $bp-mobile) {
+      grid-column: 1;
+      grid-row: 2;
+    }
     .reco-slide {
       position: relative;
       width: 100%;
@@ -369,6 +572,9 @@ h2{
       .swiper-slide {
         display: flex;
         width: 80%;
+        @media screen and (max-width: $bp-mobile) {
+          width: 95%;
+        }
         .card-img{
           border-radius: 10px;
         }
@@ -382,6 +588,9 @@ h2{
           height: 60%;
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
           z-index: 1;
+          @media screen and (max-width: $bp-mobile) {
+            height: 85%;
+          }
         }
         img {
           position: relative;
@@ -405,6 +614,16 @@ h2{
           font-size: 30px;
           font-weight: 600;
         }
+        @media screen and (max-width: $bp-mobile) {
+          left: 15px;
+          bottom: 15px;
+          .hash{
+            font-size: 14px;
+          }
+          .txt{
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -415,6 +634,11 @@ h2{
     left: 0;
     bottom: 0;
     text-align: left;
+    @media screen and (max-width: $bp-mobile) {
+      margin-top: 0;
+      grid-column: 1;
+      grid-row: 3;
+    }
   }
   .swiper-pagination-bullet{
     margin-right: 15px;
@@ -422,12 +646,21 @@ h2{
     height: 20px;
     background: $txt-disabled;
     border-radius: 25px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 10px;
+      width: 10px;
+      height: 10px;
+    }
   }
   .swiper-pagination-bullet-active{
     width: 50px;
     height: 20px;
     background: $txt-secondary;
     border-radius: 25px;
+    @media screen and (max-width: $bp-mobile) {
+      width: 27px;
+      height: 10px;
+    }
   }
 }
 
@@ -436,6 +669,9 @@ h2{
 .farm{
   h2{
     margin-bottom: 30px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 5px;
+    }
   }
   .tab-btns{
     display: flex;
@@ -463,10 +699,23 @@ h2{
         }
       }
     }
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 5vw;
+      button{
+        font-size: 15px;
+        .line{
+          height: 2px;
+        }
+      }
+    }
   }
   .farm-tab{
     position: relative;
     display: none;
+    margin-top: 1px;
+    @media screen and (max-width: $bp-mobile) {
+      margin: -5px -20px 0 -20px;
+    }
     &.active{
       display: block;
     }
@@ -479,6 +728,10 @@ h2{
       }
       &.water{
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/main/farm-water.jpg) center center / cover;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        height: 300px;
+        border-radius: 10px;
       }
     }
     .txt-wrap{
@@ -496,8 +749,8 @@ h2{
       }
       .txt{
         margin: 20px 0 45px 0;
-         font-weight: 500;
-         font-size: 20px;
+        font-weight: 500;
+        font-size: 20px;
       }
       .btn-more{
         color: $txt-default;
@@ -507,6 +760,22 @@ h2{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        .tit{
+          font-size: 24px;
+          margin-bottom: 30px;
+          span{
+            display: none;
+          }
+        }
+        .txt{
+          display: none;
+        }
+        .btn-more{
+          font-size: 12px;
+          padding: 10px 20px;
+        }
+      }
     }
   }
 }
@@ -515,82 +784,133 @@ h2{
 .review{
   background: $bg-light;
   padding: 150px 0;
+  @media screen and (max-width: $bp-mobile) {
+    padding: 70px 0;
+  }
   .review-wrap{
     margin: 0 auto;
     .txt{
       font-size: 20px;
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 16px;
+      }
     }
   }
   .review-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
     margin-top: 60px;
-    li{
-      flex: 1;
-    }
     .card-wrap{
-      height: 550px;
+      position: relative;
+      width: calc(25% - 20px);
+      height: auto;
       background: $w;
       padding: 21px;
-      border-radius: 20px;
-      .img-big{
-        width: 100%;
-        height: calc(100% - 185px);
-        border-radius: 20px;
+      border-radius: 10px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      margin-top: 24px;
+      gap: 12px;
+      .card-wrap{
+        width: calc(50% - 6px);
+        padding: 11px;
+        border: 1px solid $line;
+      }
+    }
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .img-big{
+      width: 100%;
+      height: 23vw;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      &.meat{
+        background: url(/images/main/review-01.jpg) center center / cover;
+      }
+      &.straw{
+        background: url(/images/main/review-02.jpg) center center / cover;
+      }
+      &.carrot{
+        background: url(/images/main/review-03.jpg) center center / cover;
+      }
+      &.noodle{
+        background: url(/images/main/review-04.jpg) center center / cover;
+      }
+    }
+    .star{
+      font-size: 24px;
+      color: $point;
+    }
+    .desc{
+      margin: 6px 0 20px 0;
+    }
+    .name{
+      font-size: 12px;
+      color: $txt-disabled;
+    }
+    .line{
+      width: 100%;
+      height: 1px;
+      background: $line;
+      margin: 15px 0;
+    }
+    .under-wrap{
+      display: flex;
+      align-items: center;
+      .img-small{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
         &.meat{
-          background: url(../../images/main/review-01.jpg) center center / cover;
+          background: url(/images/main/best-meat01.jpg) center center / cover;
         }
         &.straw{
-          background: url(../../images/main/review-02.jpg) center center / cover;
+          background: url(/images/main/new-strawberry01.jpg) center center / cover;
         }
         &.carrot{
-          background: url(../../images/main/review-03.jpg) center center / cover;
+          background: url(/images/main/new-carrot01.jpg) center center / cover;
         }
         &.noodle{
-          background: url(../../images/main/review-04.jpg) center center / cover;
+          background: url(/images/main/best-processed06.jpg) center center / cover;
         }
       }
+      .product{
+        font-size: 14px;
+        margin-left: 17px;
+      }
+    }
+    @media screen and (max-width: $bp-mobile) {
+      .img-big{
+        width: 100%;
+        height: 45vw;
+        margin-bottom: 7px;
+      }
       .star{
-        font-size: 24px;
-        color: $point;
-        margin: 10px 0 6px 0;
+        font-size: 18px;
+      }
+      .desc{
+        margin-top: 7px;
       }
       .name{
-        font-size: 12px;
-        color: $txt-disabled;
-        margin-top: 20px;
+        display: none;
       }
       .line{
         width: 100%;
-        height: 1px;
-      background: $line;
-        margin: 15px 0;
+        margin: 15px 0 10px 0;
       }
       .under-wrap{
-        display: flex;
-        align-items: center;
         .img-small{
-          width: 40px;
-          height: 40px;
-          border-radius: 5px;
-          margin-right: 17px;
-          &.meat{
-            background: url(../../images/main/best-meat01.jpg) center center / cover;
-          }
-          &.straw{
-            background: url(../../images/main/new-strawberry01.jpg) center center / cover;
-          }
-          &.carrot{
-            background: url(../../images/main/new-carrot01.jpg) center center / cover;
-          }
-          &.noodle{
-            background: url(../../images/main/best-processed06.jpg) center center / cover;
-          }
+          width: 25px;
+          height: 25px;
         }
         .product{
-          font-size: 14px;
-          color: $txt-secondary;
+          font-size: 10px;
+          margin-left: 5px;
         }
       }
     }
@@ -617,10 +937,31 @@ h2{
       font-family: 'BMJUA';
       span{
         color: $point;
+        br{
+          display: none;
+        }
       }
     }
     .coin{
       background: url(../../images/main/review-icon-coin.svg) center center / contain no-repeat;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      gap: 15px;
+      height: 100px;
+      margin-top: 30px;
+      .icon{
+        width: 60px;
+        height: 60px;
+      }
+      p{
+        font-size: 24px;
+        line-height: normal;
+        span{
+          br{
+            display: block;
+          }
+        }
+      }
     }
   }
 }
