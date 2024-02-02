@@ -146,8 +146,9 @@ h2{
   }
   @media screen and (max-width: $bp-mobile) {
     .swiper-pagination{
+      transform: scale(.9);
       position: absolute;
-      bottom: 20px;
+      bottom: 25px;
     }
   }
 }
