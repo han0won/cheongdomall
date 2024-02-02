@@ -59,6 +59,10 @@ h2{
 }
 
 // 메인 슬라이드 배너
+.mian-slide{
+  position: relative;
+  height: auto;
+}
 .main-slide-wrap{
   width: 100%;
   height: 420px;
@@ -70,7 +74,6 @@ h2{
     transition: all .4s ease-in-out;
     @media screen and (max-width: $bp-mobile) {
       opacity: 1;
-      transition: none;
     }
     .main-img{
       width: 100%;
@@ -141,21 +144,31 @@ h2{
     border-radius: 25px;
     border: none;
   }
+  @media screen and (max-width: $bp-mobile) {
+    .swiper-pagination{
+      position: absolute;
+    }
+  }
 }
-
 // 모바일 카테고리
 .mo-category{
   display: none;
   @media screen and (max-width: $bp-mobile) {
     display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 250px;
+    left: 0;
     width: 100%;
     height: auto;
     .cate-wrap{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 25px 0 25px;
-      border-radius: 15px 0;
+      padding: 25px 20px 30px 20px;
+      background: $w;
+      border-radius: 15px 15px 0;
+      box-shadow: 4px -4px 8px rgba(0, 0, 0, .03);
       .icon-wrap{
         display: flex;
         flex-direction: column;
@@ -168,10 +181,22 @@ h2{
         background: $bg-light;
         border-radius: 50%;
         .icon-img{
-          width: 30px;
-          height: 30px;
+          width: 25px;
+          height: 25px;
           &.vegi{
-            background: url(/images/comm/icon-cart.png);
+            background: url(/images/comm/icon-ctr1.png) center center / cover;
+          }
+          &.meat{
+            background: url(/images/comm/icon-ctr5.png) center center / cover;
+          }
+          &.fish{
+            background: url(/images/comm/icon-ctr2.png) center center / cover;
+          }
+          &.processed{
+            background: url(/images/comm/icon-ctr4.png) center center / cover;
+          }
+          &.present{
+            background: url(/images/comm/icon-ctr6.png) center center / cover;
           }
         }
       }

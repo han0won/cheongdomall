@@ -2,10 +2,12 @@ $(document).ready(function() {
 
   // main banner
   var swiper = new Swiper(".main-slide-wrap", {
-    autoplay: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     loop: true,
     slidesPerView: 1,
-    // centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
     },

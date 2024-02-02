@@ -805,7 +805,6 @@ h2 {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 475px) {
   .cate-wrap,
   .new-items,
@@ -821,14 +820,12 @@ h2 {
     padding: 0 20px;
   }
 }
-
 .new-items,
 .best-item,
 .farm,
 .review {
   margin-top: 150px;
 }
-
 @media screen and (max-width: 475px) {
   .new-items,
   .best-item,
@@ -838,11 +835,9 @@ h2 {
   }
 }
 
-
 .localfood,
 .recommend {
   margin-top: 210px;
-
 }
 @media screen and (max-width: 475px) {
   .localfood,
@@ -882,6 +877,10 @@ h2 {
   }
 }
 
+.mian-slide {
+  position: relative;
+  height: auto;
+}
 
 .main-slide-wrap {
   width: 100%;
@@ -899,7 +898,6 @@ h2 {
 @media screen and (max-width: 475px) {
   .main-slide-wrap .main-slide {
     opacity: 1;
-    transition: none;
   }
 }
 .main-slide-wrap .main-slide .main-img {
@@ -974,6 +972,11 @@ h2 {
   border-radius: 25px;
   border: none;
 }
+@media screen and (max-width: 475px) {
+  .main-slide-wrap .swiper-pagination {
+    position: absolute;
+  }
+}
 
 .mo-category {
   display: none;
@@ -981,6 +984,10 @@ h2 {
 @media screen and (max-width: 475px) {
   .mo-category {
     display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 250px;
+    left: 0;
     width: 100%;
     height: auto;
   }
@@ -988,8 +995,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 25px 0 25px;
-    border-radius: 15px 0;
+    padding: 25px 20px 30px 20px;
+    background: #fff;
+    border-radius: 15px 15px 0;
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.03);
   }
   .mo-category .cate-wrap .icon-wrap {
     display: flex;
@@ -1004,56 +1013,27 @@ h2 {
     border-radius: 50%;
   }
   .mo-category .cate-wrap .icon .icon-img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .mo-category .cate-wrap .icon .icon-img.vegi {
-    background: url(/images/comm/icon-cart.png);
+    background: url(/images/comm/icon-ctr1.png) center center/cover;
+  }
+  .mo-category .cate-wrap .icon .icon-img.meat {
+    background: url(/images/comm/icon-ctr5.png) center center/cover;
+  }
+  .mo-category .cate-wrap .icon .icon-img.fish {
+    background: url(/images/comm/icon-ctr2.png) center center/cover;
+  }
+  .mo-category .cate-wrap .icon .icon-img.processed {
+    background: url(/images/comm/icon-ctr4.png) center center/cover;
+  }
+  .mo-category .cate-wrap .icon .icon-img.present {
+    background: url(/images/comm/icon-ctr6.png) center center/cover;
   }
   .mo-category .cate-wrap p {
     font-size: 12px;
   }
-.main-slide .slide-wrap {
-  position: relative;
-}
-.main-slide .slide-wrap .slide {
-  margin-right: -30px;
-  transform: scale(0.9);
-  opacity: 0.4;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #E2E2E2;
-  border-radius: 20px;
-}
-.main-slide .slide-wrap .slide a {
-  width: 1105px;
-  height: 420px;
-  border-radius: inherit;
-}
-.main-slide .slide-wrap .slide a img {
-  border-radius: inherit;
-}
-.main-slide .slide-wrap .slick-center {
-  transform: scale(1);
-  opacity: 1;
-}
-.main-slide .slide-wrap .slick-dots {
-  bottom: 15px;
-}
-.main-slide .slide-wrap .slick-dots li {
-  width: 15px;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  border: 1px solid #E2E2E2;
-  transition: width 0.2s;
-}
-.main-slide .slide-wrap .slick-dots li button::before {
-  display: none;
-}
-.main-slide .slide-wrap .slick-dots li.slick-active {
-  width: 40px;
-  background: #77B934;
-  border: 1px solid #77B934;
 }
 
 .new-items {
@@ -1179,20 +1159,6 @@ h2 {
   .new-items .desc .price .won {
     font-size: 16px;
   }
-.new-items .new-scrollbar {
-  max-width: 1440px;
-  width: 90%;
-  height: 1px;
-  background: #E2E2E2;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.new-items .new-scrollbar .swiper-scrollbar-drag {
-  height: 3px;
-  top: -1px;
-  background: #77B934;
 }
 
 .localfood .video-wrap {
@@ -1260,6 +1226,7 @@ h2 {
     padding: 10px 20px;
   }
 }
+
 .best-item .tab-btns {
   display: flex;
   justify-content: center;
@@ -1297,11 +1264,13 @@ h2 {
 .best-item .best-tab.active {
   display: block;
 }
+
 @media screen and (max-width: 475px) {
   .best-tabs {
     margin-right: -20px;
   }
 }
+
 .best-tab {
   position: relative;
 }
@@ -1342,21 +1311,6 @@ h2 {
 }
 .best-tab .swiper-slide.swiper-slide-active {
   opacity: 1;
-}
-.best-tab .best-scrollbar {
-  max-width: 1440px;
-  width: 90%;
-  height: 1px;
-  background: #E2E2E2;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.best-tab .best-scrollbar .swiper-scrollbar-drag {
-  height: 3px;
-  top: -1px;
-  background: #77B934;
 }
 
 .best-card .best-thumbnail {
