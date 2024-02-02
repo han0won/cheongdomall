@@ -1,27 +1,37 @@
 $(document).ready(function() {
 
   // main banner
-  $('.slide-wrap').slick({
-    arrows: false,
-    dots: true,
+  var swiper = new Swiper(".main-slide-wrap", {
     autoplay: true,
-    autoplaySpeed: 3500,
-    centerMode: true,
-    slidesToShow: 3,
-    variableWidth: true,
-    responsive: [
-      {
-        // breakpoint: 1024,
-        // settings: {
-        // },
-        // breakpoint: 475,
-        // settings: {
-        //   centerMode: false,
-        //   slidesToShow: 1,
-        // },
-      }
-    ]
+    loop: true,
+    slidesPerView: 1.4,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
+
+  // $('.slide-wrap').slick({
+  //   arrows: false,
+  //   dots: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 3500,
+  //   centerMode: true,
+  //   slidesToShow: 3,
+  //   variableWidth: true,
+  //   responsive: [
+  //     {
+  //       // breakpoint: 1024,
+  //       // settings: {
+  //       // },
+  //       // breakpoint: 475,
+  //       // settings: {
+  //       //   centerMode: false,
+  //       //   slidesToShow: 1,
+  //       // },
+  //     }
+  //   ]
+  // });
 
   // new items
   var swiper = new Swiper(".new-slide", {

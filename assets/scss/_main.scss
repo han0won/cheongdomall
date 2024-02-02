@@ -58,49 +58,108 @@ h2{
 }
 
 // 메인 슬라이드 배너
-.main-slide{
-  .slide-wrap{
-    .slide{
-      margin-right: -30px;
-      transform: scale(0.9);
-      opacity: .4;
-      transition: all .3s ease-in-out;
-      border: 1px solid $line;
+
+.main-slide-wrap{
+  width: 100%;
+  height: 420px;
+  .main-slide{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+    .main-img{
+      width: 100%;
+      height: 100%;
       border-radius: 20px;
-      a{
-        width: 1105px;
-        height: 420px;
-        border-radius: inherit;
-        img{
-          border-radius: inherit;
-        }
+      border: 1px solid $line;
+      &.bnr01{
+        background: url(/images/main/main-bnr01.jpg) center center / cover;
       }
-    }
-    .slick-center{
-      transform: scale(1);
-      opacity: 1;
-    }
-    .slick-dots {
-      bottom: 15px;
-      li {
-        width: 15px;
-        height: 8px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 5px;
-        border: 1px solid $line;
-        transition: width 0.2s;
-        button::before {
-          display:none;
-        }
-        &.slick-active{
-          width: 40px;
-          background: $primary;
-          border: 1px solid $primary;
-        }
+      &.bnr02{
+        background: url(/images/main/main-bnr02.jpg) center center / cover;
+      }
+      &.bnr03{
+        background: url(/images/main/main-bnr03.jpg) center center / cover;
+      }
+      &.bnr04{
+        background: url(/images/main/main-bnr04.jpg) center center / cover;
+      }
+      &.bnr05{
+        background: url(/images/main/main-bnr05.jpg) center center / cover;
       }
     }
   }
+  &.swiper-backface-hidden .swiper-slide {
+    transform: scale(.93) translateZ(0);
+  }
+  &.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0);
+  }
+  .swiper-slide.swiper-slide-active {  
+    opacity: 1;
+  }
+  .swiper-pagination-bullet{
+    margin-right: 6px;
+    width: 15px;
+    height: 8px;
+    background: $w;
+    border-radius: 25px;
+    border: 1px solid $line;
+    opacity: .8;
+  }
+  .swiper-pagination-bullet-active{
+    width: 40px;
+    height: 8px;
+    background: $primary;
+    border-radius: 25px;
+    border: none;
+  }
 }
+
+
+
+
+// .main-slide{
+//   .slide-wrap{
+//     .slide{
+//       margin-right: -30px;
+//       transform: scale(0.9);
+//       opacity: .4;
+//       transition: all .3s ease-in-out;
+//       border: 1px solid $line;
+//       border-radius: 20px;
+//       a{
+//         width: 1105px;
+//         height: 420px;
+//         border-radius: inherit;
+//         img{
+//           border-radius: inherit;
+//         }
+//       }
+//     }
+//     .slick-center{
+//       transform: scale(1);
+//       opacity: 1;
+//     }
+//     .slick-dots {
+//       bottom: 15px;
+//       li {
+//         width: 15px;
+//         height: 8px;
+//         background: rgba(255, 255, 255, 0.7);
+//         border-radius: 5px;
+//         border: 1px solid $line;
+//         transition: width 0.2s;
+//         button::before {
+//           display:none;
+//         }
+//         &.slick-active{
+//           width: 40px;
+//           background: $primary;
+//           border: 1px solid $primary;
+//         }
+//       }
+//     }
+//   }
+// }
 
 // 신상품
 .new-items{

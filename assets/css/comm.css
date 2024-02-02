@@ -778,44 +778,59 @@ h2 {
   }
 }
 
-.main-slide .slide-wrap .slide {
-  margin-right: -30px;
-  transform: scale(0.9);
-  opacity: 0.4;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #E2E2E2;
-  border-radius: 20px;
-}
-.main-slide .slide-wrap .slide a {
-  width: 1105px;
+.main-slide-wrap {
+  width: 100%;
   height: 420px;
-  border-radius: inherit;
 }
-.main-slide .slide-wrap .slide a img {
-  border-radius: inherit;
+.main-slide-wrap .main-slide {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
-.main-slide .slide-wrap .slick-center {
-  transform: scale(1);
+.main-slide-wrap .main-slide .main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #E2E2E2;
+}
+.main-slide-wrap .main-slide .main-img.bnr01 {
+  background: url(/images/main/main-bnr01.jpg) center center/cover;
+}
+.main-slide-wrap .main-slide .main-img.bnr02 {
+  background: url(/images/main/main-bnr02.jpg) center center/cover;
+}
+.main-slide-wrap .main-slide .main-img.bnr03 {
+  background: url(/images/main/main-bnr03.jpg) center center/cover;
+}
+.main-slide-wrap .main-slide .main-img.bnr04 {
+  background: url(/images/main/main-bnr04.jpg) center center/cover;
+}
+.main-slide-wrap .main-slide .main-img.bnr05 {
+  background: url(/images/main/main-bnr05.jpg) center center/cover;
+}
+.main-slide-wrap.swiper-backface-hidden .swiper-slide {
+  transform: scale(0.93) translateZ(0);
+}
+.main-slide-wrap.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+  transform: scale(1) translateZ(0);
+}
+.main-slide-wrap .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
-.main-slide .slide-wrap .slick-dots {
-  bottom: 15px;
-}
-.main-slide .slide-wrap .slick-dots li {
+.main-slide-wrap .swiper-pagination-bullet {
+  margin-right: 6px;
   width: 15px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 25px;
   border: 1px solid #E2E2E2;
-  transition: width 0.2s;
+  opacity: 0.8;
 }
-.main-slide .slide-wrap .slick-dots li button::before {
-  display: none;
-}
-.main-slide .slide-wrap .slick-dots li.slick-active {
+.main-slide-wrap .swiper-pagination-bullet-active {
   width: 40px;
+  height: 8px;
   background: #77B934;
-  border: 1px solid #77B934;
+  border-radius: 25px;
+  border: none;
 }
 
 .new-items {
