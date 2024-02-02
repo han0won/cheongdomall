@@ -33,7 +33,7 @@ $(document).ready(function() {
     spaceBetween: 15,
     breakpoints: {
       476: {
-        slidesPerView: 2.8,
+        slidesPerView: 2.6,
         spaceBetween: 20,
       },
       1025: {
