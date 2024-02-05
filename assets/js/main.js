@@ -2,17 +2,21 @@ $(document).ready(function() {
 
   // main banner
   var swiper = new Swiper(".main-slide-wrap", {
-    autoplay: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     loop: true,
     slidesPerView: 1,
-    // centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
     },
     breakpoints: {
-      // 476: {
-        
-      // },
+      476: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: -5,
+      },
       1025: {
         slidesPerView: 1.4,
         centeredSlides: true,
@@ -31,7 +35,7 @@ $(document).ready(function() {
     spaceBetween: 15,
     breakpoints: {
       476: {
-        slidesPerView: 2.8,
+        slidesPerView: 2.6,
         spaceBetween: 20,
       },
       1025: {
@@ -100,11 +104,11 @@ $(document).ready(function() {
     },
     breakpoints: {
       476: {
+        spaceBetween: 20,
+      },
+      1025: {
         spaceBetween: 40,
       },
-      // 1025: {
-        
-      // },
     },
   });
 

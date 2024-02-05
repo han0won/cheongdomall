@@ -7,7 +7,7 @@
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
-  @media screen and (max-width: $bp-mobile) {
+  @media screen and (max-width: $bp-tablet) {
     padding: 0 20px;
   }
 }
@@ -59,6 +59,10 @@ h2{
 }
 
 // 메인 슬라이드 배너
+.mian-slide{
+  position: relative;
+  height: auto;
+}
 .main-slide-wrap{
   width: 100%;
   height: 420px;
@@ -70,7 +74,6 @@ h2{
     transition: all .4s ease-in-out;
     @media screen and (max-width: $bp-mobile) {
       opacity: 1;
-      transition: none;
     }
     .main-img{
       width: 100%;
@@ -91,6 +94,11 @@ h2{
       }
       &.bnr05{
         background: url(/images/main/main-bnr05.jpg) center center / cover;
+      }
+      @media screen and (max-width: $bp-tablet) {
+        &.bnr01{
+          background: url(/images/main/main-bnr01-t.jpg) center center / cover;
+        }
       }
       @media screen and (max-width: $bp-mobile) {
         border-radius: 0;
@@ -141,21 +149,33 @@ h2{
     border-radius: 25px;
     border: none;
   }
+  @media screen and (max-width: $bp-mobile) {
+    .swiper-pagination{
+      transform: scale(.9);
+      position: absolute;
+      bottom: 25px;
+    }
+  }
 }
-
 // 모바일 카테고리
 .mo-category{
   display: none;
   @media screen and (max-width: $bp-mobile) {
     display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 240px;
+    left: 0;
     width: 100%;
     height: auto;
     .cate-wrap{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 25px 0 25px;
-      border-radius: 15px 0;
+      padding: 25px 20px 0 20px;
+      background: $w;
+      border-radius: 15px 15px 0;
+      box-shadow: 4px -4px 8px rgba(0, 0, 0, .03);
       .icon-wrap{
         display: flex;
         flex-direction: column;
@@ -168,10 +188,22 @@ h2{
         background: $bg-light;
         border-radius: 50%;
         .icon-img{
-          width: 30px;
-          height: 30px;
+          width: 25px;
+          height: 25px;
           &.vegi{
-            background: url(/images/comm/icon-cart.png);
+            background: url(/images/comm/icon-ctr1.png) center center / cover;
+          }
+          &.meat{
+            background: url(/images/comm/icon-ctr5.png) center center / cover;
+          }
+          &.fish{
+            background: url(/images/comm/icon-ctr2.png) center center / cover;
+          }
+          &.processed{
+            background: url(/images/comm/icon-ctr4.png) center center / cover;
+          }
+          &.present{
+            background: url(/images/comm/icon-ctr6.png) center center / cover;
           }
         }
       }
@@ -185,16 +217,16 @@ h2{
 // 신상품
 .new-items{
   position: relative;
-  .new-slide-wrap{
-    @media screen and (max-width: $bp-mobile) {
-      margin-right: -20px;
-      overflow: hidden;
-    }
+  @media screen and (max-width: $bp-tablet) {
+    overflow: hidden;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    margin-top: 150px;
   }
   .new-slide{
     width: 100%;
     margin-top: 60px;
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       margin: 24px -20px 0 0;
       overflow: visible;
       &::after{
@@ -524,15 +556,17 @@ h2{
 // 추천상품
 .recommend{
   background: $bg-light;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
   overflow: hidden;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 65px 0;
+  }
 }
 .reco-wrap {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 30% auto;
-  
-  @media screen and (max-width: $bp-mobile) {
+  @media screen and (max-width: $bp-tablet) {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 24px;
@@ -544,12 +578,12 @@ h2{
       font-size: 20px;
       color: $txt-secondary;
     }
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       grid-column: 1;
     }
   }
   .reco-slide-wrap{
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       grid-column: 1;
       grid-row: 2;
     }
@@ -572,7 +606,7 @@ h2{
       .swiper-slide {
         display: flex;
         width: 80%;
-        @media screen and (max-width: $bp-mobile) {
+        @media screen and (max-width: $bp-tablet) {
           width: 95%;
         }
         .card-img{
@@ -588,7 +622,7 @@ h2{
           height: 60%;
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
           z-index: 1;
-          @media screen and (max-width: $bp-mobile) {
+          @media screen and (max-width: $bp-tablet) {
             height: 85%;
           }
         }
@@ -634,7 +668,7 @@ h2{
     left: 0;
     bottom: 0;
     text-align: left;
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       margin-top: 0;
       grid-column: 1;
       grid-row: 3;
@@ -713,9 +747,6 @@ h2{
     position: relative;
     display: none;
     margin-top: 1px;
-    @media screen and (max-width: $bp-mobile) {
-      margin: -5px -20px 0 -20px;
-    }
     &.active{
       display: block;
     }
@@ -759,6 +790,13 @@ h2{
         padding: 10px 30px;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
+      }
+      @media screen and (max-width: $bp-tablet) {
+        .tit{
+          span{
+            display: none;
+          }
+        }
       }
       @media screen and (max-width: $bp-mobile) {
         .tit{
@@ -808,6 +846,19 @@ h2{
       background: $w;
       padding: 21px;
       border-radius: 10px;
+      @media screen and (max-width: $bp-tablet) {
+        width: calc(33.3% - 10px);
+        padding: 15px;
+        border: 1px solid $line;
+        &.card-none{
+          display: none;
+        }
+      }
+      @media screen and (max-width: $bp-mobile) {
+        &.card-none{
+          display: block;
+        }
+      }
     }
     @media screen and (max-width: $bp-mobile) {
       margin-top: 24px;
