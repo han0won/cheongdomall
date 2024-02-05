@@ -38,21 +38,12 @@ $(document).ready(function(){
     $(".li-sauce").removeClass("open");
   });
 
-
-  function handleWindowSize() {
-    if ($(window).width() <= 475) {
-      $(".ctr-btn").click(function(){
-        $(".lnb-menu-wrap").hide();
-        $(".ctr-btn > i").removeClass("fa-xmark");
-        $(".lnb").toggleClass("m-hidden");
-      });
-    }
-  }; 
-
-  handleWindowSize();
-
-  $(window).resize(function() {
-    handleWindowSize();
+  // 모바일 화면에서 카테고리 오픈
+  $(".menu-icon").click(function(){
+    $(".lnb-mob-menu").animate({left: '0'}, 300);
   });
-
+  // 모바일 화면에서 카테고리 클로즈
+  $(".icon-close > a").click(function(){
+    $(".lnb-mob-menu").animate({left: '-100%'}, 300);
+  });
 });
