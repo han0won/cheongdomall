@@ -877,7 +877,7 @@ h2 {
   }
 }
 
-.mian-slide {
+.main-slide {
   position: relative;
   height: auto;
 }
@@ -993,7 +993,7 @@ h2 {
     display: block;
     z-index: 1;
     position: absolute;
-    bottom: 240px;
+    bottom: -95px;
     left: 0;
     width: 100%;
     height: auto;
@@ -1053,7 +1053,7 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .new-items {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 }
 .new-items .new-slide {
