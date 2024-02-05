@@ -104,11 +104,11 @@ $(document).ready(function() {
     },
     breakpoints: {
       476: {
+        spaceBetween: 20,
+      },
+      1025: {
         spaceBetween: 40,
       },
-      // 1025: {
-        
-      // },
     },
   });
 
