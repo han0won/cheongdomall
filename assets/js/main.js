@@ -12,9 +12,11 @@ $(document).ready(function() {
       el: ".swiper-pagination",
     },
     breakpoints: {
-      // 476: {
-        
-      // },
+      476: {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: -5,
+      },
       1025: {
         slidesPerView: 1.4,
         centeredSlides: true,

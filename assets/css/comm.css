@@ -921,6 +921,11 @@ h2 {
 .main-slide-wrap .main-slide .main-img.bnr05 {
   background: url(/images/main/main-bnr05.jpg) center center/cover;
 }
+@media screen and (max-width: 1024px) {
+  .main-slide-wrap .main-slide .main-img.bnr01 {
+    background: url(/images/main/main-bnr01-t.jpg) center center/cover;
+  }
+}
 @media screen and (max-width: 475px) {
   .main-slide-wrap .main-slide .main-img {
     border-radius: 0;

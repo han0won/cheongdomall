@@ -95,6 +95,11 @@ h2{
       &.bnr05{
         background: url(/images/main/main-bnr05.jpg) center center / cover;
       }
+      @media screen and (max-width: $bp-tablet) {
+        &.bnr01{
+          background: url(/images/main/main-bnr01-t.jpg) center center / cover;
+        }
+      }
       @media screen and (max-width: $bp-mobile) {
         border-radius: 0;
         border: none;
