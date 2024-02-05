@@ -1962,6 +1962,7 @@ h3 {
   background-image: url(../../images/sub1/infopage1.png);
 }
 .info-page1 .info-int1 {
+  font-family: "BMJUA";
   font-size: 60px;
 }
 
@@ -1980,6 +1981,7 @@ h3 {
   overflow: hidden;
 }
 .info-what p {
+  font-family: "BMJUA";
   font-size: 100px;
   font-weight: bold;
   text-align: center;
