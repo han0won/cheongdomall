@@ -7,7 +7,7 @@
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
-  @media screen and (max-width: $bp-mobile) {
+  @media screen and (max-width: $bp-tablet) {
     padding: 0 20px;
   }
 }
@@ -217,14 +217,16 @@ h2{
 // 신상품
 .new-items{
   position: relative;
+  @media screen and (max-width: $bp-tablet) {
+    overflow: hidden;
+  }
   @media screen and (max-width: $bp-mobile) {
     margin-top: 150px;
-    overflow: hidden;
   }
   .new-slide{
     width: 100%;
     margin-top: 60px;
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       margin: 24px -20px 0 0;
       overflow: visible;
       &::after{
@@ -745,9 +747,6 @@ h2{
     position: relative;
     display: none;
     margin-top: 1px;
-    @media screen and (max-width: $bp-mobile) {
-      margin: -5px -20px 0 -20px;
-    }
     &.active{
       display: block;
     }
@@ -853,6 +852,11 @@ h2{
         border: 1px solid $line;
         &.card-none{
           display: none;
+        }
+      }
+      @media screen and (max-width: $bp-mobile) {
+        &.card-none{
+          display: block;
         }
       }
     }
