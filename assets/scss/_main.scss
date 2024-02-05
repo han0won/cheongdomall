@@ -789,6 +789,13 @@ h2{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
       }
+      @media screen and (max-width: $bp-tablet) {
+        .tit{
+          span{
+            display: none;
+          }
+        }
+      }
       @media screen and (max-width: $bp-mobile) {
         .tit{
           font-size: 24px;

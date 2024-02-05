@@ -1649,6 +1649,11 @@ h2 {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .farm .farm-tab .txt-wrap .tit span {
+    display: none;
+  }
+}
 @media screen and (max-width: 475px) {
   .farm .farm-tab .txt-wrap .tit {
     font-size: 24px;
