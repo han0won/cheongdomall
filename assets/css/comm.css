@@ -925,6 +925,7 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .main-slide-wrap {
+    margin-top: 57px;
     height: 500px;
   }
 }
@@ -934,7 +935,6 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .main-slide-wrap .main-slide {
-    margin-top: 57px;
     opacity: 1;
   }
 }
