@@ -1705,6 +1705,16 @@ h2 {
   padding: 21px;
   border-radius: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .review .review-list .card-wrap {
+    width: calc(33.3% - 10px);
+    padding: 15px;
+    border: 1px solid #E2E2E2;
+  }
+  .review .review-list .card-wrap.card-none {
+    display: none;
+  }
+}
 @media screen and (max-width: 475px) {
   .review .review-list {
     margin-top: 24px;

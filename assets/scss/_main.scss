@@ -844,6 +844,14 @@ h2{
       background: $w;
       padding: 21px;
       border-radius: 10px;
+      @media screen and (max-width: $bp-tablet) {
+        width: calc(33.3% - 10px);
+        padding: 15px;
+        border: 1px solid $line;
+        &.card-none{
+          display: none;
+        }
+      }
     }
     @media screen and (max-width: $bp-mobile) {
       margin-top: 24px;
