@@ -3,6 +3,10 @@
 
 
 // contents
+.no-scroll {
+    overflow-y: hidden;
+}
+
 
 #header {
     max-width: 1440px;
@@ -381,10 +385,10 @@
     height: 100vh;
     z-index: 1000;
     background-color: $bg-light;
+    overflow-y: auto;
     
     .mob-menu-wrap {
         flex-grow: 1;
-        overflow-y: auto;
     }
     .signin-tap,
     .service-tap,
@@ -681,6 +685,7 @@
     height: 90px;
     background-color: $brightest;
     border-bottom: 1px solid $line;
+    overflow-y: auto;
 
     .icon-phone,
     .banner-text {

@@ -57,6 +57,7 @@ a:link, a:visited, a:active, a:hover {
 h2 {
   font-family: "BMJUA";
   font-size: 50px;
+  font-weight: normal;
 }
 
 #u-skip {
@@ -80,6 +81,10 @@ h2 {
   top: 0;
   opacity: 1;
   z-index: 1000;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 #header {
@@ -440,10 +445,10 @@ h2 {
   height: 100vh;
   z-index: 1000;
   background-color: #F5F5F5;
+  overflow-y: auto;
 }
 .lnb-mob-menu .mob-menu-wrap {
   flex-grow: 1;
-  overflow-y: auto;
 }
 .lnb-mob-menu .signin-tap,
 .lnb-mob-menu .service-tap,
@@ -716,6 +721,7 @@ h2 {
   height: 90px;
   background-color: #E7F4D7;
   border-bottom: 1px solid #E2E2E2;
+  overflow-y: auto;
 }
 .mob-banner-wrap .icon-phone,
 .mob-banner-wrap .banner-text {
@@ -824,6 +830,7 @@ h2 {
 .review-wrap {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 80px;
 }
 @media screen and (max-width: 1024px) {
   .cate-wrap,
@@ -909,7 +916,6 @@ h2 {
 
 .main-slide {
   position: relative;
-  margin-top: 57px;
   height: auto;
 }
 
@@ -928,6 +934,7 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .main-slide-wrap .main-slide {
+    margin-top: 57px;
     opacity: 1;
   }
 }
@@ -1115,6 +1122,17 @@ h2 {
 .new-items .new-thumbnail {
   position: relative;
   margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  line-height: 0;
+}
+.new-items .new-thumbnail a {
+  display: block;
+  width: 100%;
+}
+.new-items .new-thumbnail img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 @media screen and (max-width: 475px) {
   .new-items .new-thumbnail {
@@ -1361,6 +1379,14 @@ h2 {
 
 .best-card .best-thumbnail {
   position: relative;
+}
+.best-card .best-thumbnail {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.best-card .best-thumbnail img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 .best-card .cart {
   display: flex;
@@ -1688,18 +1714,10 @@ h2 {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
 }
-@media screen and (max-width: 1024px) {
-  .farm .farm-tab .txt-wrap .tit span {
-    display: none;
-  }
-}
 @media screen and (max-width: 475px) {
   .farm .farm-tab .txt-wrap .tit {
     font-size: 24px;
     margin-bottom: 30px;
-  }
-  .farm .farm-tab .txt-wrap .tit span {
-    display: none;
   }
   .farm .farm-tab .txt-wrap .txt {
     display: none;
@@ -2559,6 +2577,7 @@ h3 {
   font-family: "Pretendard-Regular";
   font-size: 50px;
   text-align: center;
+  font-weight: 600;
 }
 .service-info .search-wrap {
   display: flex;

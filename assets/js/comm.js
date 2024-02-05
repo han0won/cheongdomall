@@ -41,9 +41,11 @@ $(document).ready(function(){
   // 모바일 화면에서 카테고리 오픈
   $(".menu-icon-bar").click(function(){
     $(".lnb-mob-menu").animate({left: '0'}, 300);
+    $("body").addClass("no-scroll")
   });
   // 모바일 화면에서 카테고리 클로즈
   $(".icon-close > a").click(function(){
     $(".lnb-mob-menu").animate({left: '-100%'}, 300);
+    $("body").removeClass("no-scroll")
   });
 });

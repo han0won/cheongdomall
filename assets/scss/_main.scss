@@ -7,6 +7,7 @@
 .review-wrap{
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 80px;
   @media screen and (max-width: $bp-tablet) {
     max-width: 800px;
     padding: 0 16px;
@@ -65,7 +66,6 @@ h2{
 // 메인 슬라이드 배너
 .main-slide{
   position: relative;
-  margin-top: 57px;
   height: auto;
 }
 .main-slide-wrap{
@@ -78,6 +78,7 @@ h2{
     opacity: .5;
     transition: all .4s ease-in-out;
     @media screen and (max-width: $bp-mobile) {
+      margin-top: 57px;
       opacity: 1;
     }
     .main-img{
@@ -251,7 +252,20 @@ h2{
   }
   .new-thumbnail{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    overflow: hidden;    
+    border-radius: 10px;
+    line-height: 0;
+
+    a {
+      display: block;
+      width: 100%;
+    }
+    img:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
+
     @media screen and (max-width: $bp-mobile) {
       margin-bottom: 10px;
     }
@@ -492,6 +506,16 @@ h2{
 .best-card{
   .best-thumbnail{
     position: relative;
+  }
+  .best-thumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .best-thumbnail img{
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
   }
   .cart{
     display: flex;
@@ -798,20 +822,10 @@ h2{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
       }
-      @media screen and (max-width: $bp-tablet) {
-        .tit{
-          span{
-            display: none;
-          }
-        }
-      }
       @media screen and (max-width: $bp-mobile) {
         .tit{
           font-size: 24px;
           margin-bottom: 30px;
-          span{
-            display: none;
-          }
         }
         .txt{
           display: none;
