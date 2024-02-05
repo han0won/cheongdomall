@@ -303,115 +303,6 @@ h2 {
 #header .nav-bottom .nav-icon-wrap img {
   vertical-align: top;
 }
-#header .lnb-mob-menu {
-  position: absolute;
-  top: 0;
-  left: -100%;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #F5F5F5;
-  z-index: 1000;
-}
-#header .lnb-mob-menu .signin-tap,
-#header .lnb-mob-menu .service-tap,
-#header .lnb-mob-menu .ctr-tap,
-#header .lnb-mob-menu .theme-tap {
-  margin-bottom: 10px;
-  padding: 20px 16px;
-  background: #fff;
-}
-#header .lnb-mob-menu .service-tap,
-#header .lnb-mob-menu .ctr-wrap,
-#header .lnb-mob-menu .theme-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-#header .lnb-mob-menu .signin-tap .icon-close {
-  width: 24px;
-  height: 24px;
-}
-#header .lnb-mob-menu .signin-tap .icon-close a {
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-#header .lnb-mob-menu .signin-tap .icon-close img {
-  height: 12px;
-}
-#header .lnb-mob-menu .service-wrap,
-#header .lnb-mob-menu .ctr-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px 10px;
-}
-#header .lnb-mob-menu .service-wrap a,
-#header .lnb-mob-menu .ctr-wrap a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#header .lnb-mob-menu .service-wrap p,
-#header .lnb-mob-menu .ctr-wrap p {
-  padding-top: 10px;
-}
-#header .lnb-mob-menu strong {
-  display: block;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-family: "BMJUA";
-  font-weight: normal;
-}
-#header .lnb-mob-menu p {
-  font-size: 14px;
-}
-#header .lnb-mob-menu .signin-tap {
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-}
-#header .lnb-mob-menu .signin-tap .signin-wrap,
-#header .lnb-mob-menu .signin-tap a {
-  display: flex;
-  gap: 20px;
-}
-#header .lnb-mob-menu .signin-tap p {
-  font-size: 16px;
-}
-#header .lnb-mob-menu .service-tap img {
-  width: 32px;
-  height: 32px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#header .lnb-mob-menu .theme-wrap .theme-box {
-  width: 48%;
-}
-#header .lnb-mob-menu .theme-wrap .theme-box:nth-child(1), #header .lnb-mob-menu .theme-wrap .theme-box:nth-child(2) {
-  padding-bottom: 15px;
-}
-#header .lnb-mob-menu .theme-wrap a {
-  width: 100%;
-  height: 100%;
-}
-#header .lnb-mob-menu .theme-wrap img {
-  border-radius: 5px;
-  width: 100%;
-}
-#header .lnb-mob-menu .theme-wrap p {
-  padding-top: 10px;
-  text-align: center;
-}
-#header .lnb-mob-menu .banner-box img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-}
 #header #header-sub .h-sub-wrap {
   position: fixed;
   left: 0;
@@ -536,6 +427,122 @@ h2 {
     font-family: "BMJUA";
     font-size: 15px;
   }
+}
+
+.lnb-mob-menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #F5F5F5;
+}
+.lnb-mob-menu .mob-menu-wrap {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.lnb-mob-menu .signin-tap,
+.lnb-mob-menu .service-tap,
+.lnb-mob-menu .ctr-tap,
+.lnb-mob-menu .theme-tap {
+  margin-bottom: 10px;
+  padding: 20px 16px;
+  background: #fff;
+}
+.lnb-mob-menu .service-tap,
+.lnb-mob-menu .ctr-wrap,
+.lnb-mob-menu .theme-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lnb-mob-menu .signin-tap .icon-close {
+  width: 24px;
+  height: 24px;
+}
+.lnb-mob-menu .signin-tap .icon-close a {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.lnb-mob-menu .signin-tap .icon-close img {
+  height: 12px;
+}
+.lnb-mob-menu .service-wrap,
+.lnb-mob-menu .ctr-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px;
+}
+.lnb-mob-menu .service-wrap a,
+.lnb-mob-menu .ctr-wrap a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lnb-mob-menu .service-wrap p,
+.lnb-mob-menu .ctr-wrap p {
+  padding-top: 10px;
+}
+.lnb-mob-menu strong {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "BMJUA";
+  font-weight: normal;
+}
+.lnb-mob-menu p {
+  font-size: 14px;
+}
+.lnb-mob-menu .signin-tap {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.lnb-mob-menu .signin-tap .signin-wrap,
+.lnb-mob-menu .signin-tap a {
+  display: flex;
+  gap: 20px;
+}
+.lnb-mob-menu .signin-tap p {
+  font-size: 16px;
+}
+.lnb-mob-menu .service-tap img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.lnb-mob-menu .theme-wrap .theme-box {
+  width: 48%;
+}
+.lnb-mob-menu .theme-wrap .theme-box:nth-child(1), .lnb-mob-menu .theme-wrap .theme-box:nth-child(2) {
+  padding-bottom: 15px;
+}
+.lnb-mob-menu .theme-wrap a {
+  width: 100%;
+  height: 100%;
+}
+.lnb-mob-menu .theme-wrap img {
+  border-radius: 5px;
+  width: 100%;
+}
+.lnb-mob-menu .theme-wrap p {
+  padding-top: 10px;
+  text-align: center;
+}
+.lnb-mob-menu .banner-box img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #footer {
@@ -889,6 +896,7 @@ h2 {
     font-size: 16px;
   }
 }
+
 
 .mian-slide {
   position: relative;
@@ -2191,7 +2199,7 @@ h3 {
 }
 .info-fresh .sparkle2 {
   top: 103px;
-  left: 550px;
+  left: 450px;
   width: 80px;
   height: 80px;
 }
