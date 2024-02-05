@@ -554,8 +554,11 @@ h2{
 // 추천상품
 .recommend{
   background: $bg-light;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
   overflow: hidden;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 65px 0;
+  }
 }
 .reco-wrap {
   margin: 0 auto;

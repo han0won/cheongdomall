@@ -1391,8 +1391,13 @@ h2 {
 
 .recommend {
   background: #F5F5F5;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
   overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .recommend {
+    padding: 65px 0;
+  }
 }
 
 .reco-wrap {
