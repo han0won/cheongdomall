@@ -21,7 +21,7 @@
 <body>
 <!-- 헤더 -->
 <header id="header">
-    <div class="h-wrap">
+    <div class="h-wrap m-hidden">
         <div class="nav-top">
             <a href="#"><p>회원가입</p></a>
             <a href="#"><p>로그인</p></a>
@@ -32,7 +32,7 @@
             <a href="#" class="logo-m"></a> 
         </h1>
         <div class="nav-bottom">
-            <div class="lnb m-hidden"> 
+            <div class="lnb"> 
                 <div class="lnb-btn-wrap">
                     <a href="#">
                         <div class="ctr-btn">
@@ -110,9 +110,6 @@
                     <a href="#">
                     <img src="./images/comm/icon-search.png" alt="장바구니 아이콘">  
                     </a>
-                    <!-- <div class="search-area">
-                        <input type="text" placeholder="검색어를 입력해주세요." value="">
-                    </div> -->
                 </button>
                 <div class="btn-cart nav-icon">
                     <a href="#">
@@ -127,14 +124,14 @@
             </div>
         </div>
     </div>
-    <!-- <div id="header-sub" class="m-visible">
+    <div id="header-sub" class="m-visible">
         <div class="h-sub-wrap">
             <a href="#" class="top-icon-back">
                 <img src="./images/comm/icon-back.png" alt="뒤로가기">
             </a>
             <p>로컬푸드란?</p>
         </div>
-    </div> -->
+    </div>
     <div class="lnb-mob-menu m-visible">
         <div class="mob-menu-wrap">
             <div class="signin-tap">
@@ -518,6 +515,9 @@
             <a href="#"><strong>로컬푸드</strong> 만나러가기</a>
         </div>
     </div>
+</div>
+<!-- 푸터 -->
+<footer id="footer">
     <div class="mob-banner m-visible">
         <div class="mob-banner-wrap">
             <div class="icon-phone">
@@ -531,9 +531,6 @@
             </div>
         </div>
     </div>
-</div>
-<!-- 푸터 -->
-<footer id="footer">
     <div class="f-wrap">
         <div class="f-left">
             <div class="f-top">
@@ -583,42 +580,43 @@
             <p>주말 및 공휴일 휴무</p>
         </div>
     </div>
-</footer>
-<div class="bottom-menu m-visible">
-    <div class="bottom-menu-wrap">
-        <div class="menu-logo">
-            <a href="#">
-                <img src="./images/comm/logo-menu.png" alt="로고">
-            </a>
-        </div>
-        <div class="menu-icon-wrap">
-            <div class="menu-wrap">
-                <div class="menu-icon">
-                    <a href="#" class="menu-icon-bar">
-                        메뉴 바로가기
-                    </a>
-                </div>
-                <div class="menu-icon">
-                    <a href="#" class="menu-icon-search">
-                        검색하기
-                    </a>
-                </div>
+    <div class="bottom-menu m-visible">
+        <div class="bottom-menu-wrap">
+            <div class="menu-logo">
+                <a href="#">
+                    <img src="./images/comm/logo-menu.png" alt="로고">
+                </a>
             </div>
-            <div class="menu-wrap">
-                <div class="menu-icon">
-                    <a href="#" class="menu-icon-cart">
-                        장바구니 바로가기
-                    </a>
+            <div class="menu-icon-wrap">
+                <div class="menu-wrap">
+                    <div class="menu-icon">
+                        <a href="#" class="menu-icon-bar">
+                            메뉴 바로가기
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" class="menu-icon-search">
+                            검색하기
+                        </a>
+                    </div>
                 </div>
-                <div class="menu-icon">
-                    <a href="#" class="menu-icon-user">
-                        마이페이지 가기
-                    </a>
+                <div class="menu-wrap">
+                    <div class="menu-icon">
+                        <a href="#" class="menu-icon-cart">
+                            장바구니 바로가기
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" class="menu-icon-user">
+                            마이페이지 가기
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</footer>
+
 <script>
     AOS.init();
   </script>

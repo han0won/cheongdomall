@@ -65,7 +65,7 @@ h2 {
 }
 #u-skip a {
   position: absolute;
-  top: -35px;
+  top: -200px;
   left: 0;
   right: 0;
   display: inline-block;
@@ -548,6 +548,7 @@ h2 {
 #footer {
   width: 100%;
   background-color: #F5F5F5;
+  border-top: 1px solid #E2E2E2;
 }
 #footer .f-wrap {
   max-width: 1440px;
@@ -714,7 +715,6 @@ h2 {
        column-gap: 20px;
   height: 90px;
   background-color: #E7F4D7;
-  border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
 }
 .mob-banner-wrap .icon-phone,
@@ -831,6 +831,16 @@ h2 {
   .reco-wrap,
   .farm,
   .review-wrap {
+    max-width: 800px;
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .cate-wrap,
+  .new-items,
+  .reco-wrap,
+  .farm,
+  .review-wrap {
     padding: 0 20px;
   }
 }
@@ -897,13 +907,9 @@ h2 {
   }
 }
 
-<<<<<<< HEAD
 .main-slide {
-=======
-
-.mian-slide {
->>>>>>> c0aa21fa0f32c439d8e9a5579501d87a700fb15c
   position: relative;
+  margin-top: 57px;
   height: auto;
 }
 
@@ -1087,7 +1093,6 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .new-items .new-slide {
-    margin: 24px -20px 0 0;
     overflow: visible;
   }
   .new-items .new-slide::after {
@@ -1100,6 +1105,11 @@ h2 {
     top: 0;
     bottom: 0;
     z-index: 1;
+  }
+}
+@media screen and (max-width: 475px) {
+  .new-items .new-slide {
+    margin: 24px -20px 0 0;
   }
 }
 .new-items .new-thumbnail {

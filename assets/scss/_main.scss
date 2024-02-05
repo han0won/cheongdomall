@@ -8,6 +8,10 @@
   max-width: 1440px;
   margin: 0 auto;
   @media screen and (max-width: $bp-tablet) {
+    max-width: 800px;
+    padding: 0 16px;
+  }
+  @media screen and (max-width: $bp-mobile) {
     padding: 0 20px;
   }
 }
@@ -61,6 +65,7 @@ h2{
 // 메인 슬라이드 배너
 .main-slide{
   position: relative;
+  margin-top: 57px;
   height: auto;
 }
 .main-slide-wrap{
@@ -227,7 +232,6 @@ h2{
     width: 100%;
     margin-top: 60px;
     @media screen and (max-width: $bp-tablet) {
-      margin: 24px -20px 0 0;
       overflow: visible;
       &::after{
         content: '';
@@ -240,6 +244,9 @@ h2{
         bottom: 0;
         z-index: 1;
       }
+    }
+    @media screen and (max-width: $bp-mobile) {
+      margin: 24px -20px 0 0;
     }
   }
   .new-thumbnail{

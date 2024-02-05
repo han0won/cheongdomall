@@ -497,6 +497,7 @@
 #footer {
     width: 100%;
     background-color: $bg-light;
+    border-top: 1px solid $line;
    
     .f-wrap {
         max-width: 1440px;
@@ -679,7 +680,6 @@
     column-gap: 20px;
     height: 90px;
     background-color: $brightest;
-    border-top: 1px solid $line;
     border-bottom: 1px solid $line;
 
     .icon-phone,

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>청도몰</title>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- fonts -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -18,6 +20,7 @@
   <!-- slide --> 
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/comm.js"></script>
   <script src="./assets/js/main.js"></script>
 </head>
 <body>
@@ -27,9 +30,240 @@
   </div>
 
   <div class="wrap">
-    <header>
-      <!-- 영원님 파트 합치기 -->
-    </header>
+    <header id="header">
+      <div class="h-wrap">
+          <div class="nav-top">
+              <a href="#"><p>회원가입</p></a>
+              <a href="#"><p>로그인</p></a>
+              <a href="#"><p>고객센터</p></a>
+          </div>
+          <h1 id="logo" class="logo">
+              <a href="#" class="logo-w"></a> 
+              <a href="#" class="logo-m"></a> 
+          </h1>
+          <div class="nav-bottom">
+              <div class="lnb m-hidden"> 
+                  <div class="lnb-btn-wrap">
+                      <a href="#">
+                          <div class="ctr-btn">
+                              <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                          </div>
+                          <p class="m-hidden">전체 카테고리</p>
+                      </a>
+                  </div>
+                  <div class="lnb-menu-wrap">
+                      <div class="lnb-depth1">
+                          <ul class="depth1">
+                              <li class="lnb-d1 d1-wide">
+                                  <a href="#">로컬푸드란?</a>
+                              </li>
+                              <li class="lnb-d1 d1-first">
+                                  <a href="#" class="vegetable">과일/채소/쌀</a>
+                                  <ul class="depth2 li-vegetable">
+                                      <li><a href="#">과일</a></li>
+                                      <li><a href="#">채소</a></li>
+                                      <li><a href="#">건조/냉동과일</a></li>
+                                      <li><a href="#">견과류</a></li>
+                                      <li><a href="#">쌀/잡곡</a></li>
+                                  </ul>
+                              </li>
+                              <li class="lnb-d1">
+                                  <a href="#" class="meat">축산/수산</a>
+                                  <ul class="depth2 li-meat">
+                                      <li><a href="#">소고기/돼지고기</a></li>
+                                      <li><a href="#">닭/오리/조류</a></li>
+                                      <li><a href="#">수산물</a></li>
+                                      <li><a href="#">기타 축수산물</a></li>
+                                  </ul>
+                              </li>
+                              <li class="lnb-d1">
+                                  <a href="#" class="snack">반찬/간식류</a>
+                                  <ul class="depth2 li-snack">
+                                      <li><a href="#">국/탕/찌개</a></li>
+                                      <li><a href="#">밑반찬</a></li>
+                                      <li><a href="#">김치/장아찌/젓갈</a></li>
+                                      <li><a href="#">통조림/햄/소시지</a></li>
+                                      <li><a href="#">간식류</a></li>
+                                  </ul>
+                              </li>
+                              <li class="lnb-d1 d1-last">
+                                  <a href="#" class="sauce">가공식품/양념류</a>
+                                  <ul class="depth2 li-sauce">
+                                      <li><a href="#">간편식</a></li>
+                                      <li><a href="#">가공식품</a></li>
+                                      <li><a href="#">양념/오일/소스</a></li>
+                                      <li><a href="#">면/즙류</a></li>
+                                      <li><a href="#">기타 가공식품</a></li>
+                                  </ul>
+                              </li>
+                              <li class="lnb-d1 d1-first"><a href="#">신상품</a></li>
+                              <li class="lnb-d1"><a href="#">베스트</a></li>
+                              <li class="lnb-d1"><a href="#">선물세트</a></li>
+                              <li class="lnb-d1 d1-last"><a href="#">이벤트</a></li>
+                              <li class="lnb-d1 d1-wide"><a href="#">고객센터</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <nav id="gnb">
+                  <ul>
+                      <li><a href="#" class="nav-local">로컬푸드란?</a></li>
+                      <li class="m-visible"><span></span></li>
+                      <li><a href="#">신상품</a></li>
+                      <li><a href="#">베스트</a></li>
+                      <li><a href="#">선물세트</a></li>
+                      <li><a href="#">이벤트</a></li>
+                  </ul>
+              </nav>
+              <div class="nav-icon-wrap m-hidden">
+                  <button type="button" class="nav-icon btn-search">
+                      <a href="#">
+                      <img src="./images/comm/icon-search.png" alt="장바구니 아이콘">  
+                      </a>
+                  </button>
+                  <div class="btn-cart nav-icon">
+                      <a href="#">
+                          <img src="./images/comm/icon-cart.png" alt="장바구니 아이콘">
+                      </a>
+                  </div>
+                  <div class="btn-mypage nav-icon">
+                      <a href="#">
+                          <img src="./images/comm/icon-user.png" alt="마이페이지 아이콘">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lnb-mob-menu m-visible">
+          <div class="mob-menu-wrap">
+              <div class="signin-tap">
+                  <div class="signin-wrap">
+                      <a href="#">
+                          <p>로그인 해주세요</p>
+                          <div class="icon-goto">
+                              <img src="./images/comm/icon-goto.png" alt="로그인 아이콘">
+                          </div>
+                      </a>
+                  </div>
+                  <div class="icon-close">
+                      <a href="#">
+                          <img src="./images/comm/icon-close.png" alt="">
+                      </a>
+                  </div>
+              </div>
+              <div class="service-tap">
+                  <div class="service-wrap">
+                      <div class="service-box">
+                          <a href="#">
+                              <div class="ser-img">
+                                  <img src="./images/sub2/icon_box.png" alt="주문조회">
+                              </div>
+                              <p>주문조회</p>
+                          </a>
+                      </div>
+                      <div class="service-box">
+                          <a href="#">
+                              <div class="ser-img">
+                                  <img src="./images/sub2/icon_ask.png" alt="1:1문의">
+                              </div>
+                              <p>1:1문의</p>
+                          </a>
+                      </div>
+                      <div class="service-box">
+                          <a href="#">
+                              <div class="ser-img">
+                                  <img src="./images/sub2/icon_coupon.png" alt="쿠폰내역">
+                              </div>
+                              <p>쿠폰내역</p>
+                          </a>
+                      </div>
+                      <div class="service-box">
+                          <a href="#">
+                              <div class="ser-img">
+                                  <img src="./images/sub2/icon_cash.png" alt="마일리지">
+                              </div>
+                              <p>마일리지</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="ctr-tap">
+                  <strong>카테고리</strong>
+                  <div class="ctr-wrap">
+                      <div class="ctr-box">
+                          <a href="#">
+                              <div class="ctr-img">
+                                  <img src="./images/comm/icon-ctr1.png" alt="과일/채소/쌀">
+                              </div>
+                              <p>과일/채소/쌀</p>
+                          </a>
+                      </div>
+                      <div class="ctr-box">
+                          <a href="#">
+                              <div class="ctr-img">
+                                  <img src="./images/comm/icon-ctr2.png" alt="축산/수산">
+                              </div>
+                              <p>축산/수산</p>
+                          </a>
+                      </div>
+                      <div class="ctr-box">
+                          <a href="#">
+                              <div class="ctr-img">
+                                  <img src="./images/comm/icon-ctr3.png" alt="반찬/간식류">
+                              </div>
+                              <p>반찬/간식류</p>
+                          </a>
+                      </div>
+                      <div class="ctr-box">
+                          <a href="#">
+                              <div class="ctr-img">
+                                  <img src="./images/comm/icon-ctr4.png" alt="가공식품">
+                              </div>
+                              <p>가공식품</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-tap">
+                  <strong>테마추천</strong>
+                  <div class="theme-wrap">
+                      <div class="theme-box">
+                          <a href="#">
+                              <div class="theme-img">
+                                  <img src="./images/comm/img-theme.png" alt="신상품">
+                              </div>
+                              <p>신상품</p>
+                          </a>
+                      </div>
+                      <div class="theme-box">
+                          <a href="#">
+                              <img src="./images/comm/img-theme.png" alt="베스트">                                
+                          </a>
+                          <p>베스트</p>
+                      </div>
+                      <div class="theme-box">
+                          <a href="#">
+                              <img src="./images/comm/img-theme.png" alt="선물세트">
+                              <p>선물세트</p>
+                          </a>
+                      </div>
+                      <div class="theme-box">
+                          <a href="#">
+                              <div class="theme-img">
+                                  <img src="./images/comm/img-theme.png" alt="이벤트">
+                              <p>이벤트</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="banner-box">
+              <a href="#">
+                  <img src="./images/comm/img-banner.png" alt="리뷰 작성하고 포인트 받자!">
+              </a>
+          </div>
+      </div>
+  </header>
 
     <!-- 메인 배너 슬라이드 + 모바일 카테고리 -->
     <div class="main-slide">
@@ -1074,9 +1308,105 @@
       </section>
     </main>
 
-    <footer>
-      <!-- 영원님 파트 합치기 -->
-    </footer>
+    <footer id="footer">
+      <div class="mob-banner m-visible">
+          <div class="mob-banner-wrap">
+              <div class="icon-phone">
+                  <img src="./images/sub2/icon_phone.png" alt="전화기">
+              </div>
+              <div class="banner-wrap">
+                  <div class="banner-text">
+                      <p>고객센터 <strong>054.372.4174</strong></p>
+                  </div>
+                  <span>평일 09:00 - 18:00 (점심시간 12:30 - 13:30)</span>
+              </div>
+          </div>
+      </div>
+      <div class="f-wrap">
+          <div class="f-left">
+              <div class="f-top">
+                  <ul>
+                      <li><a href="#">홈</a></li>
+                      <li><a href="#">회사소개</a></li>
+                      <li><a href="#">이용약관</a></li>
+                      <li><a href="#">개인정보처리방침</a></li>
+                      <li><a href="#">이용안내</a></li>
+                      <li class="m-hidden"><a href="#">입점안내/제휴안내</a></li>
+                      <li class="m-hidden"><a href="#">농가관리자페이지</a></li>
+                  </ul>
+              </div>
+              <div class="f-middle">
+                  <div class="f-m-inner">
+                      <p>대표자 : 문종우
+                      <span class="line"></span>
+                      회사명 : 농업회사법인 엘푸드 주식회사
+                      <span class="line m-hidden"></span>
+                      <br class="m-visible">사업자등록번호 : 362-81-00829</p>
+                      <p>전화 : 054-372-4174
+                          <span class="line"></span>
+                      팩스 : 054-372-4175</p>
+                      <p>통신판매업신고번호 : 제 2017-5190058-30-2-00075 호</p>
+                      <p>개인정보보호책임자 : 황다겸 (lfoodshop@naver.com)
+                      <span class="line m-hidden"></span>
+                      <br class="m-visible">
+                      호스팅 제공자 : (주)가비아씨엔에스</p>
+                  </div>
+                  <p>엘푸드(주)는 본사판매상품을 제외한 제품은 입점사가 등록한 일반상품의 거래당사자가 아니며, <br class="m-hidden">입점판매자가 등록한 상품정보 및 거래에 대해 청도몰은 일체 책임을 지지 않습니다.</br>
+              </div>
+              <div class="f-bottom">
+                  <p class="copyright">
+                      COPYRIGHT (c) 농업회사법인 엘푸드 주식회사 ALL RIGHTS RESERVED.
+                  </p>
+              </div>
+          </div>
+          <div class="f-right">
+              <strong>고객센터</strong>
+              <p class="number">054.372.4174</p>
+                  <div class="f-r-wrap">
+                      <p>월 - 금</p>
+                      <p>09:00 -18:00</p>
+                      <p>점심시간</p>
+                      <p>12:30 - 13:30</p>
+                  </div>
+              <p>주말 및 공휴일 휴무</p>
+          </div>
+      </div>
+      <div class="bottom-menu m-visible">
+          <div class="bottom-menu-wrap">
+              <div class="menu-logo">
+                  <a href="#">
+                      <img src="./images/comm/logo-menu.png" alt="로고">
+                  </a>
+              </div>
+              <div class="menu-icon-wrap">
+                  <div class="menu-wrap">
+                      <div class="menu-icon">
+                          <a href="#" class="menu-icon-bar">
+                              메뉴 바로가기
+                          </a>
+                      </div>
+                      <div class="menu-icon">
+                          <a href="#" class="menu-icon-search">
+                              검색하기
+                          </a>
+                      </div>
+                  </div>
+                  <div class="menu-wrap">
+                      <div class="menu-icon">
+                          <a href="#" class="menu-icon-cart">
+                              장바구니 바로가기
+                          </a>
+                      </div>
+                      <div class="menu-icon">
+                          <a href="#" class="menu-icon-user">
+                              마이페이지 가기
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
   </div>
 </body>
 </html>

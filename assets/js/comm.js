@@ -39,7 +39,7 @@ $(document).ready(function(){
   });
 
   // 모바일 화면에서 카테고리 오픈
-  $(".menu-icon").click(function(){
+  $(".menu-icon-bar").click(function(){
     $(".lnb-mob-menu").animate({left: '0'}, 300);
   });
   // 모바일 화면에서 카테고리 클로즈
