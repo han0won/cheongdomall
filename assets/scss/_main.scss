@@ -59,7 +59,7 @@ h2{
 }
 
 // 메인 슬라이드 배너
-.mian-slide{
+.main-slide{
   position: relative;
   height: auto;
 }
@@ -164,7 +164,7 @@ h2{
     display: block;
     z-index: 1;
     position: absolute;
-    bottom: 240px;
+    bottom: -95px;
     left: 0;
     width: 100%;
     height: auto;
@@ -221,7 +221,7 @@ h2{
     overflow: hidden;
   }
   @media screen and (max-width: $bp-mobile) {
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .new-slide{
     width: 100%;

@@ -897,8 +897,12 @@ h2 {
   }
 }
 
+<<<<<<< HEAD
+.main-slide {
+=======
 
 .mian-slide {
+>>>>>>> c0aa21fa0f32c439d8e9a5579501d87a700fb15c
   position: relative;
   height: auto;
 }
@@ -1014,7 +1018,7 @@ h2 {
     display: block;
     z-index: 1;
     position: absolute;
-    bottom: 240px;
+    bottom: -95px;
     left: 0;
     width: 100%;
     height: auto;
@@ -1074,7 +1078,7 @@ h2 {
 }
 @media screen and (max-width: 475px) {
   .new-items {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 }
 .new-items .new-slide {
