@@ -2029,6 +2029,7 @@ h3 {
   padding-right: 0;
   margin: 0;
   max-width: none;
+  overflow: hidden;
 }
 .info-about .info-about-img,
 .info-about .info-wrap {
@@ -2416,6 +2417,9 @@ h3 {
   }
   .info-why .img-wrap {
     padding: 60px 0;
+  }
+  .info-fresh {
+    overflow: hidden;
   }
   .info-fresh .info-fresh-wrap > p {
     font-size: 24px;
