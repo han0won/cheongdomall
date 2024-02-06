@@ -2985,6 +2985,10 @@ h3 {
     height: 32px;
     background-color: transparent;
   }
+  .titlearea .service-wrap .service-box .infocircle:hover,
+  .service-info .service-wrap .service-box .infocircle:hover {
+    background: none;
+  }
   .titlearea .service-wrap .service-box img,
   .service-info .service-wrap .service-box img {
     width: 100%;

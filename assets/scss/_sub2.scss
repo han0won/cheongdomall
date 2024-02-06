@@ -396,6 +396,10 @@
                     width: 32px;
                     height: 32px;
                     background-color: transparent;
+
+                    &:hover {
+                        background: none;
+                    }
                 }
                 img {
                     width: 100%;
