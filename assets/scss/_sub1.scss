@@ -31,6 +31,7 @@ h3 {
         font-size: 60px;
     }
 }
+
 .info-page2 {
     margin-bottom: 100px;
     background-image: url(../../images/sub1/infopage2.png);
@@ -93,7 +94,7 @@ h3 {
 
     .info-about-img,
     .info-wrap {
-        width: 50%;
+        width: 40%;
     }
     .info-about-img {
         object-fit: cover;
@@ -108,9 +109,11 @@ h3 {
     }
     h3 {
         padding-bottom: 80px;
+        white-space: nowrap;
     }
     .info-about-txt {
         cursor: pointer;
+        white-space: nowrap;
 
         p {
             font-size: 50px;
@@ -137,6 +140,25 @@ h3 {
             z-index: -100;
             background: linear-gradient(to right, #E7F4D7 0%, rgba(119, 185, 52, 0.5) 100%);
         } 
+    }
+    @media screen and (max-width:1700px) {
+        h3 {
+            padding-bottom: 50px;
+        }
+        .info-about-img {
+            width: 30%;
+            height: 560px;
+        }
+        .info-about-txt {  
+            p {
+                font-size: 45px;
+            }
+        }
+    }
+    @media screen and (max-width:1200px) {
+        .info-wrap {
+            padding-left: 40px;
+        }
     }
 }
 
@@ -429,7 +451,6 @@ h3 {
             padding-bottom: 50px;
         }
         .info-about-img {
-            width: 30%;
             height: 463px;
         }
         .info-wrap {
@@ -516,6 +537,7 @@ h3 {
         }
     }
 }
+
 @media screen and (max-width: $bp-mobile) {
     .info-tit {
         padding-bottom: 5px;

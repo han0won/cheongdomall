@@ -2026,7 +2026,7 @@ h3 {
 }
 .info-about .info-about-img,
 .info-about .info-wrap {
-  width: 50%;
+  width: 40%;
 }
 .info-about .info-about-img {
   -o-object-fit: cover;
@@ -2042,9 +2042,11 @@ h3 {
 }
 .info-about h3 {
   padding-bottom: 80px;
+  white-space: nowrap;
 }
 .info-about .info-about-txt {
   cursor: pointer;
+  white-space: nowrap;
 }
 .info-about .info-about-txt p {
   font-size: 50px;
@@ -2070,6 +2072,23 @@ h3 {
   bottom: 5px;
   z-index: -100;
   background: linear-gradient(to right, #E7F4D7 0%, rgba(119, 185, 52, 0.5) 100%);
+}
+@media screen and (max-width: 1700px) {
+  .info-about h3 {
+    padding-bottom: 50px;
+  }
+  .info-about .info-about-img {
+    width: 30%;
+    height: 560px;
+  }
+  .info-about .info-about-txt p {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .info-about .info-wrap {
+    padding-left: 40px;
+  }
 }
 
 .info-why {
@@ -2343,7 +2362,6 @@ h3 {
     padding-bottom: 50px;
   }
   .info-about .info-about-img {
-    width: 30%;
     height: 463px;
   }
   .info-about .info-wrap {
