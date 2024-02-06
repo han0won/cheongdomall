@@ -626,9 +626,7 @@ h2 {
     padding: 60px 16px 80px;
   }
   #footer .f-left .f-top ul {
-    -moz-column-gap: 0;
-         column-gap: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   #footer .f-left .f-top a {
     font-size: 12px;
@@ -778,8 +776,8 @@ h2 {
 }
 .bottom-menu .menu-wrap {
   display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
 }
 .bottom-menu .menu-icon {
   height: 24px;
@@ -810,7 +808,7 @@ h2 {
     display: none;
   }
 }
-@media screen and (min-width: 475px) {
+@media screen and (max-width: 475px) {
   .bottom-menu .menu-wrap {
     -moz-column-gap: 45px;
          column-gap: 45px;

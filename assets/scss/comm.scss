@@ -582,8 +582,7 @@
         .f-left {
             .f-top {
                 ul {
-                    column-gap: 0;
-                    justify-content: space-between;
+                    justify-content: flex-start
                 }
                 a {
                     font-size: 12px;
@@ -744,7 +743,7 @@
     }
     .menu-wrap {
         display: flex;
-        column-gap: 60px;
+        column-gap: 70px;
     }
     .menu-icon {
         height: 24px;
@@ -774,7 +773,7 @@
     @media screen and (min-width: $bp-mobile-lg) {
         display: none;        
     }
-    @media screen and (min-width: $bp-mobile) {
+    @media screen and (max-width: $bp-mobile) {
         .menu-wrap {
             column-gap: 45px;
         }
