@@ -300,7 +300,7 @@
             }
         }
     }
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-mobile-lg) {
         position: fixed;
         top: 0;
         left: 0;
@@ -607,7 +607,7 @@
             }
         }
     }
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-mobile-lg) {
         .f-wrap {
             padding: 20px 16px;
             
@@ -744,7 +744,7 @@
     }
     .menu-wrap {
         display: flex;
-        column-gap: 45px;
+        column-gap: 60px;
     }
     .menu-icon {
         height: 24px;
@@ -771,8 +771,13 @@
             background-image: url(../../images/comm/icon-user-menu.png);
         }
     }
-    @media screen and (min-width: 476px) {
+    @media screen and (min-width: $bp-mobile-lg) {
         display: none;        
+    }
+    @media screen and (min-width: $bp-mobile) {
+        .menu-wrap {
+            column-gap: 45px;
+        }
     }
 }
 
@@ -780,7 +785,7 @@
     display: none;
 }
 
-@media screen and (max-width: $bp-mobile) {
+@media screen and (max-width: $bp-mobile-lg) {
     .m-hidden {
         display: none !important;
     }

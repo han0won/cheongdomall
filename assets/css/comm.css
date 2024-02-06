@@ -364,7 +364,7 @@ h2 {
          column-gap: 20px;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 700px) {
   #header {
     position: fixed;
     top: 0;
@@ -646,7 +646,7 @@ h2 {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 700px) {
   #footer .f-wrap {
     padding: 20px 16px;
   }
@@ -778,8 +778,8 @@ h2 {
 }
 .bottom-menu .menu-wrap {
   display: flex;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 .bottom-menu .menu-icon {
   height: 24px;
@@ -805,9 +805,15 @@ h2 {
 .bottom-menu .menu-icon .menu-icon-user {
   background-image: url(../../images/comm/icon-user-menu.png);
 }
-@media screen and (min-width: 476px) {
+@media screen and (min-width: 700px) {
   .bottom-menu {
     display: none;
+  }
+}
+@media screen and (min-width: 475px) {
+  .bottom-menu .menu-wrap {
+    -moz-column-gap: 45px;
+         column-gap: 45px;
   }
 }
 
@@ -815,7 +821,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 700px) {
   .m-hidden {
     display: none !important;
   }
@@ -1971,7 +1977,7 @@ h3 {
   background-image: url(../../images/sub1/infopage2.png);
 }
 .info-page2 .info-int2 {
-  font-size: 40px;
+  font-size: 36px;
 }
 .info-page2 .info-int2 span {
   color: #CCE9A8;
@@ -2351,7 +2357,7 @@ h3 {
     font-size: 50px;
   }
   .info-page2 .info-int2 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .info-what .sub1-slide {
     justify-content: space-between;
