@@ -2598,10 +2598,17 @@ h3 {
 }
 .service-info,
 .service-board {
-  max-width: 1340px;
-  padding: 100px 30px;
+  max-width: 1440px;
+  padding: 100px 80px;
 }
 
+@media screen and (max-width: 1024px) {
+  .service-info,
+  .service-board {
+    max-width: 800px;
+    padding: 100px 16px;
+  }
+}
 .service-info {
   padding-bottom: 0;
 }

@@ -1,7 +1,14 @@
 .service-info,
 .service-board {
-    max-width: 1340px;
-    padding: 100px 30px;
+    max-width: 1440px;
+    padding: 100px 80px;
+}
+@media screen and (max-width: $bp-tablet) {
+    .service-info,
+    .service-board {
+    max-width: 800px;
+    padding: 100px 16px;
+    }
 }
 
 
