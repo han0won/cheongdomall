@@ -2005,16 +2005,18 @@ h3 {
 .info-what .sub1-slide::before {
   content: "";
   display: inline-block;
-  width: 26px;
-  height: 94px;
+  width: 30px;
+  height: 85px;
   background-image: url(../../images/sub1/sub1_slide_before.png);
+  background-repeat: no-repeat;
 }
 .info-what .sub1-slide::after {
   content: "";
   display: inline-block;
-  width: 26px;
-  height: 94px;
+  width: 30px;
+  height: 85px;
   background-image: url(../../images/sub1/sub1_slide_after.png);
+  background-repeat: no-repeat;
 }
 .info-what .sub1-slide-img {
   width: 100%;
