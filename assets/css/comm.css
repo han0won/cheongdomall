@@ -2710,6 +2710,9 @@ h3 {
   padding: 40px 60px;
   width: 100%;
 }
+.service-info .service-wrap .service-box .service-box-wrap span {
+  display: none;
+}
 .service-info .service-wrap .service-box a {
   display: flex;
   flex-direction: column;
@@ -2874,6 +2877,9 @@ h3 {
   }
 }
 @media screen and (max-width: 700px) {
+  .service-info {
+    margin-top: 60px;
+  }
   .titlearea,
   .service-info {
     position: relative;
@@ -2958,11 +2964,12 @@ h3 {
   }
   .titlearea .service-wrap .service-box .service-box-wrap,
   .service-info .service-wrap .service-box .service-box-wrap {
-    justify-content: space-between;
     padding: 0;
-    -moz-column-gap: 0;
-         column-gap: 0;
     width: 100%;
+  }
+  .titlearea .service-wrap .service-box .service-box-wrap span,
+  .service-info .service-wrap .service-box .service-box-wrap span {
+    display: block;
   }
   .titlearea .service-wrap .service-box .infocircle,
   .service-info .service-wrap .service-box .infocircle {
@@ -3023,8 +3030,14 @@ h3 {
     border-radius: 5px;
   }
 }
-@media screen and (max-width: 475px) {
-  .service-info {
-    margin-top: 60px;
+@media screen and (max-width: 440px) {
+  .service-info .service-wrap {
+    padding: 22px;
+  }
+  .service-info .service-wrap span {
+    display: none;
+  }
+  .service-info .service-wrap .service-box .service-box-wrap {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=comm.css.map */

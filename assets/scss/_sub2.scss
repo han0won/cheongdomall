@@ -115,6 +115,10 @@
                 column-gap: 26px;
                 padding: 40px 60px;
                 width: 100%;
+
+                span {
+                    display: none;
+                }
             }
             a {
                 display: flex;
@@ -296,7 +300,10 @@
         }
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $bp-mobile-lg) {
+    .service-info{
+        margin-top: 60px;
+    }  
     .titlearea,
     .service-info {
         position: relative;
@@ -369,10 +376,12 @@
             }
             .service-box {
                 .service-box-wrap {
-                justify-content: space-between;
                 padding: 0;
-                column-gap: 0;
                 width: 100%;
+
+                    span {
+                        display: block;
+                    }
                 }
                 .infocircle {
                     margin: 0;
@@ -436,8 +445,15 @@
         }
     }
 }
-@media screen and (max-width: $bp-mobile) {
-    .service-info{
-        margin-top: 60px;
-    }    
-}
+@media screen and (max-width: 440px) {
+    .service-info .service-wrap {
+        padding: 22px;
+
+        span {
+            display: none;
+        }
+    }
+    .service-info .service-wrap .service-box .service-box-wrap {
+    justify-content: space-between;
+    }
+} 
