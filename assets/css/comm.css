@@ -46,6 +46,7 @@ body {
   line-height: 1.5;
   font-family: "Pretendard-Regular", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #232527;
+  cursor: url(../../images/comm/icon-cursor.png), auto;
 }
 
 img {
@@ -2612,21 +2613,25 @@ h3 {
     font-size: 16px;
   }
 }
-.service-info,
+.service-info {
+  max-width: 1440px;
+  padding: 50px 80px 0 80px;
+}
+
 .service-board {
   max-width: 1440px;
   padding: 100px 80px;
 }
 
 @media screen and (max-width: 1024px) {
-  .service-info,
+  .service-info {
+    max-width: 800px;
+    padding: 50px 16px;
+  }
   .service-board {
     max-width: 800px;
     padding: 100px 16px;
   }
-}
-.service-info {
-  padding-bottom: 0;
 }
 .service-info h2 {
   font-family: "Pretendard-Regular";
@@ -2844,9 +2849,6 @@ h3 {
 @media screen and (max-width: 1300px) {
   h2 {
     font-size: 40px;
-  }
-  .service-info {
-    padding-top: 50px;
   }
   .service-info .search-wrap h3 {
     padding-bottom: 20px;
