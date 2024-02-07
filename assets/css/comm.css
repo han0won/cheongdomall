@@ -2100,14 +2100,17 @@ h3 {
     padding-bottom: 50px;
   }
   .info-about .info-about-img {
-    width: 30%;
+    width: 40%;
     height: 560px;
   }
   .info-about .info-about-txt p {
     font-size: 45px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
+  .info-about .info-about-img {
+    width: 30%;
+  }
   .info-about .info-wrap {
     padding-left: 40px;
   }
