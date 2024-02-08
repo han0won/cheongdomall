@@ -708,6 +708,10 @@ h2 {
   }
 }
 
+#container {
+  overflow: hidden;
+}
+
 .sub-cont {
   max-width: 1440px;
   margin: 0 auto;
